@@ -1,0 +1,168 @@
+.main_sect_animation_div{
+    background-image: url('../../Assets/Group 3655@2x.png');
+    background-size: 100% 100%;
+    /* width: 100%; */
+    /* margin-top: 50px; */
+    background-repeat: no-repeat;
+}
+.station_img{
+    background-image: url('../../Assets/Group 4929@3x.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* background-position: ; */
+    /* background-size:; */
+    object-fit: fill;
+    width: auto;
+    height: 12vh;
+    /* margin-top: 100px; */
+    position: relative;
+}
+.tree_img{
+    margin-top: 20px;
+    width: 100%;
+}
+.road_img{
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+}
+.station_img{
+    overflow: hidden;
+}
+.train_img{
+    position: absolute;
+    bottom: 0px;
+    z-index: 11;
+    right: -120px;
+    /* overflow-x: hidden; */
+    /* transform: translate(-50%,50%); */
+}
+.airplane{
+    position: absolute;
+    z-index: 0;
+    bottom: 150px;
+    left: 400px;
+  }
+.animation_content_div{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 40px;
+}
+.animation_para_div{
+    width: 500px;
+}
+.animation_para_div p{
+    color: #2E58A6;
+}
+.home_form_div{
+    background-color: white;
+    box-shadow: 0px 0px 4px gainsboro;
+    border-radius: 5px;
+    padding: 20px;
+    width: 350px;
+    margin-left: 80px;
+    position: relative;
+    z-index: 999;
+    text-align: center;
+}
+
+.home_form_div input,.home_form_div select{
+    width: 300px;
+    border: none;
+    outline: none;
+    padding: 6px 12px;
+   background-color: #F0F4FC;
+   margin-top: 10px;
+   color: #2E58A6;
+
+}
+.home_form_btn{
+    background-color: #2E58A6;
+    color: white;
+    text-align: center;
+    padding: 7px 25px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.check_para{
+    margin-left: 10px;
+    color: #2E58A6;
+    font-size: .9rem;
+    margin-top: 4px;
+}
+.check_inp{
+    width: inherit !important;
+    /* display: inline-/block; */
+   /* margin-top: 4px; */
+}
+.check_box{
+    display: flex;
+    /* align-items: center; */
+}
+.home_form_div input::placeholder{
+    color: #2E58A6;
+}
+.home_form_div label{
+    margin-top: 20px;
+    text-align: start;
+}
+._home_video_div{
+    text-align: center;
+    margin-top: 30px;
+    width: 850px;
+    margin: 50px auto;
+}
+._home_video_div p{
+    margin-top: 20px;
+  color: #2E58A6;
+  font-size: .9rem;
+    
+}
+._home_video_div img{
+    width: 450px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:1000px){
+    .tree_img,.station_img,.airplane{
+        display: none;
+    }
+    ._home_video_div{
+        width: 95%;
+    }
+}
+@media screen and (max-width:700px){
+    .animation_content_div{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .animation_para_div{
+        text-align: center;
+    }
+    .home_form_div{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:500px){
+    ._home_video_div img{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:350px){
+    .home_form_div{
+        width: 100%;
+    }
+    .home_form_div input, .home_form_div select{
+        width: 250px;
+    }
+}
+@media screen and (max-width:310px){
+    .home_form_div input, .home_form_div select{
+        width: 230px;
+    }
+}

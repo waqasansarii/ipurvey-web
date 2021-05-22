@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .airplane {
+    animation: App-logo-spin infinite 5s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform:translate(0px,0px);
   }
   to {
-    transform: rotate(360deg);
+    transform: translate(550px,-300px);
+  }
+}
+
+input , select,textarea{
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+}
+
+/* cookie  */
+
+/* cokkiew css  */
+
+.cokkie_main_div {
+  position: fixed;
+  bottom: 0px;
+  z-index: 99999;
+  width: 100%;
+  filter: opacity(0.9);
+  padding: 10px;
+  background-color: #9faec1;
+}
+
+.cross_cookie {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  object-fit: contain;
+  width: 15px;
+  color: white;
+  font-size: 1.5em;
+}
+.cross_cookie:hover{
+  cursor: pointer;
+}
+.cokkie_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cokkie_para {
+  width: 82%;
+  margin-left: 20px;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: white;
+}
+.cokkie_para > p {
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+}
+.cokkie_btn_div{
+  margin-top: 10px;
+}
+.m-l{
+  margin-left: 10px;
+}
+.cokkie_btn_div > button {
+  /* margin-left: 10px; */
+  border: none;
+  outline: none;
+  padding: 6px 20px;
+  border-radius: 3px;
+  color: #2E58A6;
+
+}
+.cokkie_white {
+  border-radius: 3px;
+  background: transparent;
+  padding: 5px 10px !important;
+}
+.cokkie_grn {
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1144px) {
+  .cokkie_para {
+    /* width: 600px; */
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1045px) {
+  .cokkie_para {
+    /* width: 450px; */
+    font-size: 0.8rem;
+  }
+}
+
+
+@media screen and (max-width: 904px) {
+  .cokkie_main_div {
+    /* border-radius: 20px 20px 0 0; */
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .cokkie_div {
+    flex-direction: column;
+    /* align-items: flex-start; */
+  }
+  .cokkie_para {
+    width: 90% !important;
+  }
+  .cokkie_btn_div {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cokkie_para {
+    width: 360px;
+    font-size: 0.8rem;
+  }
+  .cokkie_img {
+    width: 100px;
+  }
+  .cokkie_main_div {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .cokkie_white {
+    margin-top: 10px;
+  }
+  .cokkie_para {
+    margin-left: 10px;
+    font-size: 0.7rem;
+  }
+  .cokkie_img {
+    width: 70px;
   }
 }
