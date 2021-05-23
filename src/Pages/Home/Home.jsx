@@ -1,4 +1,4 @@
-import React,{useRef} from 'react'
+import React, { useRef } from 'react'
 import Cokkie from '../../Components/Cookie'
 import './Home.css'
 import GetApp from '../../Components/GetApp'
@@ -8,25 +8,29 @@ import airplane from '../../Assets/Group 3870@2x.png'
 import tree from '../../Assets/Group 3848.png'
 import road from '../../Assets/Group 3975.png'
 import useWebAnimations from "@wellyshen/use-web-animations";
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 const Home = () => {
     // const airplane = useRef('')
     const { ref } = useWebAnimations({
         keyframes: {
-          transform: "translateX( -1100px)", // Move by 500px
+            transform: "translateX( -1100px)", // Move by 500px
         },
         animationOptions: {
-          delay: 1000, // Start with a 500ms delay
-          duration: 5000, // Run for 1000ms
-          iterations: Infinity, // Repeat once
-          direction: "alternate", // Run the animation forwards and then backwards
-          easing: "ease-in-out", // Use a fancy timing function
+            delay: 1000, // Start with a 500ms delay
+            duration: 5000, // Run for 1000ms
+            iterations: Infinity, // Repeat once
+            direction: "alternate", // Run the animation forwards and then backwards
+            easing: "ease-in-out", // Use a fancy timing function
         },
 
-      });
-      
-   
-      return (
+    });
+    function onChange(value) {
+        console.log("Captcha value:", value);
+    }
+
+    return (
         <div className='home_container'>
             <Cokkie />
             <div className="main_sect_animation_div">
@@ -38,7 +42,7 @@ const Home = () => {
                         raising compensation claim requests for up to 5 (five) Rail and/or Flight
                        journeys within the first 2 onths of launch, completely free!</p>
                     </div>
-                    <img  src={airplane} className='airplane App-logo' alt="" />
+                    <img src={airplane} className='airplane App-logo' alt="" />
                     <div className="home_form_div">
                         <h5>Care to share some info?</h5>
                         <form action="">
@@ -53,9 +57,18 @@ const Home = () => {
                             <label className='check_box' htmlFor="">
                                 <input className='check_inp' type="checkbox" name="" id="" />
                                 <p className='check_para'>
-                                Send offers & promotional content
+                                    Send offers & promotional content
                                 </p>
                             </label>
+                            <div className="captcha">
+
+                            <ReCAPTCHA
+                                sitekey="Your client site key"
+                                onChange={onChange}
+                                // size='compact'
+                                 badge='bottomright'
+                                />
+                                </div>
                             <button className='home_form_btn'>Get Notified</button>
                         </form>
                     </div>
@@ -74,7 +87,7 @@ const Home = () => {
                 dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
                 <img src={video} alt="" />
             </div>
-            <GetApp />
+            <GetApp head='Coming soon on your favorite devices!' para />
         </div>
     )
 }

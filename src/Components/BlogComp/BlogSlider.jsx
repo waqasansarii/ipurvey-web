@@ -2,10 +2,7 @@ import Slider from "react-slick";
 import Button from "../Btn/Btn";
 
 // assets 
-
 import blogSliderImg from "../../Assets/Mask Group 9.png";
-// import next from "../../Assets/Group 3603.png";
-// import prev from "../../Assets/Group 3604.png";
 
 function SampleNextArrow(props) {
   const { className, onClick } = props;
@@ -63,8 +60,6 @@ export const BlogSlider = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
-          // nextArrow: <SampleNextArrow />,
-          // prevArrow: <SamplePrevArrow />,
         },
       },
     ],

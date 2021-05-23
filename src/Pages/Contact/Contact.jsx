@@ -23,13 +23,13 @@ const Contact = () => {
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                             erat, sed diam voluptua. At vero eos et accusam et justo duo
-                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                            dolores 
                        </p>
                         <p className="about_para">
                             sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
                             amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                             invidunt ut labore et dolore magna aliquyam erat, sed diam
-                            voluptua. At vero eos et accusam et justo duo dolo
+                            voluptua. At vero 
                        </p>
                         <div className="email_div">
                             <img src={email} alt="" />
@@ -69,7 +69,7 @@ const Contact = () => {
                                     <input className='conatact_inp' type="text" placeholder='Subject' />
                                 </div>
                                 <div>
-                                    <textarea name="" id="" cols="30" rows="6" placeholder='Message'></textarea>
+                                    <textarea name="" id="" cols="30" rows="7" placeholder='Message'></textarea>
                                 </div>
                                 <div>
                                     <button className='contact_send_btn'>Send</button>
@@ -85,18 +85,18 @@ const Contact = () => {
                         <img className='map_img' src={map} alt="" />
                         <div className="_contact_links">
                             <h4>Head Office</h4>
-                            <div className="addres_div">
+                            <div className="addres_div mt-3">
                                 <img src={office} alt="" />
-                                <span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                <span > Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                 nonumy eirmod tempor invidunt</span>
                             </div>
                             <div>
                                 <img src={mob} alt="" />
-                                <span>Lorem ipsum dolor sit</span>
+                                <span className='mt-2'>Lorem ipsum dolor sit</span>
                             </div>
                             <div>
                                 <img src={msg} alt="" />
-                                <span>Lorem ipsum dolor sit</span>
+                                <span className='mt-2'> Lorem ipsum dolor sit</span>
                             </div>
                             <h4>iPurvey Business Support</h4>
                             <div>

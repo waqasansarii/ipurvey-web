@@ -73,7 +73,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <GetApp />
+      <GetApp btn  head='Get Registered Today!' />
 
     </React.Fragment>
   );

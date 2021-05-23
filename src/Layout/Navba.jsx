@@ -10,9 +10,7 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg navbar-light custom_nav">
                 <div className="container-fluid">
                     <img className='web_logo' src={logo} alt="" />
-                    {/* <a className="navbar-brand" href="#">Navbar</a> */}
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        {/* <span className="navbar-toggler-icon" /> */}
                     <img className='' src={bar} alt="" />
 
                     </button>

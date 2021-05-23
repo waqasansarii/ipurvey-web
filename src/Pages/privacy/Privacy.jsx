@@ -44,12 +44,6 @@ const Privacy = () => {
       <SubNav head='Privacy policy' />
       <div className="terms_and_cond_main_div">
         <div className="terms_boxex_div">
-          {/* <div className="tersm_head_div">
-            <h3>
-              Legal & Compliance
-            </h3>
-          </div> */}
-
           <div
             className="terms_one_box_div" >
             {termsData.map((val) => (

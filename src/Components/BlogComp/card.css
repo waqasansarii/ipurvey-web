@@ -6,7 +6,7 @@
 /* blog card css  */
 
 .blog_card{
-  box-shadow: 0px 0px 3px gainsboro;
+  box-shadow: 0px 0px 10px gainsboro;
   /* margin-left: 20px; */
 }
 .blog_card_div {
@@ -49,9 +49,10 @@
   color: var(--text-lightpurple);
 }
 .blog_data_div {
-  text-align: center;
+  /* text-align: center; */
   color: #babfdc;
   font-size: 0.7em;
+  padding-left: 10px;
 }
 .blog_card_body {
   font-size: 0.75em;
@@ -59,6 +60,7 @@
   padding-right: 5px !important;
   color: #2E58A6 !important;
   padding-bottom: 5px !important;
+  padding-top: 0px !important;
 }
 .read_more_div {
   text-align: right;
@@ -72,7 +74,7 @@
   /* margin-left: -10px; */
   font-size: 0.9em;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   color: #0553bb;
 }
 

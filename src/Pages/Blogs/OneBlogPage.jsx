@@ -35,12 +35,6 @@ const SelectBlog = () => {
             <div className='blog_container'>
                 <SubNav head='ipurvey Blogs' />
                 <div className="blog_main_div">
-                    {/* <div className="blog_head_search_div">
-                        <h3><strong style={{ color: '#1cc1a0' }}> Rarare Blog!</strong></h3>
-                    </div> */}
-                    {/* <div className='get_blog_one_link'>
-                        Blogs {' > '} <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</span>
-                    </div> */}
                     <div className="select_blog_para_data">
                         <h5><strong>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</strong></h5>
                         <div className="blog_data_div">

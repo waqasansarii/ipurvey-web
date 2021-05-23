@@ -1,5 +1,5 @@
 .web_logo{
-    width: 110px;
+    width: 90px;
 }
 .custom_nav{
     padding: 15px 50px;
@@ -16,11 +16,14 @@
     margin-left: 50px;
 }
 .nav-link{
-    color: #0d6efd !important;
+    color:  #2E58A6 !important;
     margin-left: 40px ;
 }
 .navbar-light .navbar-toggler{
     border: none !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
 }
 
 /* foterr  */
@@ -34,6 +37,14 @@
 }
 .footer_link_div{
     width: 50%;
+}
+.f_links{
+    font-weight: bold;
+    color: #2E58A6;
+    text-decoration: none;
+}
+.f_links:hover{
+    color: #2E58A6;
 }
 .footer_link_div p{
   font-size: .9rem;
@@ -73,7 +84,7 @@
     color: white;
     border: none;
     outline: none;
-    padding: 7px 25px;
+    padding: 6px 40px;
     border-radius: 3px;
     margin-top: 15px;
 }

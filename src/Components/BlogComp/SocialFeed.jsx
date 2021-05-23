@@ -42,19 +42,6 @@ const SocialFeed = () => {
                         </button>
                     </div>
                 </div>
-                {/* <div className="subscribe_news_div">
-                    <h6><strong>Subscribe to our news letter!</strong></h6>
-                    <div className="subscribe_para">
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio numquam similique cumque, 
-                            sequi fuga porro, 
-                        </p>
-                    </div>
-                    <div className="subscribe_inp">
-                        <input type="text" placeholder='Enter emial address'/>
-                    </div>
-                    <Button className='voice_heard_btn_grn' value='Subscribe' />
-                </div> */}
             </div>
 
         </div>

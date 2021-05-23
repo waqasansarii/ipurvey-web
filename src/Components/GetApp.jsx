@@ -3,7 +3,7 @@ import getApp from '../Assets/Group 4930@2x.png'
 import arrow from '../Assets/Icon feather-arrow-rightw.png'
 import store from '../Assets/App store Icons@2x.png'
 
-const GetApp = () => {
+const GetApp = ({btn,para,head}) => {
     return (
         <div>
             <div className="home_commingsoon">
@@ -12,15 +12,23 @@ const GetApp = () => {
                     <div className="hcb_left">
                         <h2
                             className="lh-base">
-                            Get Registered Today! <br />
+                            {head} <br />
 
                         </h2>
                         <p
                             className="lh-base blue_para">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                             diam nonumy eirmod tempor invidunt ut labore
-              </p>
+                       </p>
+                       {para?
+                       <p
+                       className="lh-base blue_para">
+                            Lorem ipsum dolor sit amet, consetetur
+                       </p>
+                            :null}
+                       {btn?
                         <button className='sign_up_todayBtn'>Sign Up today <img src={arrow} alt="" /></button>
+                    :null}
                         <div>
 
                             <span    >
@@ -31,7 +39,6 @@ const GetApp = () => {
                     </div>
                     <div className="hcb_right">
                         <img className="h_mob1" src={getApp} alt="..." />
-                        {/* <img className="h_mob2" src={handmob2} alt="..." /> */}
                     </div>
                 </div>
             </div>

@@ -23,15 +23,6 @@ const Cokkie = () => {
             }}
         >
             <div className="cokkie_div">
-                {/* <img
-          style={{ display: show === true ? "none" : "block" }}
-          className="cross_cookie"
-          src={crosslight}
-          alt="..."
-          onClick={() => {
-            setShow(true);
-          }}
-        /> */}
                 <p
                     style={{ display: show === true ? "none" : "block" }}
                     className="cross_cookie"

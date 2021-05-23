@@ -23,6 +23,7 @@
 
 .about_left_content1 h2 {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .about_left_content1 p {
@@ -109,7 +110,7 @@
   display: flex;
   padding: 20px 0px;
   border-radius: 20px;
-  padding-bottom: 0px;
+  /* padding-bottom: 0px; */
 }
 
 .hcb_left {
@@ -131,7 +132,7 @@
 }
 .hcb_left p {
   font-size: 1rem;
-  width: 400px;
+  /* width: 400px; */
 }
 
 .hcb_left div {

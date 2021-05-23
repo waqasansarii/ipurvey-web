@@ -16,10 +16,10 @@ const Footer = () => {
                         <p className='footer_para2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                         <div className="links_footer">
                             <ul className="link_ul">
-                                <li><Link style={{textDecoration:'none'}} to='/'> Home </Link></li>
-                                <li><Link style={{textDecoration:'none'}} to='/about'> About Us </Link></li>
-                                <li><Link style={{textDecoration:'none'}} to='blog'> Blogs</Link></li>
-                                <li><Link style={{textDecoration:'none'}} to='/contact'> Contact Us</Link></li>
+                                <li><Link className='f_links'  to='/'> Home </Link></li>
+                                <li><Link className='f_links'  to='/about'> About Us </Link></li>
+                                <li><Link className='f_links'  to='blog'> Blogs</Link></li>
+                                <li><Link className='f_links'  to='/contact'> Contact Us</Link></li>
                             </ul>
                         </div>
                 </div>

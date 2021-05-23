@@ -8,7 +8,11 @@
 .contact_container .about_left_content1{
     margin-top: 30px;
 }
+.email_div{
+    margin-top: 30px;
+}
 .email_span{
+    display: inline-block;
     margin-left: 10px;
     color: #2E58A6;
     
@@ -52,7 +56,7 @@
 .name_inp{
     width: 150px;
     outline: none;
-    padding: 6px 12px;
+    padding: 10px 12px;
     border: none;
 }
 .m_l{
@@ -66,7 +70,7 @@
     border: none;
     outline: none;
     margin-top: 10px;
-    padding: 6px 12px;
+    padding: 10px 12px;
     
 }
 .contact_send_btn{
@@ -95,7 +99,15 @@
     text-align: start;
     margin-left: 50px;
 }
+.addres_div{
+    display: flex;
+    align-items: center;
+}
+.addres_div img{
+    margin-top: -20px;
+}
 ._contact_links span{
+    display: inline-block;
     margin-left: 10px;
     color: #2E58A6;
     line-height: 1.6em;
@@ -104,7 +116,7 @@
 }
 ._contact_links h4{
     color: #4C5B6D;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 
 @media screen and (max-width:1060px){

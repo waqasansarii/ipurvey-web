@@ -2,6 +2,7 @@
     margin: 0px 170px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px !important;
   }
   
   .terms_one_box_div {

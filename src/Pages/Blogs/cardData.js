@@ -1,10 +1,10 @@
-import blog1 from '../../Assets/Rectangle 1137.png'
-import blog2 from '../../Assets/Rectangle 1137.png'
-import blog3 from '../../Assets/Rectangle 1137.png'
-import blog4 from '../../Assets/Rectangle 1137.png'
-import blog5 from '../../Assets/Rectangle 1137.png'
-import blog6 from '../../Assets/Rectangle 1137.png'
-import user from '../../Assets/Rectangle 1137.png'
+import blog1 from '../../Assets/card1.png'
+import blog2 from '../../Assets/card2.png'
+import blog3 from '../../Assets/card3.png'
+import blog4 from '../../Assets/card4.png'
+import blog5 from '../../Assets/card5.png'
+import blog6 from '../../Assets/card6.png'
+import user from '../../Assets/card7.png'
 
 export const blog_card_data = [
     {
