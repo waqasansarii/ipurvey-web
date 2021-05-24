@@ -1,7 +1,6 @@
 import React,{useLayoutEffect} from "react";
 import './Blog.css'
 import BlogCard from '../../Components/BlogComp/BlogCard'
-// import UpcomingEvent from '../../Components/BlogComp/UpcomingEvent'
 import SocialFeed from '../../Components/BlogComp/SocialFeed'
 import { BlogSlider } from '../../Components/BlogComp/BlogSlider'
 import SubNav from "../../Layout/SubNav";
@@ -15,7 +14,7 @@ const Blog = () => {
     },[])
     return (
         <div className='blog_container'>
-            <SubNav  head='ipurvey Blogs'/>
+            <SubNav  head='ipurvey Blog'/>
             <div className="blog_main_div">
                 <div className='event_slider_div'>
                     <BlogSlider />

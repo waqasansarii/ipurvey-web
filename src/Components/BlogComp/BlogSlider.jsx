@@ -4,29 +4,6 @@ import Button from "../Btn/Btn";
 // assets 
 import blogSliderImg from "../../Assets/Mask Group 9.png";
 
-function SampleNextArrow(props) {
-  const { className, onClick } = props;
-  return (
-    <img
-      // src={next}
-      onClick={onClick}
-      className={`${className} custon_arr slider_arr`}
-      alt="img"
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, onClick } = props;
-  return (
-    <img
-      // src={prev}
-      onClick={onClick}
-      className={`${className} custon_arr slider_arr`}
-      alt="img"
-    />
-  );
-}
 
 export const BlogSlider = () => {
   const settings = {
@@ -35,8 +12,6 @@ export const BlogSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1024,

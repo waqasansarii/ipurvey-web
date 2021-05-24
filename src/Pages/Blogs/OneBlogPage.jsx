@@ -9,11 +9,7 @@ import { blog_card_data } from './cardData'
 import blogSliderImg from '../../Assets/Rectangle 1137@3x.png'
 import BlogCard from '../../Components/BlogComp/BlogCard'
 import SubNav from '../../Layout/SubNav'
-// import sIcon1 from '../../Assets/Icon awesome-facebook-square.png'
-// import sIcon2 from '../../Assets/Icon awesome-instagram-1.png'
-// import sIcon3 from '../../Assets/Icon awesome-twitter-square.png'
-// import sIcon4 from '../../Assets/Icon awesome-linkedin.png'
-// import sIcon5 from '../../Assets/Icon awesome-behance-square.png'
+
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 

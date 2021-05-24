@@ -18,7 +18,7 @@
     position: relative;
 }
 .tree_img{
-    margin-top: 15px;
+    margin-top: 40px;
     width: 100%;
 }
 .road_img{
@@ -48,14 +48,16 @@
     justify-content: center;
     width: 90%;
     margin: 0px auto;
-    padding-top: 30px;
+    padding-top: 60px;
 }
 .animation_para_div{
     width: 566px;
 }
-.animation_para_div h3{
+.animation_para_div h1{
     font-weight: bold;
     color: #0A1433;
+    /* font: normal normal 900 55px/70px poppins; */
+
 }
 .animation_para_div p{
     color: #2E58A6;
@@ -66,7 +68,7 @@
     box-shadow: 0px 3px 10px #00000029;
 
     border-radius: 5px;
-    padding: 20px;
+    padding: 40px 20px;
     padding-top: 17px;
     width: 350px;
     margin-left: 80px;
@@ -89,11 +91,12 @@
    background-color: #F0F4FC;
    margin-top: 10px;
    color: #2E58A6;
+   opacity: .5;
 
 }
 .captcha{
     /* width: 250px ; */
-    margin: 0px auto;
+    margin: 20px auto;
 }
 
 .rc-anchor-normal .rc-anchor-content{
@@ -128,7 +131,7 @@
     color: #2E58A6;
 }
 .home_form_div label{
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: start;
 }
 ._home_video_div{

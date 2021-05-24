@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import Cokkie from '../../Components/Cookie'
 import './Home.css'
 import GetApp from '../../Components/GetApp'
@@ -12,7 +12,6 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 
 const Home = () => {
-    // const airplane = useRef('')
     const { ref } = useWebAnimations({
         keyframes: {
             transform: "translateX( -1100px)", // Move by 500px
@@ -36,8 +35,8 @@ const Home = () => {
             <div className="main_sect_animation_div">
                 <div className="animation_content_div">
                     <div className="animation_para_div">
-                        <h3>Be the first to know </h3>
-                        <h3>when we arrive!</h3>
+                        <h1>Be the first to know </h1>
+                        <h1>when we arrive!</h1>
                         <p>Be among the first 100 early members and win iPurvey monitoring and
                         raising compensation claim requests for up to 5 (five) Rail and/or Flight
                        journeys within the first 2 onths of launch, <strong> completely free!</strong></p>
@@ -49,7 +48,7 @@ const Home = () => {
                             <label htmlFor=""> Email Address <br />
                                 <input type="email" placeholder='Email Address' />
                             </label>
-                            <label htmlFor="">How did you hear about us?
+                            {/* <label htmlFor="">How did you hear about us?
                                  <select name="" id="">
                                     <option value="">Facebook</option>
                                 </select>
@@ -59,16 +58,15 @@ const Home = () => {
                                 <p className='check_para'>
                                     Send offers & promotional content
                                 </p>
-                            </label>
+                            </label> */}
                             <div className="captcha">
-
-                            <ReCAPTCHA
-                                sitekey="Your client site key"
-                                onChange={onChange}
-                                // size='compact'
-                                 badge='bottomright'
+                                <ReCAPTCHA
+                                    sitekey="Your client site key"
+                                    onChange={onChange}
+                                    // size='compact'
+                                    badge='bottomright'
                                 />
-                                </div>
+                            </div>
                             <button className='home_form_btn'>Get Notified</button>
                         </form>
                     </div>
@@ -82,8 +80,8 @@ const Home = () => {
             <div className="_home_video_div">
                 <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h3>
                 <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                     eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
-                     voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita 
+                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
                      kasd gubergren, no sea takimata sanctus est Lorem</p>
                 <img src={video} alt="" />
             </div>
