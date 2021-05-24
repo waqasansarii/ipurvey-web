@@ -76,7 +76,12 @@ export const BlogSlider = () => {
                 New Heading
               </strong>
             </h6>
-            <p className="upcoming_data">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p className="upcoming_data">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
             <Button className="upcoming_btn" value="Learn more" />
           </div>
         </div>

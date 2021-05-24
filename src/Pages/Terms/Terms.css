@@ -65,20 +65,30 @@
     margin-top: 20px;
   }
   .terms_two_box_para_div {
-    padding: 10px 20px;
     margin-top: 10px;
     border-radius: 8px;
     width: 400px;
     text-align: center;
     box-shadow: 0px 0px 5px gainsboro;
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+  .select_lang_div{
+    padding: 30px 0px !important;
+    margin-left: 100px;
   }
   
   .trans_para{
       color: #2E58A6;
+      font-weight: 300 !important;
+      margin-top: 10px;
   }
   @media screen and (max-width: 1125px) {
     .terms_and_cond_main_div {
       margin: 50px 20px;
+    }
+    .select_lang_div{
+      margin-left: 60px;
     }
   }
   @media screen and (max-width: 1040px) {
@@ -93,6 +103,9 @@
     .terms_and_cond_main_div {
       margin: 50px 20px;
       flex-wrap: wrap;
+    }
+    .select_lang_div{
+      margin-left: 0px;
     }
     .terms_one_box_div {
       margin: 20px auto;

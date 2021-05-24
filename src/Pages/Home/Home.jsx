@@ -40,11 +40,11 @@ const Home = () => {
                         <h3>when we arrive!</h3>
                         <p>Be among the first 100 early members and win iPurvey monitoring and
                         raising compensation claim requests for up to 5 (five) Rail and/or Flight
-                       journeys within the first 2 onths of launch, completely free!</p>
+                       journeys within the first 2 onths of launch, <strong> completely free!</strong></p>
                     </div>
                     <img src={airplane} className='airplane App-logo' alt="" />
                     <div className="home_form_div">
-                        <h5>Care to share some info?</h5>
+                        <p>Care to share some info?</p>
                         <form action="">
                             <label htmlFor=""> Email Address <br />
                                 <input type="email" placeholder='Email Address' />
@@ -81,10 +81,10 @@ const Home = () => {
             </div>
             <div className="_home_video_div">
                 <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h3>
-                <p>                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                erat, sed diam voluptua. At vero eos et accusam et justo duo
-                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+                <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                     eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+                     voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita 
+                     kasd gubergren, no sea takimata sanctus est Lorem</p>
                 <img src={video} alt="" />
             </div>
             <GetApp head='Coming soon on your favorite devices!' para />

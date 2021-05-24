@@ -60,7 +60,7 @@ const Cokkie = () => {
                         </button>
                         <button
 
-                            className='cus_btn1 m-l'
+                            className='cus_btn2 m-l'
                             onClick={() => {
                                 setShow(true);
                             }}

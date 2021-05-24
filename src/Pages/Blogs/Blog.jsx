@@ -21,7 +21,7 @@ const Blog = () => {
                     <BlogSlider />
                 </div>
                 <div className='blog_card_socail_feed_div margin_top'>
-                    <BlogCard size='15' />
+                    <BlogCard size='15' show />
                     <SocialFeed />
                 </div>
             </div>

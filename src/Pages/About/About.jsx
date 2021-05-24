@@ -19,19 +19,19 @@ const About = () => {
       <div className="about_container">
         <div className="about_content">
           <div className="about_left_content1">
-            <h2 className="main_about_head">About Us!</h2>
-            <h2 className=" fw-bold about_head">Title here!</h2>
+            <h4 className="main_about_head">Lorem ipsum</h4>
+            <h2 className=" fw-bold about_head">Lorem ipsum</h2>
             <p className="about_para">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              dolores et ea rebum. Stet clita kasd gubergren, no sea
             </p>
             <p className="about_para">
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolo
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea
             </p>
           </div>
           <div className="about_right_content1">
@@ -41,31 +41,32 @@ const About = () => {
         <div className='about_sec2'>
           <div className="about_content mt-5 ">
             <div className="about_left_content2">
-              <h2 className="">Title here!</h2>
+              <h2 className="">About iPurvey</h2>
+              <p className=''>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+            </p>
               <p className=''>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                erat, sed diam voluptua. At vero eos et accusam et justo duo
-                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                erat, sed diam
             </p>
-              <p>
-                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                invidunt ut labore et dolore magna aliquyam erat, sed diam
-                voluptua. At vero eos et accusam et justo duo dolo
-            </p>
-              <p className=''>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                erat, sed diam voluptua. At vero eos et accusam et justo duo
-                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-            </p>
-              <p>
-                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                invidunt ut labore et dolore magna aliquyam erat, sed diam
-                voluptua. At vero eos et accusam et justo duo dolo
-            </p>
+
             </div>
             <div className="about_right_content2">
               <img src={aboutRec2} alt="img" />
@@ -73,7 +74,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <GetApp btn  head='Get Registered Today!' />
+      <GetApp btn head='Get Registered Today!' />
 
     </React.Fragment>
   );

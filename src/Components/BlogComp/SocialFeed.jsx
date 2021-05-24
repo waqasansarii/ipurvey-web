@@ -24,7 +24,7 @@ const SocialFeed = () => {
                     <img className='socail_feed_img' src={social6} alt="img" />
                     <button className='socail_button'>
                         <img src={fb} alt="img" />
-                        <p>Follow on Facebook</p>
+                        <p>Follow us on Facebook</p>
                     </button>
                 </div>
                 <div className="instagram_div">
@@ -38,7 +38,7 @@ const SocialFeed = () => {
                         <img className='socail_feed_img' src={social6} alt="img" />
                         <button className='socail_button insta'>
                             <img src={insta} alt="img" />
-                            <p>Follow on Instagram</p>
+                            <p>Follow us on Instagram</p>
                         </button>
                     </div>
                 </div>

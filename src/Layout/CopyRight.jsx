@@ -14,7 +14,7 @@ const CopyRight = () => {
             <div className="copy_right_main_div">
                 <div className="contact_link_ul_">
                     <h5>Contact with us</h5>
-                    <img src={path} alt="" />
+                    <img className='contct_path_line' src={path} alt="" />
                     <ul className="social_links">
                         <li>
                             <a href="">
@@ -23,7 +23,7 @@ const CopyRight = () => {
                         </li>
                         <li>
                             <a href="">
-                                <img src={insta} alt="" />
+                                <img className='insta_icon' src={insta} alt="" />
                             </a>
                         </li>
                         <li>

@@ -71,9 +71,11 @@
   font-size: 0.8em;
   font-weight: 400 !important;
   color: white;
+  width: 80%;
+  margin-bottom: 5px;
 }
 .slick-dots li button:before{
-  top: -133px ;
+  top: -150px ;
 }
 .upcoming_head {
   color: var(--bg-white) !important;
@@ -86,9 +88,16 @@
 
 .blog_card_heading{
   color: #2E58A6;
+  font-weight: bold;
 }
 /* social feed comp  */
-
+.feed_div h4{
+  text-align: start;
+  margin-left: 30px;
+  font-size: 1em;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
 .socail_feed_conatiner {
   /* border: 2px solid red; */
   width: 530px;
@@ -110,6 +119,7 @@
   font-size: 0.95em;
   padding: 7px 45px;
   justify-content: center;
+  align-items: center;
   margin: 25px auto;
   border-radius: 3px;
 }
@@ -117,8 +127,9 @@
   margin: 0px;
   padding: 0px;
   margin-left: 8px;
-  font-weight: 600;
+  font-weight: 300;
   margin-top: -2px;
+  margin-bottom: 0px;
 }
 .instagram_div {
   margin-top: 50px;
@@ -127,7 +138,9 @@
   background-color: #7E2EA6;
   border: 1px solid #7E2EA6;
 }
-
+.insta img{
+  margin-top: 3px;
+}
 .right_arrow{
   margin-left: 5px;
 }
@@ -145,6 +158,15 @@
 .select_blog_para_data {
   margin-top: 40px;
   margin-left: 60px;
+}
+.one_blog_data_div{
+  font-size: .8rem;
+  margin-top: 5px;
+  color: #748AA6;
+}
+.one_blog_data_div p{
+  
+  margin-bottom: 0px;
 }
 .blog_cards_story{
   width: 100% !important;
@@ -235,6 +257,9 @@
 }
 .swiper-button-prev:after, .swiper-button-next:after{
   font-size: 1em !important;
+}
+.swiper-pagination-bullets{
+  bottom: 5px !important;
 }
 @media screen and (max-width: 1125px) {
   .blog_main_div {

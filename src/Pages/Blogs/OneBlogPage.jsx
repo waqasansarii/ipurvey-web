@@ -37,7 +37,7 @@ const SelectBlog = () => {
                 <div className="blog_main_div">
                     <div className="select_blog_para_data">
                         <h5><strong>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</strong></h5>
-                        <div className="blog_data_div">
+                        <div className="one_blog_data_div">
                             <p>june 20-3-2020 | 3:00 Pm</p>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ const SelectBlog = () => {
                                 <div className="more_head">
                                     <h5>More Stories</h5>
                                 </div>
-                                <BlogCard size='14' className='blog_cards_story' />
+                                <BlogCard size='14'  className='blog_cards_story' />
                             </div>
                         ))}
                         < SocialFeed />

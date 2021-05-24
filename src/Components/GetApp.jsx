@@ -10,11 +10,11 @@ const GetApp = ({btn,para,head}) => {
                 <div
                     className="hc_box">
                     <div className="hcb_left">
-                        <h2
+                        <h4
                             className="lh-base">
                             {head} <br />
 
-                        </h2>
+                        </h4>
                         <p
                             className="lh-base blue_para">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed

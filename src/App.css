@@ -22,6 +22,7 @@ input , select,textarea{
 }
 input::placeholder , select::placeholder,textarea::placeholder{
   color: #7095db;
+  font-weight: 300;
 }
 *{
   box-sizing: border-box;
@@ -41,7 +42,12 @@ body{
   width: 100%;
   filter: opacity(0.9);
   padding: 10px;
-  background-color: #9faec1;
+  background-color: #748AA6;
+  backdrop-filter: blur(10px);
+  background: #748AA6 0% 0% no-repeat padding-box;
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 1;
+
 }
 
 .cross_cookie {
@@ -68,6 +74,8 @@ body{
   font-size: 0.9rem;
   margin-top: 10px;
   color: white;
+  font: normal normal 300 16px/25px Poppins;
+
 }
 .cokkie_para > p {
   margin-bottom: 0px;
@@ -84,8 +92,14 @@ body{
   border: none;
   outline: none;
   padding: 6px 20px;
-  border-radius: 3px;
+  border-radius: 5px;
   color: #2E58A6;
+  
+  
+}
+.cus_btn2{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
 
 }
 .cokkie_white {

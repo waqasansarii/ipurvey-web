@@ -7,18 +7,18 @@ import SubNav from "../../Layout/SubNav";
 const termsData = [
   {
     head: "LLorem ipsum dolo",
-    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quaerat commodi quas asperiores exercitationem, maiores  cum aperiam eaque numquam repudiandae illo assumenda rem obcaecati impedit et earum inventore possimus beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Official quaerat commodi quas asperiores exercitationem, maiores cumaperiam eaque numquam repudiandae illo assumenda rem obcaecati impedit et earum inventore possimus beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quaerat commodi quas asperiores exercitationem, maiores cum aperiam eaque numquam repudiandae illo assumenda rem obcaecati impedit et earum inventore possimus beatae?",
+    para: " Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea",
     id: "01",
   },
   {
     head: "OWNERSHIT,COPYRIGHT AND TRADEMARK NOTICES",
-    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quaerat commodi quas asperiores exercitationem, maiores  cum aperiam eaque numquam repudiandae illo assumenda rem obcaecati impedit et earum inventore possimus beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Official quaerat commodi quas asperiores exercitationem, maiores cumaperiam eaque numquam repudiandae illo assumenda rem obcaecati impedit et earum inventore possimus beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quaerat commodi quas asperiores",
+    para: " Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea",
     id: "02",
     link:''
   },
   {
     head: "WARRANTY DISCLAIMER",
-    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quaerat commodi quas asperiores exercitationem, maiores  cum aperiam eaque numquam repudiandae illo assumenda rem obcaecati impedit et earum inventore possimus beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Official quaerat commodi quas asperiores exercitationem, maiores cumaperiam eaque numquam repudiandae illo assumenda rem obcaecati impedit et earum inventore possimus beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quaerat commodi quas asperiores Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quaerat commodi quas asperiores exercitationem, maiores  cum aperiam eaque numquam repudiandae illo assumenda rem obcaecati impedit et earum inventore possimus beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Official quaerat commodi quas asperiores exercitationem, maiores cumaperiam eaque numquam repudiandae illo assumenda rem obcaecati impedit et earum inventore possimus beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quaerat commodi quas asperiores Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quaerat commodi quas asperiores exercitationem, maiores  cum aperiam eaque numquam repudiandae illo assumenda rem obcaecati impedit et earum inventore possimus beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Official quaerat commodi quas asperiores exercitationem, maiores cumaperiam eaque numquam repudiandae illo assumenda rem obcaecati impedit et earum inventore possimus beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quaerat commodi quas asperiores,",
+    para: " Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea",
     id: "03",
   },
 ];
@@ -58,7 +58,7 @@ const TermAndCond = () => {
             ))}
           </div>
         </div>
-        <div className="terms_two_div">
+        <div className="terms_two_div select_lang_div">
           <div
             className="terms_two_box_para_div"   >
             <div className="terms_sub_head_div">

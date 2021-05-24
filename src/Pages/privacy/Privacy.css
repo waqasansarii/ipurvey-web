@@ -1,7 +1,8 @@
 .terms_and_cond_main_div {
     margin: 0px 170px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
   }
   
   .terms_one_box_div {
@@ -74,9 +75,16 @@
   .privacy_img_div{
     box-shadow: none;
   }
-  
+  .privacy_img_div img{
+    margin-left: 80px;
+  }
   .trans_para{
       color: #2E58A6;
+  }
+  @media screen and (max-width: 1205px) {
+    .privacy_img_div img{
+      margin-left: 20px;
+    }
   }
   @media screen and (max-width: 1125px) {
     .terms_and_cond_main_div {
@@ -95,6 +103,9 @@
     .terms_and_cond_main_div {
       margin: 50px 20px;
       flex-wrap: wrap;
+    }
+    .privacy_img_div img{
+      margin-left: 0px;
     }
     .terms_one_box_div {
       margin: 20px auto;

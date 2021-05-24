@@ -56,21 +56,21 @@
 .name_inp{
     width: 150px;
     outline: none;
-    padding: 10px 12px;
+    padding: 7px 12px;
     border: none;
 }
 .m_l{
     margin-left: 15px;
 }
 .contact_form input::placeholder , .contact_form textarea::placeholder{
-    color: #2E58A6;
+    color: #4b75c4f8;
 }
 .conatact_inp , .contact_form textarea{
     width: 315px;
     border: none;
     outline: none;
-    margin-top: 10px;
-    padding: 10px 12px;
+    margin-top: 15px;
+    padding: 7px 12px;
     
 }
 .contact_send_btn{
@@ -84,6 +84,7 @@
     border-radius: 3px;
 }
 
+
 .contact_map_sec{
   background-color: #F0F4FC;
   padding: 20px;
@@ -91,13 +92,26 @@
   text-align: center;
 
 }
+.contact_map_sec h3{
+    font-weight: bold;
+}
 .contact_map_flex{
     width: 90%;
     margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 ._contact_links{
     text-align: start;
     margin-left: 50px;
+    width: 32%;
+}
+._contact_links h4,._contact_links h5{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #4C5B6D;
+
 }
 .addres_div{
     display: flex;
@@ -131,8 +145,15 @@
     .contact_video_img,.contact_video_img img,.video_desc{
         width: 350px;
     }
+    ._contact_links{
+        width: 85%;
+        margin: 20px auto;
+    }
     
 }
+/* .map_img{
+    width: 1200px !important;
+} */
 @media screen and (max-width:950px){
     .contact_form_main_div{
         flex-wrap: wrap;
@@ -154,12 +175,10 @@
     .contact_section2{
         margin-top: 160px;
     }
-    .map_img{
-        width: 100%;
-    }
     .contact_img1{
         margin-top: 40px !important;
     }
+    
 }
 @media screen and (max-width:520px){
     .contact_section2{

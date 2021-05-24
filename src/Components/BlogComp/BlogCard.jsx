@@ -4,13 +4,15 @@ import { blog_card_data } from '../../Pages/Blogs/cardData'
 import arrow from '../../Assets/Icon feather-arrow-right@2x.png'
 import './card.css'
 
-const BlogCard = ({size,className}) => {
+const BlogCard = ({ size, className, show }) => {
     return (
         <div className={`blog_card_container ${className}`}>
-            <h3 className='blog_card_heading'>Top News</h3>
+            {show ?
+                <h3 className='blog_card_heading'>Top News</h3>
+                : null}
             <div className="blog_card_div">
                 {blog_card_data.map((val) => (
-                    <div className="card blog_card" style={{ width: `${size}rem`,marginTop:'15px' }} key={val.id}>
+                    <div className="card blog_card" style={{ width: `${size}rem`, marginTop: '14.5px' }} key={val.id}>
                         <img src={val.img} className="card-img-top" alt="..." />
                         <div className='card_title_div'>
                             <h6><strong> {val.title} </strong></h6>
