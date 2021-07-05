@@ -1,0 +1,160 @@
+.user_acc_container {
+  background-color: #f8f9fc;
+}
+.user_acc_md {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1330px;
+  width: 80%;
+  margin: 0px auto;
+}
+.user_acc_s_md {
+  /* margin: 30px auto; */
+  padding: 50px 0px;
+}
+.user_acc_left_md {
+  width: 50%;
+  /* border: 2px solid red; */
+}
+.account_form_sd {
+  width: 330px;
+  padding: 30px 30px;
+  background-color: white;
+  box-shadow: 0px 3px 10px #d6d5d5;
+  border-radius: 4px;
+  /* margin-left: 50px; */
+}
+.form_head_md {
+  text-align: center;
+}
+.account_form_sd .sign_up_btns {
+  margin-top: 30px;
+}
+.account_form_sd input {
+  width: 100%;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  padding: 9px 9px;
+  background-color: #f0f4fc;
+  font-size: 0.9rem;
+}
+.account_form_sd .orLine_md > img {
+  width: 100%;
+  /* margin: 10px 0px; */
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.account_form_sd button {
+  width: 100%;
+  margin-top: 10px;
+}
+.notMember_para {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.notMember_para > p {
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+.form_head_md > h4 {
+  font-weight: bold;
+}
+.user_acc_right_md {
+  width: 40%;
+  /* border: 2px solid red; */
+}
+.user_acc_right_md > img {
+  /* width: 100%; */
+  /* height: 100vh; */
+  object-fit: contain;
+}
+
+/* sign up form  */
+
+.acc_name_inp {
+  display: flex;
+  justify-content: space-between;
+}
+.acc_name_inp > input {
+  width: 48%;
+  /* padding: 6px 9px; */
+  /* font-size: .9rem; */
+}
+
+.acc_postal_code > button {
+  width: 120px;
+  padding: 10.5px 2px;
+  height: auto;
+}
+.acc_hover_input {
+  font-size: 0.8rem !important;
+}
+.acc_hover_togle img {
+  top: 20px !important;
+  right: 8px !important;
+}
+
+/* Popover styling */
+
+.popover__content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 270px;
+  transform: translate(0, 10px);
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  width: 330px;
+  top: -15px;
+}
+.popover__content:before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  left: calc(0% - 14px);
+  top: 28px;
+  border-style: solid;
+  box-shadow: 0 0px 5px 0 rgba(197, 196, 196, 0.26);
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #fffefe transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: rotate(270deg);
+}
+.hoverI_togle_img:hover .popover__content {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+.popover__message {
+  /* text-align: center; */
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+}
+
+
+/* forgot form  */
+
+.forgot_main_img{
+    text-align: center;
+}
+.forgot_main_img>img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    margin: 15px auto;
+}
+.form_blue_para{
+    font-size: .7rem;
+    color: #2E58A6;
+    margin-bottom: 5px;
+}
+.magic_link_Btn{
+    margin-top: 70px !important;
+}

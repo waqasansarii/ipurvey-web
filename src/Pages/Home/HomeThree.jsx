@@ -58,7 +58,7 @@ const HomeThree = () => {
           <img src={airplane} className="airplane App-logo" alt="" />
           <div className="home_form_div_md">
             <div className="head_md">
-              <Link className="form_arrow_link">
+              <Link className="form_arrow_link" to="/home">
                 <img src={arrow} alt="" />
               </Link>
               <div>

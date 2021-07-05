@@ -12,7 +12,6 @@ import Trusted from "../../Components/HomeComp/Trusted";
 import ChatBox from "../../Components/HomeComp/ChatBox";
 import VideoSection from "../../Components/HomeComp/VideoSection";
 // assets
-import hover from "../../Assets/Component 41 – 1.png";
 import train from "../../Assets/Group 4050@2x.png";
 import airplane from "../../Assets/Group 3870@2x.png";
 import tree from "../../Assets/Group 3848.png";
@@ -21,6 +20,7 @@ import eye from "../../Assets/Icon awesome-eye-slash.png";
 import arrow from "../../Assets/Icon feather-arrow-right.png";
 import fb from "../../Assets/Group 833.png";
 import google from "../../Assets/Group 830.png";
+import orLine from "../../Assets/Group 3483.png";
 const HomeSeven = () => {
   const { ref } = useWebAnimations({
     keyframes: {
@@ -34,9 +34,6 @@ const HomeSeven = () => {
       easing: "ease-in-out", // Use a fancy timing function
     },
   });
-  function onChange(value) {
-    console.log("Captcha value:", value);
-  }
 
   return (
     <div className="home_container">
@@ -62,11 +59,11 @@ const HomeSeven = () => {
           {/* home first form section  */}
           <div className="home_form_div_md">
             <div className="head_md">
-              <Link className="form_arrow_link">
+              <Link className="form_arrow_link" to='/home-six'>
                 <img src={arrow} alt="" />
               </Link>
               <div>
-                <p>We've found a booking!</p>
+                <p>Login to iPurvey</p>
               </div>
             </div>
             <div className="blue_para">
@@ -77,24 +74,35 @@ const HomeSeven = () => {
               </p>
             </div>
             <div className="sign_up_btns">
-              <button className="cus_blue_btn">
-                <img src={fb} alt="..." /> Login using Facebook
+              <button className="acc_blue_btn">
+                <img src={fb} alt="..." /> <p> Login using Facebook</p>
+              </button>
+              <button className="acc_wht_btn">
+                <img src={google} alt="..." /> <p> Login using Google</p>
               </button>
             </div>
+            <div className="orLine_md">
+              <img src={orLine} alt="..." />
+            </div>
             <div className="home_form_div_sd">
-              <input type="email" placeholder="Booking reference number" />
+              <input type="email" placeholder="Email" />
 
               <div className="eye_md">
-                <input type="email" placeholder="Booking reference number" />
+                <input type="password" placeholder="Password" />
                 <img src={eye} alt="..." />
               </div>
-              <button className="home_form_btn">Continue</button>
-              <div>
-                <Link className="form_link">Is this not the booking?</Link>
+              <div className="remember_chck_md">
+                <div>
+                  <input type="checkbox" name="" id="" />
+                  <p>Remember me</p>
+                </div>
+                <Link className="form_link">Forgot password?</Link>
               </div>
+              <button className="home_form_btn">Login</button>
             </div>
           </div>
         </div>
+        {/* animation images  */}
         <img className="tree_img" src={tree} alt="" />
         <div className="station_img">
           <img className="train_img" ref={ref} src={train} alt="" />

@@ -58,11 +58,11 @@ const HomeFour = () => {
           <img src={airplane} className="airplane App-logo" alt="" />
           <div className="home_form_div_md">
             <div className="head_md">
-              <Link className="form_arrow_link">
+              <Link className="form_arrow_link" to="/home-three">
                 <img src={arrow} alt="" />
               </Link>
               <div>
-                <p>We've found a booking!</p>
+                <p>Register with iPurvey</p>
               </div>
             </div>
             <div className="form_para_blue">
@@ -73,7 +73,7 @@ const HomeFour = () => {
             </div>
             <div className="forms_detail_md">
               <div className="personal_detail_md">
-                <h6>Personal Details</h6>
+                <h6>Your Details</h6>
                 <ul className="personal_detail_ul">
                   <li>
                     <p>name</p>
@@ -102,7 +102,7 @@ const HomeFour = () => {
               Continue <img src={wArrow} alt="..." />{" "}
             </button>
             <div>
-              <Link className="form_link">Is this not the booking?</Link>
+              <Link className="form_link">Already a member?Login</Link>
             </div>
           </div>
         </div>

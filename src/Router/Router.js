@@ -21,6 +21,12 @@ import HomeFive from "../Pages/Home/HomeFive";
 import HomeSix from "../Pages/Home/HomeSix";
 import HomeEight from "../Pages/Home/HomeEight";
 import HomeSeven from "../Pages/Home/HomeSeven";
+import Login from "../Pages/CreateAccount/Login";
+import SignUp from "../Pages/CreateAccount/SignUp";
+import Forgot from "../Pages/CreateAccount/Forgot";
+import ResetPassword from "../Pages/CreateAccount/ResetPassword";
+import Faq from "../Pages/FAQ/Faq";
+import Career from "../Pages/Career";
 
 
 const AppRouter = ()=>{
@@ -42,6 +48,12 @@ const AppRouter = ()=>{
                 <Route path='/home-six' component={HomeSix} />
                 <Route path='/home-seven' component={HomeSeven} />
                 <Route path='/home-eight' component={HomeEight} />
+                <Route path='/login' component={Login} />
+                <Route path='/signup' component={SignUp} />
+                <Route path='/forgot' component={Forgot} />
+                <Route path='/reset' component={ResetPassword} />
+                <Route path='/faq' component={Faq} />
+                <Route path='/career' component={Career} />
             </Switch>
             <Footer />
             <CopyRight />

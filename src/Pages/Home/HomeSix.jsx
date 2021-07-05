@@ -61,11 +61,11 @@ const HomeSix = () => {
           <div className="home_form_div_md">
             <div className="home_form_div_sd">
               <div className="head_md">
-                <Link className="form_arrow_link">
+                <Link className="form_arrow_link" to="/home-five">
                   <img src={arrow} alt="" />
                 </Link>
                 <div>
-                  <p>We've found a booking!</p>
+                  <p>Register with iPurvey</p>
                 </div>
               </div>
               <div className="done_form_regsiter">

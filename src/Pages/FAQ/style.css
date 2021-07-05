@@ -1,0 +1,24 @@
+.sub_header_md{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0F4FC;
+    margin: 30px auto;
+    padding: 20px 120px;
+}
+.sub_header_md>h4{
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+.faq_search_md{
+    width: 400px;
+    background-color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+.faq_search_md>input{
+    width: 92%;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}

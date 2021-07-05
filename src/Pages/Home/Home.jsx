@@ -44,7 +44,7 @@ const Home = () => {
       <ChatBox />
       <div className="main_sect_animation_div">
         <div className="animation_content_div">
-            {/* home first left section  */}
+          {/* home first left section  */}
           <div className="animation_para_div">
             <h3>Simplifying Travel Claims </h3>
             {/* <h1>when we arrive!</h1> */}
@@ -59,7 +59,7 @@ const Home = () => {
             </div>
           </div>
           <img src={airplane} className="airplane App-logo" alt="" />
-            {/* home first form section  */}
+          {/* home first form section  */}
           <div className="home_form_div_md">
             <p>
               Would you like your travel claim to be automatically submitted if

@@ -61,21 +61,21 @@ const HomeEight = () => {
           <div className="home_form_div_md">
             <div className="home_form_div_sd">
               <div className="head_md">
-                <Link className="form_arrow_link">
+                <Link className="form_arrow_link" to='/home-seven'>
                   <img src={arrow} alt="" />
                 </Link>
                 <div>
-                  <p>We've found a booking!</p>
+                  <p>We couldn't find a booking!</p>
                 </div>
               </div>
               <div className="question_mark_form">
                 <img src={question} alt="..." />
                 <p>
                   We could find any booking by this reference number! Please
-                  re-enter the details or <Link className='form_link'> contact us!</Link>
+                  re-enter the details or <Link className='form_link' to='/contact'> contact us!</Link>
                 </p>
               </div>
-              <button className="home_form_btn mt-3">Retrieve Booking</button>
+              <button className="home_form_btn mt-3">Search another Booking</button>
             </div>
           </div>
         </div>

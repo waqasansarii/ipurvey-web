@@ -60,34 +60,37 @@ const HomeFive = () => {
           {/* home first form section  */}
           <div className="home_form_div_md">
             <div className="head_md">
-              <Link className="form_arrow_link">
+              <Link className="form_arrow_link" to="/home-four">
                 <img src={arrow} alt="" />
               </Link>
               <div>
-                <p>We've found a booking!</p>
+                <p>Register with iPurvey</p>
               </div>
             </div>
             <div className="home_form_div_sd">
               <div className="postal_Code">
-                <input type="email" placeholder="Booking reference number" />
+                <input type="text" placeholder="Postal Code" />
                 <button>Find Address</button>
               </div>
-              <input type="email" placeholder="Booking reference number" />
-              <input type="email" placeholder="Booking reference number" />
-              <input type="email" placeholder="Booking reference number" />
-              <div className='hoverI_togle'>
-                <input type="email" placeholder="Booking reference number" />
+              <input type="text" placeholder="Address" />
+              <input type="text" placeholder="Sort Code" />
+              <input type="text" placeholder="Account Number" />
+              <div className="hoverI_togle">
+                <input
+                  type="text"
+                  placeholder="Alternative Compensation Method"
+                />
                 <div className="hoverI_togle_img">
-                    <img src={hover} alt="..." />
+                  <img src={hover} alt="..." />
                 </div>
               </div>
-              <div className='eye_md'>
-                <input type="email" placeholder="Booking reference number" />
+              <div className="eye_md">
+                <input type="password" placeholder="Password" />
                 <img src={eye} alt="..." />
               </div>
-              <button className="home_form_btn">Continue</button>
+              <button className="home_form_btn">Sign up</button>
               <div>
-                <Link className="form_link">Is this not the booking?</Link>
+                <Link className="form_link">Already a member?Login</Link>
               </div>
             </div>
           </div>
