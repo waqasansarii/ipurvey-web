@@ -1,0 +1,118 @@
+.accInfo_container{
+    background-color: #F0F4FC;
+}
+.accInfo_sd{
+    display: flex;
+}
+
+.accInfo_rigth_md{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.acc_info_sd{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.pD_container{
+    margin-left: 50px;
+}
+/* forms section  */
+
+.AInfo_conatainer{
+    width: 450px;
+}
+
+.aInfo_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aInfo_head>h5{
+    font-size: .9rem;
+    margin-bottom: 0px;
+}
+.aInfo_head>button{
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 8px 30px;
+    border-radius: 6px;
+    font-size: .9rem;
+}
+.aInfo_head>button>img{
+    margin-right: 10px;
+}
+.profile_img{
+    margin-bottom: 20px;
+    /* margin-top: 20px; */
+}
+.profile_img>img{
+    width: 150px;
+    /* height: 180px; */
+}
+.acc_info_form input,.pD_inp input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: normal !important;
+}
+.acc_sv_btn{
+    text-align: center;
+    margin-top: 40px;
+}
+.acc_sv_btn>button{
+    width: 150px;
+}
+.hw_inp{
+    display: flex;
+    justify-content: space-between;
+}
+.hw_inp>input{
+    width: 48%;
+}
+
+.pD_inp{
+    margin-top: 10px;
+}
+
+/* account setting  */
+
+.acc_seting_md{
+    margin-top: 30px;
+}
+.acc_seting_md>h5{
+    font-size: .9rem;
+
+}
+.acc_stng_ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+}
+.acc_stng_ul>li{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+.acc_stng_ul p{
+    margin-bottom: 0px;
+    font-size: .9rem;
+    opacity: .5;
+}
+.acc_stng_ul h6{
+    color: #2E58A6;
+    font-size: .9rem;
+    font-weight: bold;
+}
+.MuiSwitch-colorPrimary.Mui-checked{
+    color: #25D632 !important;
+}
+.MuiSwitch-colorPrimary.Mui-checked + .MuiSwitch-track{
+    background-color: #25D632 !important;
+    opacity: .3 !important;
+}

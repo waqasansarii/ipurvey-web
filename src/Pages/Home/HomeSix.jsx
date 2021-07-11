@@ -32,9 +32,6 @@ const HomeSix = () => {
       easing: "ease-in-out", // Use a fancy timing function
     },
   });
-  function onChange(value) {
-    console.log("Captcha value:", value);
-  }
 
   return (
     <div className="home_container">

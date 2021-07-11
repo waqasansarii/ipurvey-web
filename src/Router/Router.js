@@ -27,6 +27,14 @@ import Forgot from "../Pages/CreateAccount/Forgot";
 import ResetPassword from "../Pages/CreateAccount/ResetPassword";
 import Faq from "../Pages/FAQ/Faq";
 import Career from "../Pages/Career";
+import Developers from "../Pages/Developers";
+import DashBoard from "../Pages/DashboardAccount/Dashboard";
+import TravelBooking from "../Pages/DashboardAccount/TravelBooking";
+import AccountInformation from "../Pages/DashboardAccount/AccountInfo";
+import SecuritySetting from "../Pages/DashboardAccount/SecuritySetting";
+import DeleteAccount from "../Pages/DashboardAccount/DeleteAccount";
+import AccountActivity from "../Pages/DashboardAccount/AccountActivity";
+import Notifications from "../Pages/DashboardAccount/Notification";
 
 
 const AppRouter = ()=>{
@@ -54,6 +62,14 @@ const AppRouter = ()=>{
                 <Route path='/reset' component={ResetPassword} />
                 <Route path='/faq' component={Faq} />
                 <Route path='/career' component={Career} />
+                <Route path='/developer' component={Developers} />
+                <Route path='/dashboard' component={DashBoard} />
+                <Route path='/travel-booking' component={TravelBooking} />
+                <Route path='/account-info' component={AccountInformation} />
+                <Route path='/security' component={SecuritySetting} />
+                <Route path='/delete-account' component={DeleteAccount} />
+                <Route path='/account-activity' component={AccountActivity} />
+                <Route path='/notification' component={Notifications}  />
             </Switch>
             <Footer />
             <CopyRight />

@@ -1,0 +1,60 @@
+.msg_ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.msg_ul>.msgs_li{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.msgs_li:hover{
+    background-color: #2E58A6;
+    color: white;
+}
+.msgs_li:hover p{
+    opacity: 1 ;
+}
+.msgs_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.msgs_title>p:nth-child(1){
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+.msg_date{
+    font-size: .8rem;
+    opacity: .5;
+    margin-bottom: 0px;
+}
+.mesage{
+    font-size: .8rem;
+    opacity: .5;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+.msg_time{
+    text-align: end;
+    font-size: .8rem;
+    margin-bottom: 0px ;
+}
+.msg_time>p{
+    opacity: .5;
+    margin-bottom: 0px;
+}
+.msg_sd_cont{
+    margin-top: 10px;
+}
+.msg_sd_cont .sd_detail_para{
+    margin-top: 0px;
+}
+.selected_msg{
+    background-color: #2E58A6 !important;
+    color: white;
+}
+.selected_msg p{
+    opacity: 1;
+}

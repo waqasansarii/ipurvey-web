@@ -1,0 +1,84 @@
+.filter_dd_container{
+    position: absolute;
+    background-color: #D0D8E5;
+    padding: 30px;
+    top: 20px;
+    right: 0px;
+    left: 0px;
+    z-index: 11;
+    display: none;
+}
+.filter_img_md:hover .filter_dd_container{
+   display: block;
+}
+.filter_dd_container p{
+    margin-bottom: 0px;
+}
+.filters_sections{
+    display: flex;
+    justify-content: space-between;
+}
+.filter_secOne{
+    width: 220px;
+}
+
+.filter_secOne input , .filter_secOne select{
+    border: none;
+    outline: none;
+    padding: 6px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: .9rem;
+    opacity: .9;
+    /* background-color: white !important; */
+}
+.filter_secOne input::placeholder{
+    color: black;
+}
+.date_inp{
+    position: relative;
+    /* margin-top: 10px; */
+}
+.date_img{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+.filter_secTwo{
+    width: 160px;
+}
+.filter_secTwo>div{
+    /* display: flex; */
+    flex-direction: column;
+}
+.filter_secTwo label{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.filter_secTwo input{
+    border: none;
+}
+.filter_secTwo p{
+    font-size: .85rem;
+    margin-left: 10px;
+    color: #2E58A6;
+}
+.filtr_head2{
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+.link_btn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-decoration: underline #2E58A6;
+    color: #2E58A6;
+    font-size: .8rem;
+    margin-top: 8px;
+}
+.filter_dd_container .cntr_btn{
+    margin-top: 20px;
+    text-align: center;
+}

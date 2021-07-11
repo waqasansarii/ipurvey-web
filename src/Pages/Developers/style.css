@@ -1,0 +1,62 @@
+.cus_wht_btn{
+    background-color: white;
+    outline: none;
+    border: 1px solid #2E58A6;
+    color: #2E58A6;
+    padding: 8px ;
+    text-align: center;
+    font-size: .9rem;
+    border-radius: 4px;
+}
+.developers_btns{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.developers_btns>button{
+    width: 300px;
+    margin: 10px auto;
+    padding: 12px ;
+}
+
+.developer_sd .pm_sections2{
+    width: 75%;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+.developer_sd .pm_left_sec2{
+    width: 520px;
+
+}
+.developer_sd .pm_right_sec2{
+    width: 450px;
+}
+.dvlp_left_m_section{
+    width: 520px;
+}
+.dvlp_left_m_section h5{
+    text-align: end;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.dvlp_sect_card_md{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.dvlp_sect_card{
+    width: 250px;
+    text-align: center;
+    margin-top: 25px;
+}
+.dvlp_sect_card>h6{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.dvlp_sect_card>p{
+    font-size: .9rem;
+    color: #2E58A6;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}

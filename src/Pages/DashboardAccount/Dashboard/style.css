@@ -1,0 +1,133 @@
+.db_md_main{
+    display: flex;
+    background-color: #f9fafc;
+}
+
+.db_right_content_md{
+    padding-top: 20px;
+    padding-left: 30px;
+    width: 75%;
+    margin-bottom: 30px;
+}
+.db_head_btn{
+    text-align: end;
+}
+.db_right_sd{
+    display: flex;
+}
+.db_chart_table_section{
+    width: 58%;
+}
+/* table comp  */
+
+.db_table_md{
+    box-shadow: 0px 3px 6px #757575;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    /* width: 600px; */
+    width: 100%;
+}
+.db_table_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.db_table_head>h4{
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+    color: #2E58A6;
+}
+.db_table_head .link{
+    margin-right: 0px;
+}
+
+/* status section  */
+
+.db_timeline_section{
+    width: 40%;
+    margin-left: 20px;
+}
+
+.tb_status_container{
+    box-shadow: 0px 3px 6px #757575;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    /* width: 600px; */
+    width: 100%;
+    /* padding-bottom: 0px; */
+}
+.tb_status_sd>h5{
+    font-size: 1.1rem;
+    color: #2E58A6;
+}
+.Booking_detail_md>h6{
+   background-color: #2E58A6;
+   color: white;
+   text-align: center;
+   width: 100%;
+   padding: 10px;
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+   margin-bottom: 0px;
+}
+.Booking_detail_ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    background-color: #F0F4FC;
+}
+.Booking_detail_ul p{
+    margin-bottom: 0px;
+    
+}
+.Booking_detail_ul>li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: .9rem;
+    color: #2E58A6;
+}
+ul{
+    margin-bottom: 0px !important;
+}
+.MuiTimelineItem-missingOppositeContent:before{
+    flex: none !important;
+    padding: 0px !important;
+}
+.MuiTimeline-root{
+    padding: 6px 0px !important;
+}
+.MuiTimelineDot-root{
+    box-shadow: none !important;
+}
+.MuiTimelineDot-root>img{
+    width: 25px ;
+    height: 25px;
+}
+.step1Head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.step1Head>h6{
+    margin-bottom: 0px;
+    font-size: .9rem;
+    font-weight: bold;
+}
+.step1Head>p{
+    margin-bottom: 0px;
+    opacity: .5;
+    font-size: .7rem;
+}
+.timeline_user_info>p{
+    font-size: .8rem;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    opacity: .5;
+}
