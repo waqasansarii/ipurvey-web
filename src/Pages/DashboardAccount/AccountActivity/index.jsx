@@ -4,6 +4,8 @@ import ShowDetail from "./ShowDetail";
 import Table from "./Table";
 import { accountActivityTable } from "../data";
 import "./style.css";
+import MobViewActivityCard from "./MobViewActivityCard";
+import BackHeader from "../BackHeader";
 
 const AccountActivity = () => {
   const [showDetail, setShowDetail] = useState([]);
@@ -26,7 +28,8 @@ const AccountActivity = () => {
             <MiniDrawer />
           </div>
           <div className="acc_activity_right_md">
-            <h5>ACCOUNT ACTIVITY</h5>
+            <BackHeader head='account activity' link='/dashboard' />
+            <h5 className='acc_activity_head'>ACCOUNT ACTIVITY</h5>
             <div className="acc_activity_right_content">
               <div className="acc_active_table_md">
                 <Table
@@ -38,6 +41,9 @@ const AccountActivity = () => {
               <div className="sDetail_container">
                 <ShowDetail detailData={showDetail} reportBtn  />
               </div>
+            </div>
+            <div className="mob_view_activity_card">
+              <MobViewActivityCard data={accountActivityTable.body} />
             </div>
           </div>
         </div>

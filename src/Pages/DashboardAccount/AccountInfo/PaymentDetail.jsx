@@ -16,7 +16,7 @@ const PaymentDetail = () => {
   return (
     <div className="AInfo_conatainer">
       <div className="ainfo_md">
-        <div className="aInfo_head">
+        <div className="payment_head">
           <h5 >PAYMENT DETAIL</h5>
         </div>
         <div className="pD_inp">
@@ -93,6 +93,28 @@ const PaymentDetail = () => {
               />
             </li>
           </ul>
+          <div className="mobileView_switch_content">
+            <div>
+              <h6>Notification</h6>
+              <Switch
+                checked={state.checkedA}
+                onChange={handleChange}
+                color="primary"
+                name="checkedA"
+                inputProps={{ "aria-label": "primary checkbox" }}
+              />
+            </div>
+            <div>
+              <h6>Newsletter</h6>
+              <Switch
+                checked={state.checkedC}
+                onChange={handleChange}
+                color="primary"
+                name="checkedC"
+                inputProps={{ "aria-label": "primary checkbox" }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

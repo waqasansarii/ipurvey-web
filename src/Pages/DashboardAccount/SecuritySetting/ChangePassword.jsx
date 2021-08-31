@@ -1,11 +1,14 @@
 import React from "react";
+import {useHistory} from 'react-router-dom'
 
 const ChangePassword = () => {
+  const history = useHistory()
   return (
     <div className="ss_container">
       <div className="ss_md">
         <div className="ss_sd">
           <h6>SECURITY SETTINGS</h6>
+          <h5>CHANGE PASSWORD</h5>
           <div className='ss_inp'>
             <input type="text" placeholder="Old Password" />
             <input type="text" placeholder="New Password" />
@@ -27,7 +30,7 @@ const ChangePassword = () => {
             </p>
           </div>
           <div className="ss_btn">
-            <button className="cus_blue_btn dlt_red">Delete Account</button>
+            <button onClick={()=>history.push('/delete-account')} className="cus_blue_btn dlt_red">Delete Account</button>
           </div>
         </div>
       </div>

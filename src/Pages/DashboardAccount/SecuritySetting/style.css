@@ -26,3 +26,38 @@
     background-color: #F72E2E;
     color: white;
 }
+.ss_sd>h5{
+    display: none;
+}
+
+@media(max-width:600px){
+    .accInfo_rigth_md{
+        margin-left: 0px;
+    }
+    .ss_container{
+        width: 96%;
+        margin: 0px auto;
+        text-align: center;
+    }
+    .ss_sd>h5{
+        display: block;
+        margin: 15px;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .dlt_acc_md>h6{
+        font-weight: bold;
+
+    }
+    .dlt_acc_md{
+        margin-top: 60px;
+    }
+    .ss_sd>h6{
+        display: none;
+    }
+}
+@media(max-width:350px){
+    .ss_container{
+        width: 100%;
+    }
+}

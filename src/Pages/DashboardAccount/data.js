@@ -108,6 +108,7 @@ export const accountActivityTable = {
       ip: "192.16.100.204",
       title:'ACTIVITY DETAIL',
       id: "01",
+      activityType:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
       para: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
     },
     {
@@ -117,6 +118,7 @@ export const accountActivityTable = {
       ip: "192.16.100.204",
       title:'ACTIVITY DETAIL',
       id: "02",
+      activityType:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
       para: "Lorem  labore et dolore magna aliquyam erat sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
     },
     {
@@ -126,6 +128,7 @@ export const accountActivityTable = {
       ip: "192.16.100.204",
       title:'ACTIVITY DETAIL',
       id: "03",
+      activityType:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
       para: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
     },
     {
@@ -135,6 +138,7 @@ export const accountActivityTable = {
       ip: "192.16.100.204",
       title:'ACTIVITY DETAIL',
       id: "04",
+      activityType:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
       para: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
     },
     {
@@ -144,6 +148,7 @@ export const accountActivityTable = {
       ip: "192.16.100.204",
       title:'ACTIVITY DETAIL',
       id: "05",
+      activityType:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
       para: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
     },
     {
@@ -153,6 +158,7 @@ export const accountActivityTable = {
       ip: "192.16.100.204",
       title:'ACTIVITY DETAIL',
       id: "06",
+      activityType:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
       para: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
     },
     {
@@ -162,6 +168,7 @@ export const accountActivityTable = {
       ip: "192.16.100.204",
       title:'ACTIVITY DETAIL',
       id: "07",
+      activityType:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
       para: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
     },
     {
@@ -171,6 +178,7 @@ export const accountActivityTable = {
       ip: "192.16.100.204",
       id: "08",
       title:'ACTIVITY DETAIL',
+      activityType:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
       para: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
     },
   ],

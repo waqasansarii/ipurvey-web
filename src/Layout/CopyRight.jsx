@@ -17,28 +17,28 @@ const CopyRight = () => {
                     <img className='contct_path_line' src={path} alt="" />
                     <ul className="social_links">
                         <li>
-                            <a href="">
-                                <img src={fb} alt="" />
+                            <a href="https://www.google.com/">
+                                <img src={fb} alt="..." />
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <img className='insta_icon' src={insta} alt="" />
+                            <a href="https://www.google.com/">
+                                <img className='insta_icon' src={insta} alt="..." />
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src={youtube} alt="" />
+                            <a href="https://www.google.com/">
+                                <img src={youtube} alt="..." />
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src={twiter} alt="" />
+                            <a href="https://www.google.com/">
+                                <img src={twiter} alt="..." />
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src={link} alt="" />
+                            <a href="https://www.google.com/">
+                                <img src={link} alt="..." />
                             </a>
                         </li>
                     </ul>

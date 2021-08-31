@@ -23,3 +23,40 @@
 .dlt_slct{
     margin-top: 20px;
 }
+@media(max-width:600px){
+    .leaving_head{
+        display: block !important;
+        text-align: center;
+    }
+    .dltAcc_container{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .accInfo_sd{
+        justify-content: center;
+    }
+}
+@media(max-width:500px){
+    .dlt_slct>select{
+        font-size: .7rem;
+    }
+}
+@media(max-width:400px){
+    .dlt_slct>select{
+        font-size: .6rem;
+    }
+    .leaving_img>img{
+        width: 250px;
+    }
+}
+@media(max-width:360px){
+    .dlt_slct>select{
+        font-size: .5rem;
+    }
+}
+@media(max-width:310px){
+    .dlt_slct>select{
+        font-size: .5rem;
+        padding: 10px 1px;
+    }
+}

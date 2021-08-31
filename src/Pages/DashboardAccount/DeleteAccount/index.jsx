@@ -18,7 +18,7 @@ const DeleteAccount = () => {
               <div className="dltAcc_container">
                 <div className="ss_md">
                   <div className="ss_sd">
-                    <h6>WHY ARE YOU LEAVING?</h6>
+                    <h6 className='leaving_head'>WHY ARE YOU LEAVING?</h6>
                     <div className="leaving_img">
                       <img src={leaving} alt="..." />
                     </div>

@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import clsx from "clsx";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
-import Typography from "@material-ui/core/Typography";
+// import Typography from "@material-ui/core/Typography";
 // assets
 import sOpen from "../../Assets/Group 3398.png";
 import sClose from "../../Assets/Group 3399.png";
@@ -18,7 +18,7 @@ import lock from "../../Assets/Icon awesome-lock.png";
 import hand from "../../Assets/Icon awesome-hand-point-up.png";
 import bell from "../../Assets/Icon awesome-bell.png";
 import more from "../../Assets/Path 5117.png";
-import { useState } from "react";
+// import { useState } from "react";
 import './Style/sidebar.css'
 
 const drawerWidth = 300;
@@ -107,6 +107,7 @@ export default function MiniDrawer() {
 
   return (
     <div className={classes.root}>
+       
       <Drawer
         variant="permanent"
         className={clsx(classes.drawer, {
@@ -119,6 +120,7 @@ export default function MiniDrawer() {
             [classes.drawerClose]: !open,
           }),
         }}
+        aria-labelledby="dropdownMenuButton10"
       >
         <List>
           <div
@@ -182,7 +184,7 @@ export default function MiniDrawer() {
                 <img src={person} alt="..." />
                 {open ? <p>Manage your account</p> : null}
               </div>
-              {open ? <img src={more} alt="..." /> : null}
+              {open ? <img className={subLink? 'more_rotate':'less_rotate'} src={more} alt="..." /> : null}
             </div>
             {subLink || !open ? (
               <div className={open ? "sub_sb_links" : ""}>

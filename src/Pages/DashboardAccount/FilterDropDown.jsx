@@ -30,7 +30,7 @@ const FilterDropDown = () => {
               </select>
             </div>
           </div>
-          <div className="filter_secOne">
+          <div className="filter_secOne travel_filter">
             <h6>Travel Details</h6>
             <div className="filter_inp">
               <input type="text" placeholder="From" />
@@ -41,7 +41,7 @@ const FilterDropDown = () => {
               <input type="text" placeholder="Search for an operator" />
             </div>
           </div>
-          <div className="filter_secTwo">
+          <div className="filter_secTwo filter_two_section_One">
             <h6>Transport Mode</h6>
             <div>
               <label htmlFor="all">
@@ -58,7 +58,7 @@ const FilterDropDown = () => {
               </label>
             </div>
           </div>
-          <div className="filter_secTwo">
+          <div className="filter_secTwo filter_subSec_2">
             <h6>Distruption Type</h6>
             <div>
               <label htmlFor="all">

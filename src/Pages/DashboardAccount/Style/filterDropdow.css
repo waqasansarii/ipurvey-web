@@ -1,84 +1,178 @@
-.filter_dd_container{
-    position: absolute;
-    background-color: #D0D8E5;
-    padding: 30px;
-    top: 20px;
-    right: 0px;
-    left: 0px;
-    z-index: 11;
-    display: none;
+.filter_dd_container {
+  position: absolute;
+  background-color: #d0d8e5;
+  padding: 30px;
+  top: 20px;
+  right: 0px;
+  left: 0px;
+  z-index: 11;
+  display: none;
 }
-.filter_img_md:hover .filter_dd_container{
-   display: block;
+.filter_img_md:hover .filter_dd_container {
+  display: block;
 }
-.filter_dd_container p{
-    margin-bottom: 0px;
+.filter_dd_container p {
+  margin-bottom: 0px;
 }
-.filters_sections{
-    display: flex;
-    justify-content: space-between;
+.filters_sections {
+  display: flex;
+  justify-content: space-between;
 }
-.filter_secOne{
-    width: 220px;
+.filter_secOne {
+  width: 220px;
+  margin: 0px 7px;
 }
 
-.filter_secOne input , .filter_secOne select{
-    border: none;
-    outline: none;
-    padding: 6px;
-    width: 100%;
-    margin-top: 10px;
-    font-size: .9rem;
-    opacity: .9;
-    /* background-color: white !important; */
+.filter_secOne input,
+.filter_secOne select {
+  border: none;
+  outline: none;
+  padding: 6px;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  /* background-color: white !important; */
 }
-.filter_secOne input::placeholder{
-    color: black;
+.filter_secOne input::placeholder {
+  color: black;
 }
-.date_inp{
-    position: relative;
-    /* margin-top: 10px; */
+.date_inp {
+  position: relative;
+  /* margin-top: 10px; */
 }
-.date_img{
-    position: absolute;
-    right: 10px;
-    top: 20px;
+.date_img {
+  position: absolute;
+  right: 10px;
+  top: 20px;
 }
-.filter_secTwo{
-    width: 160px;
+.filter_secTwo {
+  width: 160px;
+  margin: 0px 5px;
 }
-.filter_secTwo>div{
-    /* display: flex; */
-    flex-direction: column;
+/* .filter_secTwo > div {
+  display: flex;
+  flex-direction: column;
+} */
+.filter_secTwo label {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
-.filter_secTwo label{
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
+.filter_secTwo input {
+  border: none;
+}
+.filter_secTwo p {
+  font-size: 0.85rem;
+  margin-left: 10px;
+  color: #2e58a6;
+}
+.filtr_head2 {
+  margin-bottom: 0px;
+  margin-top: 25px;
+}
+.link_btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-decoration: underline #2e58a6;
+  color: #2e58a6;
+  font-size: 0.8rem;
+  margin-top: 8px;
+}
+.filter_dd_container .cntr_btn {
+  margin-top: 20px;
+  text-align: center;
+}
 
-}
-.filter_secTwo input{
-    border: none;
-}
-.filter_secTwo p{
-    font-size: .85rem;
+@media (max-width: 960px) {
+  .filter_dd_container {
+    padding: 15px;
+  }
+  .filters_sections {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .filter_secTwo {
+    width:100%;
+    margin-top: 15px;
+  }
+  .filter_secTwo > div {
+      display: flex;
+      flex-wrap: wrap;
+    /* flex-direction: inherit; */
+  }
+  .filter_two_section_One {
+    margin-top: 0px !important;
+  }
+  .filter_secTwo label {
     margin-left: 10px;
-    color: #2E58A6;
+  }
 }
-.filtr_head2{
-    margin-bottom: 0px;
-    margin-top: 25px;
+@media (max-width: 760px) {
+  .filters_sections {
+    flex-direction: column;
+  }
+  .filter_secOne{
+      width:100%;
+  }
+  .filter_inp{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+  .date_inp{
+      width: 48%;
+  }
+  .filter_inp>input,.filter_inp>select{
+      width: 48%;
+  }
+  .filter_two_section_One {
+    margin-top: 15px !important;
+  }
+  .filter_secTwo > div{
+      flex-wrap: wrap !important;
+      width: 100%;
+  }
+  .filter_secTwo label{
+      flex-wrap: wrap !important;
+  }
+  .filter_secOne,.filter_secTwo{
+      margin: 0px;
+  }
+  .filter_secTwo{
+      margin-top: 10px;
+  }
+  .travel_filter{
+      margin-top: 15px;
+  }
+  .filtr_head2{
+      margin-top: 15px;
+  }
 }
-.link_btn{
-    border: none;
-    outline: none;
-    background-color: transparent;
-    text-decoration: underline #2E58A6;
-    color: #2E58A6;
-    font-size: .8rem;
-    margin-top: 8px;
+@media (max-width: 400px) {
+    .filter_dd_container{
+        width: 100%;
+    }
+    .filter_secOne input ,.filter_secOne select{
+        font-size: .8rem;
+    }
+    .filter_secOne input::placeholder{
+         font-size: .8rem;
+    }
 }
-.filter_dd_container .cntr_btn{
-    margin-top: 20px;
-    text-align: center;
+@media (max-width: 370px) {
+    .filter_inp{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .date_inp{
+        width: 100%;
+    }
+    .filter_inp>input{
+        width: 100%;
+    }
+    .filter_inp>select{
+        width: 100%;
+    }
 }

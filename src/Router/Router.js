@@ -35,6 +35,7 @@ import SecuritySetting from "../Pages/DashboardAccount/SecuritySetting";
 import DeleteAccount from "../Pages/DashboardAccount/DeleteAccount";
 import AccountActivity from "../Pages/DashboardAccount/AccountActivity";
 import Notifications from "../Pages/DashboardAccount/Notification";
+import MobViewActitvityDetailPage from "../Pages/DashboardAccount/AccountActivity/MobViewActitvityDetailPage";
 
 
 const AppRouter = ()=>{
@@ -68,8 +69,9 @@ const AppRouter = ()=>{
                 <Route path='/account-info' component={AccountInformation} />
                 <Route path='/security' component={SecuritySetting} />
                 <Route path='/delete-account' component={DeleteAccount} />
-                <Route path='/account-activity' component={AccountActivity} />
+                <Route exact path='/account-activity' component={AccountActivity} />
                 <Route path='/notification' component={Notifications}  />
+                <Route exact path='/account-activity/:id' component={MobViewActitvityDetailPage} />
             </Switch>
             <Footer />
             <CopyRight />

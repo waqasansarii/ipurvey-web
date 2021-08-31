@@ -72,3 +72,13 @@
 .sub_sb_links{
     padding-left: 15px;
 }
+
+.more_rotate{
+    /* rotate: 27; */
+    transform: rotate(90deg);
+    transition: .5s;
+}
+.less_rotate{
+    transform: rotate(0deg);
+    transition: .5s;
+}

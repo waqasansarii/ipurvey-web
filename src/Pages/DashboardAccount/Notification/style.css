@@ -1,3 +1,7 @@
+.msg_notify_right_content{
+    display: flex;
+}
+
 .msg_ul{
     list-style: none;
     padding: 0px;
@@ -57,4 +61,13 @@
 }
 .selected_msg p{
     opacity: 1;
+}
+
+@media (max-width:800px){
+   .msg_list_none{
+       display: none !important;
+   }
+   .sDetail_container{
+       margin-left: 0px;
+   }
 }

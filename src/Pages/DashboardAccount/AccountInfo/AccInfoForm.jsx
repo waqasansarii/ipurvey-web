@@ -17,6 +17,10 @@ const AccInfoForm = () => {
           <form action="">
             <div className='profile_img'>
               <img src={profile} alt="..." />
+              <button className='mob_view_infoEdit_btn'>
+            {" "}
+            <img src={edit} alt="..." /> Edit
+          </button>
             </div>
             <div className="hw_inp">
               <input type="text" placeholder="First Name" />
