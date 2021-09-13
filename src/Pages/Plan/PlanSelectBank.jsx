@@ -1,0 +1,13 @@
+import React from "react";
+import BankSelect from "../Payment/BankSelect";
+const PlanSelectBank = () => {
+  return (
+    <React.Fragment>
+      <div className="plan_select_bank">
+        <BankSelect col="col-lg-4" />
+      </div>
+    </React.Fragment>
+  );
+};
+
+export default PlanSelectBank;

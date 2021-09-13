@@ -9,7 +9,7 @@ import IpurveySpecial from "../../Components/HomeComp/IpurveySpecial";
 import Flights from "../../Components/HomeComp/Flights";
 import PaymentMethod from "../../Components/HomeComp/PaymentMethod";
 import Trusted from "../../Components/HomeComp/Trusted";
-import ChatBox from "../../Components/HomeComp/ChatBox";
+import ChatBox from "../../Components/ChatBox";
 import VideoSection from "../../Components/HomeComp/VideoSection";
 // assets
 import envelop from "../../Assets/undraw_Mail_sent_re_0ofv.png";

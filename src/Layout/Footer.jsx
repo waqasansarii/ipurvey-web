@@ -34,7 +34,9 @@ const Footer = () => {
                        </div>
                    </form>
                 </div>
+               
             </div>
+            
         </div>
     )
 }

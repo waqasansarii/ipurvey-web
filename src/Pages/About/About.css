@@ -178,13 +178,18 @@
 @media screen and (max-width: 1000px) {
   .hc_box{
     flex-wrap: wrap !important;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
+    /* padding-bottom: 0px; */
    
   }
   .home_commingsoon{
-    padding-bottom: 20px;
+    width: 95%;
+    margin: 30px auto;
+  }
+  .home_commingsoon{
+    padding-bottom: 0px;
     padding-right: 40px;
   }
   .hcb_left{
@@ -248,9 +253,9 @@
   .hcb_left h2{
     font-size: 1.1rem;
   }
-  .home_commingsoon{
+  /* .home_commingsoon{
     width: 100%;
-  }
+  } */
 }
 
 @media screen and (max-width:400px){

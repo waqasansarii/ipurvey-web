@@ -20,7 +20,7 @@ const LoginForm = () => {
             <button className="acc_blue_btn">
               <img src={fb} alt="..." /> <p> Login using Facebook</p>
             </button>
-            <button className="acc_wht_btn">
+            <button className="acc_wht_btn googleLogin_btn" >
               <img src={google} alt="..." /> <p> Login using Google</p>
             </button>
           </div>
@@ -38,7 +38,7 @@ const LoginForm = () => {
                 <input type="checkbox" name="" id="" />
                 <p>Remember me</p>
               </div>
-              <Link className="form_link">Forgot password?</Link>
+              <Link className="form_link" to='/forgot'>Forgot password?</Link>
             </div>
             <button className="home_form_btn">Login</button>
             <div className="notMember_para">

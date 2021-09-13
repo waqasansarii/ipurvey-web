@@ -1,9 +1,11 @@
 import React, { useState, useRef } from "react";
-import chat from "../../Assets/Group 3417.png";
-import user from "../../Assets/Rectangle 1148.png";
-import send from "../../Assets/Group 3419.png";
-import user1 from "../../Assets/Rectangle 1144.png";
+import chat from "../Assets/Group 3417.png";
+import user from "../Assets/Rectangle 1148.png";
+import send from "../Assets/Group 3419.png";
+import user1 from "../Assets/Rectangle 1144.png";
 import { useEffect } from "react";
+import './Style/Chat.css'
+
 const ChatBox = () => {
   const [chatOpen, setChatOpen] = useState(false);
   const chatRef = useRef(null);
