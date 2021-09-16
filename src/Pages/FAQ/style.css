@@ -22,3 +22,55 @@
     outline: none;
     box-shadow: none;
 }
+
+@media (max-width:1050px){
+    .sub_header_md{
+        padding: 20px;
+    }
+}
+@media (max-width:800px){
+    .faq_search_md{
+        width: 250px;
+    }
+    .faq_search_md>input{
+        width: 85%;
+    }
+    .sub_header_md>h4{
+        font-size: 1.1rem;
+    }
+    .makeStyles-root-1{
+        width: 80% !important;
+    }
+}
+@media (max-width:600px){
+    .sub_header_md{
+        flex-direction: column;
+        align-items: center;
+    }
+    .faq_search_md>input{
+        width: 90%;
+    }
+    .sub_header_md>h4{
+        font-size: 1.5rem;
+    }
+    .faq_search_md{
+        width: 350px;
+        margin-top: 15px;
+    }
+}
+@media (max-width:400px){
+    .sub_header_md{
+        flex-direction: column;
+        align-items: center;
+    }
+    .faq_search_md>input{
+        width: 87%;
+    }
+    .sub_header_md>h4{
+        font-size: 1.1rem;
+    }
+    .faq_search_md{
+        width: 260px;
+        margin-top: 15px;
+    }
+}

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
-    max-width: 1340px;
+    max-width: 1100px;
     margin: 50px auto;
 }
 
@@ -120,4 +120,53 @@
 .ourTeam_right_md>h4{
     font-weight: bold;
     margin-bottom: 30px;
+}
+
+@media(max-width:1150px){
+    .beA_part_md{
+        width: 92%;
+    }
+    .beA_part_right_form_md{
+        margin-left: 20px;
+    }
+    .benifit_cards{
+        width: 80%;
+    }
+    .ourTeam_sd{
+        width: 92%;
+    }
+    .ourTeam_left_content{
+        width: 60%;
+        margin-right: 15px;
+    }
+    .ourTeam_right_md{
+        width: 40%;
+    }
+.beA_part_left_md{
+    width: 60%;
+}
+}
+@media(max-width:800px){
+    .beA_part_md{
+        /* width: 92%; */
+        flex-wrap: wrap;
+    }
+    .beA_part_left_md{
+        width: 100%;
+        text-align: center;
+    }
+    .beA_part_right_form_md{
+        /* margin-left: 20px; */
+        width: 400px;
+        margin: 40px auto;
+        text-align: center;
+    }
+    .benifit_container,.ourTeam_container{
+        display: none;
+    }
+}
+@media(max-width:500px){
+    .beA_part_form input ,.beA_part_form button{
+        font-size: .8rem;
+    }
 }

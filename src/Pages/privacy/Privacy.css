@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* max-width: 1400px; */
   }
   .privacy_scroll_div{
     max-height: 70vh;
@@ -106,6 +107,7 @@
     .terms_and_cond_main_div {
       margin: 50px 20px;
       flex-wrap: wrap;
+      flex-direction: column-reverse;
     }
     .privacy_img_div img{
       margin-left: 0px;
@@ -131,6 +133,18 @@
       width: 100%;
     }
   }
+  @media screen and (max-width: 600px) {
+    .privacy_scroll_div{
+      flex-wrap: wrap;
+    }
+    .privacy_scroll_div .terms_one_box_div,.privacy_scroll_div>div{
+      width: 100%;
+      text-align: center;
+    }
+    .terms_box_two_scroll{
+      margin-left: 0px;
+    }
+  }
   
   @media screen and (max-width: 450px) {
     .terms_and_cond_main_div {
@@ -142,7 +156,7 @@
       width: 100%;
     }
     .terms_two_box_para_div {
-      width: 100%;
+      width: 100% !important;
     }
     .term_note_para {
       padding: 10px 5px;
