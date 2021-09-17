@@ -22,21 +22,22 @@ const options = {
   bank: {
     name: "Payment with Bank",
     img: bankIcon,
-    route: "/payment/bank-transfer",
+    route: "/payment/bank-method",
   },
 };
 
 const PaymentMethod = () => {
   const [active, setActive] = useState("paypal");
   return (
- 
- <React.Fragment>
+    <React.Fragment>
       <div className="pay_method">
         <div className="row">
           <div className="col-lg-12">
             <div className="pm_head">
               <div>
-                <img src={arrowLeft} alt="..." />
+                <Link to="/payment/options">
+                  <img src={arrowLeft} alt="..." />
+                </Link>
                 <h2>Select a Payment Method</h2>
               </div>
               <p>Select a payment method to continue!</p>
@@ -90,8 +91,7 @@ const PaymentMethod = () => {
         </div>
       </div>
     </React.Fragment>
- 
- );
+  );
 };
 
 export default PaymentMethod;

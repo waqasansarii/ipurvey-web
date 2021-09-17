@@ -10,7 +10,7 @@ import bell from "../../Assets/Icon awesome-bell.png";
 import out from "../../Assets/Icon open-account-logout.png";
 
 const UserDropdown = ({ logout }) => {
-  const history = useHistory();
+  // const history = useHistory();
   return (
     <React.Fragment>
       <div className="dropdown userinfo_dropdown">

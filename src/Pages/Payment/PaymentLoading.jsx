@@ -11,7 +11,9 @@ const PaymentLoading = () => {
           <div className="col-lg-12">
             <div className="pm_head">
               <div>
-                <img src={arrowLeft} alt="..." />
+                <Link to="/payment/bank-method">
+                  <img src={arrowLeft} alt="..." />
+                </Link>
                 <h2>Select a Payment Method</h2>
               </div>
             </div>
@@ -32,13 +34,15 @@ const PaymentLoading = () => {
         <div className="row mt-4">
           <div className="col-lg-12">
             <button className="home_form_btn">
-              <Link to="success">Continue</Link>
+              <Link to="/payment/select-bank">Continue</Link>
             </button>
           </div>
         </div>
         <div className="row mt-2">
           <div className="col-lg-12">
-            <Link className="hl_text">Cancel Transaction</Link>
+            <Link to="#" className="hl_text">
+              Cancel Transaction
+            </Link>
           </div>
         </div>
       </div>

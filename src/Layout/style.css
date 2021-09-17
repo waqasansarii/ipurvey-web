@@ -46,6 +46,72 @@
     box-shadow: none !important;
 }
 
+/* mobile view menu bar  */
+
+.mobView_menu_bar{
+  display: none;
+  position: relative;
+}
+
+.mobView_menu_bar .dropdown-menu{
+  background-color: #F0F4FC !important;
+  width: 300px;
+  right: -52px !important;
+  top: 55px;
+  padding: 20px;
+  overflow-y: scroll;
+  max-height: 85vh !important;
+} 
+.mobView_menu_bar .dropdown-menu::-webkit-scrollbar{
+  width: 5px;
+}
+.mobView_link,.mobView_link_two{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobView_link .link,.mobView_link_two .link{
+  margin-top: 15px;
+  font-size: .8rem;
+}
+.mobView_link_two{
+  margin-top: 40px;
+}
+.mobView_link_two button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #2e58a6;
+  margin-top: 15px;
+}
+.nav_userInfo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 0px;
+  border-bottom: 3px solid rgb(161, 160, 160);
+}
+.nav_userInfo img{
+  width: 50px ;
+  height: 50px;
+  object-fit: contain;
+}
+.nav_nameEmail p{
+  font-size: .7rem;
+  margin-bottom: 0px;
+}
+.navUsername{
+  color: #2e58a6;
+  font-weight: bold;
+}
+.navUserEmail{
+  font-style: italic;
+  color: black;
+}
+.navUserField{
+  color: #748AA6;
+}
+
 /* notification dropdown  */
 
 .notif_btn {
@@ -179,7 +245,9 @@ ul{
   height: 24px;
   margin-right: 20px;
 }
-
+/* .userinfo_dropdown .dropdown-menu{
+  right: 120px !important;
+} */
 .userdrpdwn_menu {
     width: 80%;
     height: max-content;
@@ -379,7 +447,7 @@ ul{
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 991px) {
   .footer_main_div {
     flex-wrap: wrap;
     padding: 50px 20px;
@@ -415,6 +483,12 @@ ul{
   .sub_nav_container h4 {
     margin-left: 50px;
   }
+  .deskTop_viewMenu{
+    display: none;
+  }
+  .mobView_menu_bar{
+    display: block;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -428,10 +502,10 @@ ul{
   .copy_right_div p {
     margin-top: 0px;
   }
-  /* .copy_right_main_div{
-        flex-direction: column;
-        justify-content: center;
-    } */
+  .mobView_menu_bar .dropdown-menu{
+    right: -22px !important;
+  }
+
 }
 @media screen and (max-width: 450px) {
   .link_ul {

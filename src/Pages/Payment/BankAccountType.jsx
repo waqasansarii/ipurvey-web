@@ -8,18 +8,18 @@ const options = {
   bank: {
     currAccount: "Current Account",
     accNumber: "33322222",
-    sortNumber:"40-65-22",
+    sortNumber: "40-65-22",
     route: "/",
   },
   monzo: {
     currAccount: "Savings Account",
     accNumber: "33322222",
-    sortNumber:"40-65-22",
+    sortNumber: "40-65-22",
     route: "/",
   },
 };
 const BankAccountType = () => {
-  const [active, setActive] = useState("paypal");
+  const [active, setActive] = useState("bank");
 
   return (
     <React.Fragment>
@@ -65,31 +65,33 @@ const BankAccountType = () => {
                 <div>
                   <span>{el[1].currAccount}</span>
                 </div>
-                <div className="d-flex justify-content-between mt-1">
+                <div className="row">
+                  <div className="col-6 col-sm-6 col-md-6 col-lg-12 d-flex align-items-center justify-content-between mt-1">
                     <span>ACC No.</span>
                     <span>33322222</span>
-                </div>
-                <div className="d-flex justify-content-between mt-2">
+                  </div>
+                  <div className="col-6 col-sm-6 col-md-6 col-lg-12 d-flex align-items-center justify-content-between mt-1">
                     <span>Sort No.</span>
                     <span>40-65-22</span>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
-            
+
         <div className="row mt-5">
-              <div className="col-lg-12">
-                <button className="home_form_btn">
-                  <Link to="success">Proceed & Pay</Link>
-                </button>
-              </div>
-            </div>
-            <div className="row mt-2">
-              <div className="col-lg-12">
-                <Link className="hl_text">Cancel transcation</Link>
-              </div>
-            </div>
+          <div className="col-lg-12">
+            <button className="home_form_btn">
+              <Link to="success">Proceed & Pay</Link>
+            </button>
+          </div>
+        </div>
+        <div className="row mt-2">
+          <div className="col-lg-12">
+            <Link className="hl_text">Cancel transcation</Link>
+          </div>
+        </div>
       </div>
     </React.Fragment>
   );

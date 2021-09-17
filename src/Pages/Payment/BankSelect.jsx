@@ -14,37 +14,37 @@ const options = {
   bank: {
     name: "Bank of Scotland",
     img: HBOS,
-    route: "/payment/paypal",
+    route: "/payment/paying-bank",
   },
   monzo: {
     name: "Monzo",
     img: monzo,
-    route: "/payment/stripe",
+    route: "/payment/paying-bank",
   },
   starling: {
     name: "Santander",
     img: Starling,
-    route: "/payment/bank-transfer",
+    route: "/payment/paying-bank",
   },
   hsbc: {
     name: "HSBC Bank",
     img: HSBC,
-    route: "/payment/paypal",
+    route: "/payment/paying-bank",
   },
   stripe: {
     name: "NatWest",
     img: NatWest,
-    route: "/payment/stripe",
+    route: "/payment/paying-bank",
   },
   santader: {
     name: "Starling Bank",
     img: santader,
-    route: "/payment/bank-transfer",
+    route: "/payment/paying-bank",
   },
 };
 
 const BankSelect = (props) => {
-  const [active, setActive] = useState("paypal");
+  const [active, setActive] = useState("bank");
 
   return (
     <React.Fragment>
@@ -53,7 +53,7 @@ const BankSelect = (props) => {
           <div className="col-lg-12">
             <div className="pm_head">
               <div>
-                <img src={arrowLeft} alt="..." />
+               <Link to="/payment/bank-method"><img src={arrowLeft} alt="..." /></Link>
                 <h2>Select a Payment Method</h2>
               </div>
               <p className="mt-4">
@@ -72,7 +72,7 @@ const BankSelect = (props) => {
         </div>
         <div className="row bank_select_options">
           {Object.entries(options).map((el) => (
-            <div className={props.col ? "col-lg-4" : "col-lg-6"}>
+            <div className={props.col ? "col-lg-4" : "col-6 col-sm-6 col-md-6 col-lg-6"}>
               <div
                 onClick={() => setActive(el[0])}
                 className={
@@ -89,14 +89,14 @@ const BankSelect = (props) => {
           ))}
         </div>
         <div className="row mt-2">
-          <Link to="/" className="dont_text">
+          <Link to="#" className="dont_text">
             Don't see your bank?
           </Link>
         </div>
         <div className="row mt-4">
           <div className="col-lg-12">
             <button className="home_form_btn">
-              <Link to="success">Continue</Link>
+              <Link to={options[active].route}>Continue</Link>
             </button>
           </div>
         </div>

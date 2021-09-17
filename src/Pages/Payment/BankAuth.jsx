@@ -15,7 +15,7 @@ const BankAuth = () => {
           <div className="col-lg-12">
             <div className="pm_head">
               <div>
-                <img src={arrowLeft} alt="..." />
+               <Link to="payment/bank-auth"><img src={arrowLeft} alt="..." /></Link>
                 <h2 className="ms-2">Authenticate your Login Credentials</h2>
               </div>
             </div>
@@ -67,13 +67,13 @@ const BankAuth = () => {
               </div>
             </div>
             <div className="row mt-2 align-items-center justify-content-between">
-              <div className="col-lg-6">
+              <div className="col-6 col-sm-6 col-md-6 col-lg-6">
                 <div className="check_box">
                   <input type="checkbox" />
                   <span>Rember me</span>
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-6 col-sm-6 col-md-6 col-lg-6">
                 <Link to="/" className="dont_text">
                   Forgot Password?
                 </Link>
@@ -83,7 +83,7 @@ const BankAuth = () => {
             <div className="row mt-1">
               <div className="col-lg-12">
                 <button className="home_form_btn">
-                  <Link to="success">Login to Starling Bank</Link>
+                  <Link to="/payment/bank-otp">Login to Starling Bank</Link>
                 </button>
               </div>
             </div>
@@ -109,7 +109,7 @@ const BankAuth = () => {
             <div className="row mt-3">
               <div className="col-lg-12">
                 <button className="home_form_btn">
-                  <Link to="success">Login to Starling Bank</Link>
+                  <Link to="/payment/bank-otp">Login to Starling Bank</Link>
                 </button>
               </div>
             </div>

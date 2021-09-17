@@ -9,6 +9,7 @@ import MobViewDashboardSidebar from "./MobViewDashboardSidebar";
 import UserDropdown from "../Components/DropDown/UserDropDown";
 // assets 
 import path from '../Assets/Path 5114.png'
+import MobileViewMenu from "./MobileViewMenu";
 // import sOpen from "../Assets/Group 3398.png";
 
 const Navbar = () => {
@@ -29,7 +30,7 @@ const Navbar = () => {
             <img className="web_logo" src={logo} alt="" />
           </Link>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler deskTop_viewMenu"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -39,6 +40,8 @@ const Navbar = () => {
           >
             <img className="" src={bar} alt="" />
           </button>
+          
+          <MobileViewMenu />
           <div
             className="collapse navbar-collapse nav_ul"
             id="navbarSupportedContent"
@@ -95,10 +98,6 @@ const Navbar = () => {
                     <NotificationDropdown />
                   </li>
                   <img className="path_line" src={path} alt="img" />
-                  {/* <li className="nav-item">
-                    <CartDropdown />
-                  </li> */}
-                  {/* <img className="path_line" src={path} alt="img" /> */}
                   <li className="nav-item">
                     <UserDropdown logout={handleLogout} />
                   </li>

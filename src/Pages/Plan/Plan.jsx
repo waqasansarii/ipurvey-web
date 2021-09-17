@@ -1,7 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import "./Plan.css";
-import tick from "../../Assets/Path 5451.svg";
 import PlanPaymentMethod from "./PlanPaymentMethod";
 import PlanStripe from "./PlanStripe";
 import PlanPaypal from "./PlanPaypal";
@@ -14,25 +13,9 @@ import PlanOtp from "./PlanOtp";
 import PlanAccountType from "./PlanAccountType";
 import PlanConfirm from "./PlanConfirm";
 import PlanSuccessfull from "./PlanSuccessfull";
+import PlanList from "../../Components/PlanComponent/PlanList";
 
 const Plan = () => {
-  const options = {
-    data1: {
-      text: "Travel disruption monitoring",
-    },
-    data2: {
-      text: "Automatic claim request to travel operator",
-    },
-    data3: {
-      text: "Customer notification of submitted claim",
-    },
-    data4: {
-      text: "History of customer journeys and submitted claim",
-    },
-    data5: {
-      text: "Multiple choice of compensation payment method",
-    },
-  };
   return (
     <React.Fragment>
       <div className="plan_section">
@@ -42,7 +25,6 @@ const Plan = () => {
         <div className="plan_hero">
           <div className="plan_container">
             <div className="row">
-              
               <div className="col-lg-6">
                 <div className="select_plan">
                   <h2>Select a plan</h2>
@@ -55,33 +37,22 @@ const Plan = () => {
                       <option value="">Flight Combo Plan</option>
                     </select>
                   </div>
-                  <div className="row p_text mt-4">
-                    <div className="col-lg-6">
+                  <div className="row d_p_text p_text mt-4">
+                    <div className="col-6 col-sm-6 col-md-6 col-lg-6">
                       <h2>Frequent Rail & Flight Combo Plan</h2>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-6 col-sm-6 col-md-6 col-lg-6">
                       <h6 className="fw-bold">£6.99</h6>
                       <p>(+30p/transaction)</p>
                     </div>
                   </div>
                   <hr />
                   <div className="row w-100">
-                    {Object.entries(options).map((el) => (
-                      <div className="col-lg-12 mb-2 p-0">
-                        <ul className="plan_list">
-                          <li>
-                            <img src={tick} alt="..." />
-                            <div>
-                              <span>{el[1].text}</span>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    ))}
+                    <PlanList />
                   </div>
                 </div>
               </div>
-              
+
               <div className="col-lg-6">
                 <div className="plan_content">
                   <Switch>

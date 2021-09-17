@@ -1,5 +1,4 @@
 import React from "react";
-import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import paypalIcon from "../../Assets/Group 4071.svg";
 import tick from "../../Assets/Group 4169.png";
 import stripeIcon from "../../Assets/Group 4070.svg";
@@ -7,6 +6,7 @@ import bankIcon from "../../Assets/Group 891.svg";
 import wArrow from "../../Assets/Icon feather-arrow-rightw.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import OrderSummary from "../../Components/PlanComponent/OrderSummary";
 
 const options = {
   paypal: {
@@ -32,28 +32,14 @@ const PlanPaymentMethod = () => {
   return (
     <React.Fragment>
       <div className="pay_method plan_pay_method">
-     
-        <div className="row mb-3">
-          <div className="col-lg-12">
-            <div className="tr_details_1">
-              <span>Order Summary</span>
-            </div>
-          </div>
-          <div className="col-lg-12">
-            <div className="tr_details_2">
-              <div>
-                <span>Single Claim Initiation Fee</span>
-                <span>£5.99</span>
-              </div>
-              <hr />
-              <div>
-                <span>Total</span>
-                <span>£6.98</span>
-              </div>
-            </div>
-          </div>
-        </div>
-     
+        <OrderSummary
+          topText="Order Summary"
+          claimText="Single Claim Initiation Fee"
+          valueA="£5.99"
+          totalText="Total"
+          valueB="£6.98"
+        />
+
         <div className="row">
           <div className="pp_content">
             <div className="row">

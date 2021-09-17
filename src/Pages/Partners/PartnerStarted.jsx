@@ -11,8 +11,8 @@ const PartnerStarted = () => {
               <h1>How to get Started?</h1>
             </div>
           </div>
-          <div className="row align-items-center justify-content-center">
-            <div className="col-lg-3">
+          <div className="row gy-2 align-items-center justify-content-center">
+            <div className="co-12 col-sm-12 col-md-12 col-lg-3">
               <div className="started_card">
                 <img src={getImg} alt="" />
                 <h2>Step Title</h2>
@@ -24,7 +24,7 @@ const PartnerStarted = () => {
                 <img src={rightArrow} alt="" />
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="co-12 col-sm-12 col-md-12 col-lg-3">
               <div className="started_card">
                 <img src={getImg} alt="" />
                 <h2>Step Title</h2>
@@ -36,7 +36,7 @@ const PartnerStarted = () => {
                 <img src={rightArrow} alt="" />
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="co-12 col-sm-12 col-md-12 col-lg-3">
               <div className="started_card">
                 <img src={getImg} alt="" />
                 <h2>Step Title</h2>

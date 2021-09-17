@@ -1,6 +1,6 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
 import "./Payment.css";
+import { Switch, Route } from "react-router-dom";
 import useWebAnimations from "@wellyshen/use-web-animations";
 import tree from "../../Assets/Group 3848.png";
 import road from "../../Assets/Group 3975.png";

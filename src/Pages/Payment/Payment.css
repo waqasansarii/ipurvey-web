@@ -1,6 +1,148 @@
+
+/* form one  */
+
+.home_form_div_md {
+  background-color: #ffffff00;
+  /* box-shadow: 0px 0px 10px rgb(202, 202, 202); */
+  box-shadow: 0px 3px 10px #00000029;
+  border-radius: 5px;
+  padding: 20px 20px;
+  padding-top: 17px;
+  width: 398px;
+  /* margin-left: -100px; */
+  /* margin-right: 150px; */
+  position: relative;
+  z-index: 999;
+  text-align: center;
+  min-height: 52vh;
+}
+.home_form_div_md > p {
+  /* font-weight: 600; */
+  font-size: 0.9rem;
+  margin-bottom: 0px;
+  /* font: normal normal 600 25px/35px Poppins; */
+}
+.hover_togle_div {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.hover_togle_div > p {
+  font-size: 0.8rem;
+  color: #2e58a6;
+  margin-bottom: 0px;
+}
+.hover_togle_div > div > img {
+  margin-left: 10px;
+}
+.hover_togle {
+  position: relative;
+}
+.hover_togle:hover .hover_i {
+  display: block;
+}
+.hover_i {
+  position: absolute;
+  width: 270px;
+  background-color: white;
+  box-shadow: 0px 3px 6px #272727;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: start;
+  z-index: 9999;
+  display: none;
+}
+.hover_i p {
+  font-size: 0.75rem;
+  margin-bottom: 0px;
+}
+
+.home_form_div_md input,
+.home_form_div_md select {
+  width: 300px;
+  border: none;
+  outline: none;
+  padding: 6px 12px;
+  background-color: #f0f4fc;
+  margin-top: 10px;
+  color: #2e58a6;
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+.seleCt_travel_mode > p {
+  color: #2e58a6;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.slect_tab {
+  display: flex;
+  justify-content: center;
+}
+.travel_tab label {
+  padding: 10px 30px;
+  margin: 15px;
+  margin-bottom: 5px;
+  border: 2px solid white;
+  border-radius: 4px;
+  opacity: 0.5;
+  background-color: #f0f4fc;
+  box-shadow: 0px 3px 6px rgb(85, 84, 84);
+}
+.tr_tab > p {
+  color: #2e58a6;
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+}
+#box1:checked + label,
+#box2:checked + label {
+  box-shadow: 0px 3px 6px rgb(85, 84, 84);
+  border: 2px solid #2e58a6;
+  opacity: 1;
+}
+.home_form_btn {
+  background-color: #2e58a6;
+  color: white;
+  text-align: center;
+  padding: 7px 35px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+.home_form_btn > img {
+  margin-left: 10px;
+}
+.check_para {
+  margin-left: 10px;
+  color: #2e58a6;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+.check_inp {
+  width: inherit !important;
+  /* display: inline-/block; */
+  /* margin-top: 4px; */
+}
+.check_box {
+  display: flex;
+  /* align-items: center; */
+}
+.home_form_div_md input::placeholder {
+  color: #2e58a6;
+}
+
+
 .payment_wrapper {
   /* width: 90%; */
   margin: 0 auto;
+}
+
+.payment_wrapper .home_form_btn {
+  padding: 10px 25px;
 }
 
 .pay_option_text {
@@ -41,7 +183,7 @@
 }
 
 .pay_option_1 h6,
-span {
+.pay_option_1 span {
   font-size: 0.8rem;
   font-weight: 400;
   margin: 0;
@@ -114,7 +256,7 @@ span {
 .pm_head img {
   width: 15px !important;
   position: absolute;
-  /* top: 5px; */
+  top: 2px;
 }
 
 .pm_head h2 {
@@ -181,6 +323,10 @@ span {
   display: flex;
   background: #f0f4fc;
   justify-content: space-between;
+}
+
+.pay-text {
+  color: #2e58a6;
 }
 
 .paypal_img {
@@ -267,6 +413,10 @@ span {
   margin: 0 auto;
   color: #2e58a6;
   height: 1.2px;
+}
+
+.pm_hr span {
+  color: #2e58a6;
 }
 
 .ps_input1 {
@@ -549,6 +699,7 @@ span {
 
 .otp_text p {
   font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .otp_box {
@@ -558,6 +709,7 @@ span {
 .otp_input {
   width: 100%;
   height: 50px;
+  background-color: white;
   border: 1.2px solid #707070;
   display: flex;
   align-items: center;
@@ -596,6 +748,7 @@ span {
 
 .type_box span {
   font-weight: 600;
+  font-size: 0.8rem;
 }
 
 .type_box img {
@@ -625,6 +778,10 @@ span {
   width: 40px;
 }
 
+.payment_success .tr_details_2 span {
+  font-size: 0.8rem;
+}
+
 .payment_success .tr_details_2 > div {
   background: white;
 }
@@ -646,4 +803,101 @@ span {
 
 .plan_paypal .paypal_img {
   display: block !important;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1070px) {
+  .payment_success .tr_details_2 span{
+    font-size: 0.7rem;
+  }
+}
+  @media screen and (max-width: 991px) {
+  .animation_para_div {
+    display: none;
+  }
+  .animation_content_div {
+    justify-content: center;
+  }
+  .pay_option_1 strong,
+  .pay_option_2 strong {
+    font-size: 1.6rem;
+  }
+  .type_box {
+    text-align: initial;
+    margin-bottom: 8px;
+  }
+  .type_box img {
+    top: 15px;
+  }
+  .tr_details_2 > div {
+    /* flex-direction: column; */
+  }
+  .payment_success .tr_details_2 span{
+    font-size: 0.9rem;
+    margin: 3px 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+  .pm_hr hr {
+    width: 30%;
+  }
+  .pm_hr span {
+    font-size: 0.9rem;
+  }
+  .paypal_img {
+    width: 110px;
+  }
+  .payment_wrapper .home_form_btn {
+    width: 100%;
+  }
+  .otp_box {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .tr_details_2 span {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .paypal_box div:nth-of-type(1) span {
+    margin-left: 11px;
+  }
+  .pm_hr span {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .type_box span {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .paypal_box div:nth-of-type(1) span {
+    font-size: 0.9rem;
+  }
+  .pm_hr hr {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .select_bank .paypal_box div:nth-of-type(1) span {
+    font-size: 0.7rem;
+  }
+  .check_box span {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .auth_tabs button {
+    font-size: 0.8rem;
+  }
 }

@@ -5,8 +5,8 @@ const PartnersPlan = () => {
     <React.Fragment>
       <div className="partner_plans">
         <div className="partner_container">
-          <div className="row">
-            <div className="col-lg-6">
+          <div className="row gy-5">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6">
               <div className="p_left">
                 <h2>Best Plans</h2>
                 <h1>For your Business</h1>
@@ -24,7 +24,7 @@ const PartnersPlan = () => {
 
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6">
                 <div className="p_right">
                     <img src={planImg} alt="" />
                 </div>

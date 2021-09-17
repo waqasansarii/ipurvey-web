@@ -12,7 +12,7 @@ const PaymentPaypal = () => {
          <img className="paypal_img" src={paypalIcon} alt="..." />
         </div>
         <div className="row mt-3">
-          <div className="col-lg-12 p-0 d-flex justify-content-center">
+          <div className="pay-text col-lg-12 p-0 d-flex justify-content-center">
             <span>Please login to PayPal to complete the transaction!</span>
           </div>
         </div>

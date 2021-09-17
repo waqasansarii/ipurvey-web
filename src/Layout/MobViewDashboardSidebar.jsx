@@ -15,7 +15,6 @@ import lock from '../Assets/Icon awesome-lock.png'
 import hand from '../Assets/Icon awesome-hand-point-up.png'
 import bell from '../Assets/Icon awesome-bell.png'
 import more from '../Assets/Path 5117.png'
-// import sOpen from "../Assets/Group 3398.png";
 
 const MobViewDashboardSidebar = () => {
   const [subLink, setSubLink] = React.useState(false)
@@ -37,7 +36,6 @@ const MobViewDashboardSidebar = () => {
       <div
         className="dropdown-menu "
         aria-labelledby="dropdownMenuButton10"
-        // onClick={(e) => e.stopPropagation()}
         onClick={(e)=>e.stopPropagation()}
 
       >
@@ -50,7 +48,6 @@ const MobViewDashboardSidebar = () => {
               </div>
             </div>
             <NavLink
-              // style={{ marginTop: !open ? "15px" : "" }}
               to="/dashboard"
               className="sb_link"
             >
@@ -87,7 +84,6 @@ const MobViewDashboardSidebar = () => {
               >
                 <NavLink
                   to="/account-info"
-                  // className={!open ? "sb_mob_link" : "sb_link"}
                   className='sb_link'
                 >
                   <div className="sb_imgD">

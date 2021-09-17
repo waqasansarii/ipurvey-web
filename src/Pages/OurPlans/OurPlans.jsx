@@ -11,7 +11,7 @@ const OurPlans = () => {
         </div>
         <div className="our_plan_hero">
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-md-4 col-lg-3">
               {/* <div className="row"> */}
               <div className="feature_box">
                 <h2>Features</h2>
@@ -45,7 +45,7 @@ const OurPlans = () => {
               </div>
               {/* </div> */}
             </div>
-            <div className="col-lg-9">
+            <div className="col-md-8 col-lg-9">
               <div className="row">
                 <div className="col-lg-2 p-0">
                   <div className="feature_item_box active_fib">

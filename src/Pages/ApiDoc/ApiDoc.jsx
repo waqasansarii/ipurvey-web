@@ -51,8 +51,8 @@ const ApiDoc = () => {
         </div>
         <div className="api_doc_hero">
           <div className="api_container">
-            <div className="row">
-              <div className="col-lg-3">
+            <div className="row gy-3">
+              <div className="col-12 col-sm-12 col-md-12 col-lg-3">
                 <div className="api_list_box">
                   <div className="row">
                     <div className="col-lg-12">
@@ -71,7 +71,7 @@ const ApiDoc = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="row w-100 mt-3">
+                  <div className="row w-100 mt-3 ad_left_list">
                     {Object.entries(options).map((el) => (
                       <div
                         className="col-lg-12 p-0"
@@ -91,7 +91,7 @@ const ApiDoc = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-5">
+              <div className="col-12 col-sm-12 col-md-12 col-lg-5">
                 <div className="api_content">
                   <h2>Lorem Ipsum</h2>
                   <p>
@@ -132,7 +132,7 @@ const ApiDoc = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-lg-3">
+              <div className="col-12 col-sm-12 col-md-12 col-lg-3">
                 <div className="api_editor">
                   <div className="row">
                     <div className="ae_head">

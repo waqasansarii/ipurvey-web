@@ -10,7 +10,9 @@ const BankPaying = () => {
           <div className="col-lg-12">
             <div className="pm_head">
               <div>
-                <img src={arrowLeft} alt="..." />
+                <Link to="/payment/select-bank">
+                  <img src={arrowLeft} alt="..." />
+                </Link>
                 <h2>Select your bank</h2>
               </div>
             </div>
@@ -19,7 +21,9 @@ const BankPaying = () => {
         <div className="row mt-4">
           <div className="col-lg-12">
             <div className="ps_img">
-              <img src={bankImg} alt="..." />
+              <Link to="/payment/select-bank">
+                <img src={bankImg} alt="..." />
+              </Link>
             </div>
           </div>
         </div>
