@@ -1,7 +1,8 @@
 import React from "react";
+import BackHeader from "../BackHeader";
 import MiniDrawer from "../Sidebar";
 import ChangePassword from "./ChangePassword";
-import './style.css'
+import "./style.css";
 
 const SecuritySetting = () => {
   return (
@@ -12,8 +13,11 @@ const SecuritySetting = () => {
             <MiniDrawer />
           </div>
           <div className="accInfo_rigth_md">
+            <div className="acc_back_link">
+              <BackHeader head="SECURITY SETTING" link="/dashboard" />
+            </div>
             <div className="acc_info_sd">
-                <ChangePassword />
+              <ChangePassword />
             </div>
           </div>
         </div>

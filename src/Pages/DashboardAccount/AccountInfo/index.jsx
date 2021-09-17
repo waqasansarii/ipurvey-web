@@ -1,4 +1,5 @@
 import React from "react";
+import BackHeader from "../BackHeader";
 import MiniDrawer from "../Sidebar";
 import AccInfoForm from "./AccInfoForm";
 import PaymentDetail from "./PaymentDetail";
@@ -13,14 +14,17 @@ const AccountInformation = () => {
             <MiniDrawer />
           </div>
           <div className="accInfo_rigth_md">
-              <div className="acc_info_sd">
-                  <div className="_accountInfo_form_container">
-                      <AccInfoForm />
-                  </div>
-                  <div className="pD_container">
-                      <PaymentDetail />
-                  </div>
+            <div className="acc_back_link">
+              <BackHeader head='VIEW ACCOUNT INFORMATION' link='/dashboard' />
+            </div>
+            <div className="acc_info_sd">
+              <div className="_accountInfo_form_container">
+                <AccInfoForm />
               </div>
+              <div className="pD_container">
+                <PaymentDetail />
+              </div>
+            </div>
           </div>
         </div>
       </div>

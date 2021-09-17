@@ -4,7 +4,8 @@ import {useHistory} from 'react-router-dom'
 const MobViewActivityCard = ({ data }) => {
   const history = useHistory()
   const handleSelectedId = (id)=>{
-      history.push(`account-activity/${id}`)
+      
+      history.push(`/account-activity/${id}`)
   }
   return (
     <div className="activiyCard_container">

@@ -7,6 +7,7 @@ import "./style.css";
 import filter from '../../../Assets/Group 3570.png'
 import FilterDropDown from "../FilterDropDown";
 import MobViewDetailCard from "./MobViewDetailCard";
+import BackHeader from "../BackHeader";
 
 const TravelBooking = () => {
   return (
@@ -18,6 +19,7 @@ const TravelBooking = () => {
           </div>
           <div className="tb_page_right_md">
             <div className="tb_page_rigth_content">
+              <BackHeader head='SEARCH TRAVEL BOOKING' link='/dashboard' />
               <h5>SEARCH YOUR TRAVEL BOOKINGS</h5>
               <div className="tb_search_md">
                 <form action="">

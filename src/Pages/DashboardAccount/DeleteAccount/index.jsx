@@ -4,6 +4,7 @@ import MiniDrawer from "../Sidebar";
 import "./style.css";
 // assets
 import leaving from "../../../Assets/undraw_feeling_blue_4b7q.png";
+import BackHeader from "../BackHeader";
 
 const DeleteAccount = () => {
   return (
@@ -14,6 +15,9 @@ const DeleteAccount = () => {
             <MiniDrawer />
           </div>
           <div className="accInfo_rigth_md">
+          <div className="acc_back_link">
+              <BackHeader head="DELETE ACCOUNT" link="/dashboard" />
+            </div>
             <div className="acc_info_sd">
               <div className="dltAcc_container">
                 <div className="ss_md">

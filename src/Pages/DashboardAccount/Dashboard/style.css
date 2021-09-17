@@ -161,6 +161,49 @@ ul{
     border: none;
 }
 
+
+/* mob view boooking card  */
+
+.mobViewBook_card_container{
+    display:none;
+    max-height: 500px;
+    overflow-y: auto;
+}
+.mobViewBook_card_container::-webkit-scrollbar{
+    width: 5px;
+}
+.mobVIewbook_card{
+    background-color: #F0F4FC;
+    padding: 15px;
+    margin-top: 15px;
+}
+.mobVIewbook_card p,.mobVIewbook_card h6{
+    margin-bottom: 5px;
+}
+.mobVIewbook_card p{
+    color: #2E58A6;
+    font-size: .8rem;
+}
+.mobVIewbook_card h6{
+    font-size: 1rem;
+}
+.book_card_time{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+}
+.bookCardBody_{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+
+
 @media(max-width:1200px){
   .db_left_content{
       display: none;
@@ -171,4 +214,63 @@ ul{
   .db_right_content_md{
       width: 95%;
   }
+}
+
+@media(max-width:950px){
+    .db_right_sd{
+        flex-wrap: wrap;
+    }
+    .db_chart_table_section{
+        width: 90%;
+        margin: 10px auto;
+    }
+    .db_timeline_section{
+        width: 60%;
+        margin: 10px auto;
+    }
+}
+@media(max-width:700px){
+    .db_timeline_section{
+        width: 70%;
+        margin: 10px auto;
+    }
+}
+@media(max-width:600px){
+    .db_timeline_section{
+        width: 100%;
+    }
+    .db_chart_table_section{
+        width: 100%;
+    }
+    .db_table_md .table_container{
+      display: none;
+    }
+    .db_table_head .link{
+        display: none;
+    }
+    .db_table_head>h4{
+        font-size: 1rem;
+    }
+    .mobViewBook_card_container{
+        display: block;
+    }
+}
+@media(max-width:400px){
+    .mobVIewbook_card p{
+        font-size: .7rem;
+    }
+    .mobVIewbook_card h6{
+        font-size: .8rem;
+    }
+    .db_table_md{
+        padding: 15px;
+    }
+    .mobVIewbook_card{
+        padding: 15px 10px;
+    }
+}
+@media(max-width:350px){
+    .db_table_head>h4{
+        font-size: .9rem;
+    }
 }

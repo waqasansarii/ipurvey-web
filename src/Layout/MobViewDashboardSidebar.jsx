@@ -109,7 +109,7 @@ const MobViewDashboardSidebar = () => {
                     <p>Change password </p>
                   </div>
                 </NavLink>
-                <NavLink to="/dashboard" className="sb_mob_link">
+                <NavLink to="/manage-subscription" className="sb_mob_link">
                   <div className="sb_imgD">
                     <img src={hand} alt="..." />
                     <p>Manage subscription </p>

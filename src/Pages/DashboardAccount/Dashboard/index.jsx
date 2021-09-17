@@ -8,6 +8,7 @@ import "./style.css";
 // assets
 import arrow from "../../../Assets/Icon feather-arrow-right.png";
 import BookingStatus from "./BookingStatus";
+import MobViewBookingCard from "./MobViewBookingCard";
 const DashBoard = () => {
   return (
     <div className="db_container">
@@ -40,6 +41,7 @@ const DashBoard = () => {
                     </Link>
                   </div>
                   <Table data={dbTable} />
+                  <MobViewBookingCard />
                 </div>
               </div>
             </div>

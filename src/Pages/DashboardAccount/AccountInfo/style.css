@@ -22,6 +22,7 @@
 .AInfo_conatainer{
     width: 450px;
 }
+
 @media(min-width:1200px){
     ._accountInfo_form_container,.pD_container{
         width: 40%;
@@ -140,7 +141,10 @@
 .mobileView_switch_content{
     display: none;
 }
-
+.acc_back_link{
+    margin-left: 30px;
+    display: none;
+}
 
 @media (max-width:990px){
     .acc_info_sd{
@@ -165,6 +169,10 @@
         display: none;
     }
     .mob_view_infoEdit_btn{
+        display: block;
+    }
+    .acc_back_link{
+        /* margin-left: 30px; */
         display: block;
     }
     .profile_img{
@@ -211,6 +219,9 @@
     }
     .AInfo_conatainer input{
         font-size: .85rem;
+    }
+    .acc_back_link{
+        margin-left: 5px;
     }
 }
 @media (max-width:350px){

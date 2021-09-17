@@ -225,7 +225,7 @@ export default function MiniDrawer() {
                   </div>
                 </NavLink>
                 <NavLink
-                  to="/dashboard"
+                  to="/manage-subscription"
                   className={!open ? "sb_mob_link" : "sb_link"}
                 >
                   <div className="sb_imgD">

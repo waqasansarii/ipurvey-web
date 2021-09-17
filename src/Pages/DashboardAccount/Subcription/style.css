@@ -255,6 +255,31 @@
   display: none;
 }
 
+
+/* complete subscription  */
+
+.subs_complete_container{
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f4fc;
+}
+
+.subsComplete_sec{
+  margin-top: 30px;
+}
+.subsComplete_sec p:nth-child(2){
+  font-weight: bold;
+  margin-top: 10px;
+}
+.subsComplete_sec p:nth-child(3){
+  color: #2e58a6;
+  font-size: .8rem;
+}
+.returnDb_bt{
+  margin-top: 90px;
+}
+
 @media (max-width: 1150px) {
   .subcript_right_content_main {
     overflow-x: scroll;

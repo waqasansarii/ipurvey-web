@@ -24,6 +24,9 @@
 .acc_tble tr{
     box-shadow: none !important;
 }
+.acc_tble tr th{
+
+}
 .acc_tble thead{
     box-shadow: none !important;
 }
@@ -96,6 +99,7 @@
     background-color: #F0F4FC;
     /* margin: 30px auto; */
     padding: 30px 30px;
+    display: none;
 }
 .mobView_moreActivity_dtl_md{
     margin-top: 20px;
@@ -120,6 +124,9 @@
     }
     .acc_activity_right_content{
         display: none;
+    }
+    .mobView_moreActivity_dtl_container{
+        display: block;
     }
     .acc_activity_right_md{
         width: 90%;

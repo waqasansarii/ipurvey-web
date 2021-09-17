@@ -32,13 +32,15 @@ import SecuritySetting from "../Pages/DashboardAccount/SecuritySetting";
 import DeleteAccount from "../Pages/DashboardAccount/DeleteAccount";
 import AccountActivity from "../Pages/DashboardAccount/AccountActivity";
 import Notifications from "../Pages/DashboardAccount/Notification";
-import ChatBox from '../Components/ChatBox'
-import TravelClaim from '../Pages/TravelClaim'
-import MobViewActitvityDetailPage from '../Pages/DashboardAccount/AccountActivity/MobViewActitvityDetailPage'
+import ChatBox from "../Components/ChatBox";
+import TravelClaim from "../Pages/TravelClaim";
+import MobViewActitvityDetailPage from "../Pages/DashboardAccount/AccountActivity/MobViewActitvityDetailPage";
 import SubscriptionManager from "../Pages/DashboardAccount/Subcription";
 import StartSubscription from "../Pages/DashboardAccount/Subcription/StartSubscription";
 import SelectMethod from "../Pages/DashboardAccount/Subcription/SelectMethod";
 import MethodDetail from "../Pages/DashboardAccount/Subcription/MethodDetail";
+import Failed from "../Pages/DashboardAccount/Subcription/Failed";
+import Success from "../Pages/DashboardAccount/Subcription/Success";
 
 const AppRouter = () => {
   return (
@@ -72,18 +74,20 @@ const AppRouter = () => {
         <Route path="/account-info" component={AccountInformation} />
         <Route path="/security" component={SecuritySetting} />
         <Route path="/delete-account" component={DeleteAccount} />
-        <Route path="/account-activity" component={AccountActivity} />
+        <Route exact path="/account-activity" component={AccountActivity} />
         <Route path="/notification" component={Notifications} />
         <Route
           exact
           path="/account-activity/:id"
           component={MobViewActitvityDetailPage}
         />
-        <Route path='/travel-claim' component={TravelClaim} />
-        <Route path='/manage-subscription' component={SubscriptionManager} />
-        <Route path='/start-subsricption' component={StartSubscription} />
-        <Route path='/select-method' component={SelectMethod} />
-        <Route path='/method-detail' component={MethodDetail} />
+        <Route path="/travel-claim" component={TravelClaim} />
+        <Route path="/manage-subscription" component={SubscriptionManager} />
+        <Route path="/start-subsricption" component={StartSubscription} />
+        <Route path="/select-method" component={SelectMethod} />
+        <Route path="/method-detail" component={MethodDetail} />
+        <Route path='/subs-failed'  component={Success}/>
+        <Route path='/subs-succes' component={Failed} />
       </Switch>
       <Footer />
       <CopyRight />
