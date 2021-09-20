@@ -223,6 +223,7 @@
     text-align: center;
   }
   .mobileView_terms_top_img{
+    display: block;
     width: 50%;
     text-align: center;
     margin: 40px auto;

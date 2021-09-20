@@ -6,11 +6,10 @@ import SelectBlog from "../Pages/Blogs/OneBlogPage";
 import TermAndCond from "../Pages/Terms/Terms";
 import Privacy from "../Pages/privacy/Privacy";
 import About from "../Pages/About/About";
-import Footer from "../Layout/Footer";
+// import Footer from "../Layout/Footer";
+// import CopyRight from "../Layout/CopyRight";
 import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home";
-import CopyRight from "../Layout/CopyRight";
-
 import Login from "../Pages/CreateAccount/Login";
 import SignUp from "../Pages/CreateAccount/SignUp";
 import Forgot from "../Pages/CreateAccount/Forgot";
@@ -68,7 +67,7 @@ const AppRouter = () => {
         <Route path="/api-doc" component={ApiDoc} />
         <Route path="/our-plan" component={OurPlans} />
         <Route path="/planpayment" component={PlanPayment} />
-        <Route path="/developer" component={Developers} />
+        <Route path="/developers" component={Developers} />
         <Route path="/dashboard" component={DashBoard} />
         <Route path="/travel-booking" component={TravelBooking} />
         <Route path="/account-info" component={AccountInformation} />
@@ -89,8 +88,8 @@ const AppRouter = () => {
         <Route path='/subs-failed'  component={Success}/>
         <Route path='/subs-succes' component={Failed} />
       </Switch>
-      <Footer />
-      <CopyRight />
+      {/* <Footer /> */}
+      {/* <CopyRight /> */}
     </Router>
   );
 };

@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useState } from 'react'
 import img from '../../Assets/undraw_privacy_protection_nlwy@2x.png'
 import './Privacy.css'
 import SubNav from '../../Layout/SubNav'
+import Footer from '../../Layout/Footer'
 
 const termsData = [
   {
@@ -414,6 +415,7 @@ const Privacy = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

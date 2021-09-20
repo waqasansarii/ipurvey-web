@@ -5,6 +5,7 @@ import "./Terms.css";
 import SubNav from "../../Layout/SubNav";
 import rightImg from "../../Assets/undraw_contract_uy56.png";
 import TermsDetail from "./TermsDetail";
+import Footer from "../../Layout/Footer";
 
 
 
@@ -18,7 +19,7 @@ const TermAndCond = () => {
 
   return (
     <div className="terms_and_cond_container">
-      <SubNav head="Terms of use" />
+      <SubNav head="Terms of Service" />
       <div className="mobileView_terms_top_img">
         <img src={rightImg} alt="" />
       </div>
@@ -50,6 +51,7 @@ const TermAndCond = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

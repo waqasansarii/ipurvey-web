@@ -11,24 +11,25 @@ import ChatBox from "../../Components/ChatBox";
 import VideoSection from "../../Components/HomeComp/VideoSection";
 import AnimationSection from "../../Components/AnimationSection";
 import StartedForm from "../../Components/HomeComp/StartedForm";
+import Footer from "../../Layout/Footer";
 
 const Home = () => {
-  
-
   return (
-    <div className="home_container">
-      <Cokkie />
-      <ChatBox />
-      
-      <AnimationSection forms={<StartedForm />} />
-      <WhyIpurvey />
-      <VideoSection />
-      <IpurveySpecial />
-      <Flights />
-      <PaymentMethod />
-      <Trusted />
-      <GetApp head="Coming soon on your favorite devices!" para />
-    </div>
+    <React.Fragment>
+      <div className="home_container">
+        <Cokkie />
+        <ChatBox />
+        <AnimationSection forms={<StartedForm />} />
+        <WhyIpurvey />
+        <VideoSection />
+        <IpurveySpecial />
+        <Flights />
+        <PaymentMethod />
+        <Trusted />
+        <GetApp head="Get Register Today" btn />
+      </div>
+      <Footer />
+    </React.Fragment>
   );
 };
 

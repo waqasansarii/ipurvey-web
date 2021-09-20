@@ -301,7 +301,7 @@
   border: none;
   outline: none;
   padding: 6px;
-  height: 31px;
+  height: 39px;
   margin-top: 10px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -510,6 +510,7 @@
 .why_ipur_md p {
   font-size: 0.9rem;
   color: #2e58a6;
+  font-weight: 500;
 }
 .why_ipurvey_steps {
   display: flex;
@@ -528,7 +529,9 @@
 .why_ipurvey_steps > div > p {
   margin-top: 20px;
 }
-
+.why_ipurvey_steps > div>h6{
+  font-weight: bold;
+}
 /* why ipurvey something special  */
 
 .ipurSpecial_md {
@@ -707,7 +710,7 @@
 }
 .pm_left_sec > h5,
 .pm_left_sec2 > h5 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 .pm_left_sec > p,

@@ -37,7 +37,7 @@ const options = {
 
 const GroupedBar = () => (
   <>
-    <Bar data={data} options={options} />
+    <Bar data={data} options={options} className='cus_bar_chart' />
   </>
 );
 

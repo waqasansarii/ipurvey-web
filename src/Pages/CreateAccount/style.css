@@ -163,3 +163,15 @@
 .magic_link_Btn{
     margin-top: 70px !important;
 }
+
+@media (max-width:400px){
+  .acc_postal_code > button{
+    width: 110px;
+    font-size: .7rem;
+  }
+}
+@media (max-width:320px){
+  .popover__content{
+    width: 240px;
+  }
+}

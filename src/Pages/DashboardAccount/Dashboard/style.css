@@ -6,7 +6,8 @@
 .db_right_content_md{
     padding-top: 20px;
     padding-left: 30px;
-    width: 75%;
+    width: 85%;
+    padding-right: 15px;
     margin-bottom: 30px;
 }
 .db_head_btn{
@@ -259,14 +260,28 @@ ul{
     .mobVIewbook_card p{
         font-size: .7rem;
     }
+    .step1Head>p{
+        font-size: .6rem;
+    }
+    .cus_bar_chart{
+        height: 280px !important;
+    }
+    .db_right_content_md{
+        width: 100%;
+        padding: 20px 15px;
+    }
+    
     .mobVIewbook_card h6{
         font-size: .8rem;
     }
     .db_table_md{
-        padding: 15px;
+        padding: 15px 8px;
     }
     .mobVIewbook_card{
         padding: 15px 10px;
+    }
+    .step1Head>h6{
+        font-size: .8rem;
     }
 }
 @media(max-width:350px){

@@ -157,4 +157,18 @@
     font-size: 0.85rem;
     max-width: 212px;
   }
-  
+
+ 
+@media (max-width:450px){
+  .helpChat_div{
+    left: -250px;
+    top: -375px;
+  }
+}
+@media (max-width:450px){
+  .helpChat_div{
+    width: 270px;
+    left: -215px;
+    top: -375px;
+  }
+}  

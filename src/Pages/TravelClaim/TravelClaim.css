@@ -142,7 +142,7 @@
   margin-bottom: 15px;
 }
 .stp_btns {
-  width: 190px;
+  width: 200px;
   margin: 20px auto;
 }
 
@@ -405,10 +405,10 @@ border: 1px solid #2E58A6;
         font-size: .7rem;
     }
     .stp_btns{
-        width: 160px;
+        width: 200px;
     }
    .stepper_form .home_form_btn{
-      width: 190px;
+      width: 200px;
     }
 }
 @media (max-width:370px){
@@ -455,10 +455,11 @@ border: 1px solid #2E58A6;
 }
 @media (max-width:340px){
     .steper_form_container{
-        width: 280px;
+        width: 100%;
+        padding: 20px 10px;
     }
     .claimSteps_head{
-        width: 280px;
+        width: 100%;
     }
     .dflt_step_line{
         width: 75px;
