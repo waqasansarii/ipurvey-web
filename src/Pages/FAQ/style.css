@@ -5,6 +5,9 @@
     background-color: #F0F4FC;
     margin: 30px auto;
     padding: 20px 120px;
+    position: sticky;
+    top: 92px;
+    z-index: 99;
 }
 .sub_header_md>h4{
     margin-bottom: 0px;

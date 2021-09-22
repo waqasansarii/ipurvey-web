@@ -176,6 +176,10 @@
   border-radius: 5px;
   position: relative;
 }
+.payMethodImg>.method_img{
+  height: 50px;
+  width: 80px;
+}
 .slct_tick {
   position: absolute;
   right: 10px;
@@ -323,6 +327,12 @@
   .subsCard_feature {
     width: 170px;
   }
+  .payMethod_boxes {
+    width: 270px;
+  }
+  .payMethodImg{
+    padding: 35px 20px;
+  }
 }
 @media (max-width: 400px) {
   .plan_list li span {
@@ -337,12 +347,12 @@
   .subsCard_feature {
     width: 140px;
   }
-  .payMethod_boxes {
-    width: 100%;
-  }
 }
 @media (max-width: 340px) {
+  .payMethod_boxes{
+    width: 250px;
+  }
   .payMethodImg {
-    padding: 30px 20px;
+    padding: 25px 18px;
   }
 }

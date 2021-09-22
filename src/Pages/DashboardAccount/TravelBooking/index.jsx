@@ -1,10 +1,10 @@
 import React from "react";
 import MiniDrawer from "../Sidebar";
 import Table from "./Table";
-import { travelBookingTable } from '../data'
+import { travelBookingTable } from "../data";
 import "./style.css";
-// assets 
-import filter from '../../../Assets/Group 3570.png'
+// assets
+import filter from "../../../Assets/Group 3570.png";
 import FilterDropDown from "../FilterDropDown";
 import MobViewDetailCard from "./MobViewDetailCard";
 import BackHeader from "../BackHeader";
@@ -19,25 +19,26 @@ const TravelBooking = () => {
           </div>
           <div className="tb_page_right_md">
             <div className="tb_page_rigth_content">
-              <BackHeader head='SEARCH TRAVEL BOOKING' link='/dashboard' />
+              <BackHeader head="SEARCH TRAVEL BOOKING" link="/dashboard" />
               <h5>SEARCH YOUR TRAVEL BOOKINGS</h5>
               <div className="tb_search_md">
                 <form action="">
-                  <input type="text" className="cus_inp" placeholder='Add a reference number' />
+                  <input
+                    type="text"
+                    className="cus_inp"
+                    placeholder="Add a reference number"
+                  />
                   <div>
-
-                    <select
-                      className="cus_select"
-                      placeholder="select"
-                    >
-                      <option value="">Travel From</option>
-                    </select>
-                    <select
-                      className="cus_select"
-                      placeholder="select"
-                    >
-                      <option value="">Travel To</option>
-                    </select>
+                    <div className="tb_select_md">
+                      <select className="cus_select" placeholder="select">
+                        <option value="">Travel From</option>
+                      </select>
+                    </div>
+                    <div className="tb_select_md">
+                      <select className="cus_select" placeholder="select">
+                        <option value="">Travel To</option>
+                      </select>
+                    </div>
                   </div>
                   <button className="cus_blue_btn">Search</button>
                 </form>
@@ -50,7 +51,7 @@ const TravelBooking = () => {
                 </div>
               </div>
               <div className="travel_table_container">
-                <Table tbClass='tb_page_table' data={travelBookingTable} />
+                <Table tbClass="tb_page_table" data={travelBookingTable} />
               </div>
               <div className="mob_view_taravel_card">
                 <MobViewDetailCard />

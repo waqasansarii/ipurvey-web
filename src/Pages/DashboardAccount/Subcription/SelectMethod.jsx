@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import OrderDetail from "./OrderDetail";
 import stripe from "../../../Assets/Group 4070.png";
+import paypal from "../../../Assets/Group 4071.svg";
 import tick from "../../../Assets/Group 3469.png";
 import { useHistory } from "react-router";
 import BackHeader from "../BackHeader";
@@ -34,7 +35,7 @@ const SelectMethod = () => {
                     : "payMethodImg"
                 }
               >
-                <img className="method_img" src={stripe} alt="..." />
+                <img className="method_img" src={paypal} alt="..." />
                 {method === "paypal" ? (
                   <img className="slct_tick" src={tick} alt="..." />
                 ) : null}

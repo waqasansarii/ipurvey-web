@@ -1,10 +1,10 @@
 import React from "react";
-import aboutRec1 from "../../Assets/Group 3122@2x.png";
+import aboutRec1 from "../../Assets/Group 4066.png";
 import aboutRec2 from "../../Assets/Group 4941.png";
-import play from "../../Assets/Polygon 13.png";
+// import play from "../../Assets/Polygon 13.png";
 import email from "../../Assets/Icon ionic-ios-mail@2x.png";
 import path from "../../Assets/Path 4974.png";
-import map from "../../Assets/Mask Group 7@2x.png";
+// import map from "../../Assets/Mask Group 7@2x.png";
 import office from "../../Assets/Icon awesome-building@2x.png";
 import mob from "../../Assets/Icon ionic-ios-call@2x.png";
 import msg from "../../Assets/Group 4946@2x.png";
@@ -17,22 +17,22 @@ const Contact = () => {
     <React.Fragment>
       <div className="contact_container">
         <div className="about_container">
-          <div className="about_content">
-            <div className="about_left_content1">
-              <h4 className="main_about_head">We love!</h4>
-              <h2 className=" fw-bold about_head">to hear from you!</h2>
+          <div className="about_content abt_contetn">
+            <div className="about_left_content1 ab_left_c1">
+              <h2 className=" fw-bold about_head">
+                We're on a mission to simplify travel claims
+              </h2>
               <p className="about_para">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                We assist rail and air passengers by automatically submitting
+                travel claims on their behalf to travel operators, when they
+                experience a travel disruption
               </p>
               <div className="email_div">
                 <img src={email} alt="" />
                 <span className="email_span">contact@ipurvey.com</span>
               </div>
             </div>
-            <div className="about_right_content1">
+            <div className="about_right_content1 abt_right_c1">
               <img className="contact_img1" src={aboutRec1} alt="img" />
             </div>
           </div>
