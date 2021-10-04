@@ -17,7 +17,7 @@
 }
 .db_table thead {
   background-color: #f0f4fc;
-  box-shadow: 0px 3px 6px #707070;
+  /* box-shadow: 0px 3px 6px #707070; */
   border-radius: 18px;
 }
 .db_table th:last-child {
@@ -31,7 +31,7 @@
   padding-left: 10px;
 }
 .db_table th {
-  padding: 10px 0px;
+  padding: 6px 0px;
   text-align: center;
   color: #2e58a6;
   opacity: 0.8;

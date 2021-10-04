@@ -12,7 +12,7 @@ const WhereWereTraveling = ({ nextBtn, backBtn }) => {
       <div className="stepper_form_md">
         <div className="stepper_form">
           <img src={headImg} alt="..." />
-          <h2>What's the departure date?</h2>
+          <h2>Where were you traveling?</h2>
           <div className="stp_inp arrive_inp">
             <img src={arrival} alt="..." />
             <input

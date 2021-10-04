@@ -1,5 +1,4 @@
-
-.home_container{
+.home_container {
   overflow-x: hidden;
 }
 /* form one  */
@@ -27,11 +26,12 @@
 .selection_travel_mode {
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  width: 322px;
   margin: 10px auto;
   margin-top: 20px;
 }
-.byAir_mode,.byTrain_mode {
+.byAir_mode,
+.byTrain_mode {
   border: 1px solid #2e58a6;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
@@ -43,36 +43,39 @@
   height: 40px;
   padding: 20px;
   padding-left: 10px;
-  width: 143px;
+  width: 153px;
 }
-.byAir_mode:hover, .byTrain_mode:hover{
-   cursor: pointer;
-   opacity: 1;
-   background: #cddbf5;
+.byAir_mode:hover,
+.byTrain_mode:hover {
+  cursor: pointer;
+  opacity: 1;
+  background: #cddbf5;
 }
-.activate{
+.activate {
   opacity: 1;
 }
-.byTrain_mode>img,.byAir_mode>img{
+.byTrain_mode > img,
+.byAir_mode > img {
   height: 25px;
 }
-.byAir_mode > p ,.byTrain_mode>p{
+.byAir_mode > p,
+.byTrain_mode > p {
   margin-bottom: 0px;
   margin-left: 10px;
   color: #2e58a6;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
-.getError_md{
+.getError_md {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 15px;
 }
-.getError_md>p{
+.getError_md > p {
   margin-bottom: 0px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-left: 10px;
-  color: #FF0707;
+  color: #ff0707;
 }
 .hover_togle_div {
   margin-top: 5px;
@@ -494,7 +497,7 @@
   padding: 70px 0px;
 }
 .why_ipur_md {
-  background-image: url('../../Assets/world_map_PNG1.png');
+  background-image: url("../../Assets/world_map_PNG1.png");
   background-repeat: no-repeat;
   width: 70%;
   margin: 0px auto;
@@ -529,7 +532,7 @@
 .why_ipurvey_steps > div > p {
   margin-top: 20px;
 }
-.why_ipurvey_steps > div>h6{
+.why_ipurvey_steps > div > h6 {
   font-weight: bold;
 }
 /* why ipurvey something special  */
@@ -550,7 +553,7 @@
 }
 .why_para_describe > p {
   color: #2e58a6;
-  width: 90%;
+  width: 92%;
   margin: 30px auto;
   text-align: center;
 }
@@ -629,6 +632,7 @@
   border: none;
   background-color: #2e58a6;
   box-sizing: 0px 3px 6px;
+  box-shadow: 0px 3px 6px #00000029;
   color: white;
   padding: 8px 25px;
   font-size: 0.9rem;
@@ -684,7 +688,7 @@
 .pm_md {
   width: 70%;
   max-width: 1226px;
-  background-image: url('../../Assets/Mask\ Group\ 4.png');
+  background-image: url("../../Assets/Mask\ Group\ 4.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -744,7 +748,7 @@
 /* trusted comp  */
 
 .trusted_md {
-  width: 70%;
+  width: 85%;
   max-width: 1226px;
   margin: 40px auto;
 }
@@ -763,8 +767,41 @@
   width: 5px;
 }
 .trusted_slides > div {
-  margin: 0px 20px;
+  margin: 0px 30px;
   width: 100px;
+}
+
+@media screen and (min-width: 1500px) {
+  ._home_video_div {
+    width: 1050px;
+  }
+  .no_flight_card h3 {
+    font-size: 3rem;
+  }
+  .no_flight_card p {
+    font-size: 1.2rem;
+  }
+  .why_ipurvey_steps > div > h6 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .why_ipurvey_steps > div {
+    width: 20%;
+  }
+  .why_ipurvey_steps > div > h6 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .why_ipurvey_steps > div {
+    width: 21.5%;
+  }
+  .why_ipurvey_steps > div > h6 {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -781,7 +818,7 @@
   .trusted_md {
     width: 90%;
   }
-  .started_form_container{
+  .started_form_container {
     margin-right: 0px;
   }
 }
@@ -795,7 +832,6 @@
   ._home_video_div {
     width: 95%;
   }
-
 }
 @media screen and (max-width: 991px) {
   .ipurveySpecial_steps {
@@ -926,7 +962,7 @@
   .why_ipur_sd > h4 {
     width: 100%;
   }
-  .hover_i{
+  .hover_i {
     left: -200px;
   }
 }
@@ -974,15 +1010,15 @@
   .no_flight_card p {
     font-size: 0.7rem;
   }
-  .started_form_container{
+  .started_form_container {
     width: 340px;
     padding: 20px 12px;
   }
-  .started_form > p{
+  .started_form > p {
     font-size: 1rem;
   }
-  .getError_md>p{
-    font-size: .8rem;
+  .getError_md > p {
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 360px) {
@@ -1005,20 +1041,20 @@
   .pm_right_sec2 {
     width: 100%;
   }
-  .selection_travel_mode{
+  .selection_travel_mode {
     width: 100%;
   }
-  .byAir_mode, .byTrain_mode{
+  .byAir_mode,
+  .byTrain_mode {
     width: 49%;
   }
-  .started_form > h1{
+  .started_form > h1 {
     font-size: 1.2rem;
   }
-  
 }
 @media screen and (max-width: 335px) {
-  .home_form_btn{
-    font-size: .7rem;
+  .home_form_btn {
+    font-size: 0.7rem;
   }
   .no_flight_card {
     width: 100px;

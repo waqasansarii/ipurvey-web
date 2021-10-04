@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 // assets
 import forgotMan from "../../Assets/undraw_forgot_password_gi2d.png";
 
@@ -10,7 +9,7 @@ const ForgotForm = () => {
         <div className="account_form_sd">
           <div className="form_head_md">
             <div>
-              <h4>Forgot Password?</h4>
+              <h4 className="fw-bold">Forgot Password?</h4>
             </div>
           </div>
           <div className='forgot_main_img'>

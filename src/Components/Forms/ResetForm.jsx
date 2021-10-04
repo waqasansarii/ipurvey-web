@@ -10,7 +10,7 @@ const ResetPasswordForm = () => {
         <div className="account_form_sd">
           <div className="form_head_md">
             <div>
-              <h4>Reset your password</h4>
+              <h4 className="fw-bold">Reset your password</h4>
             </div>
           </div>
           <div className='forgot_main_img'>

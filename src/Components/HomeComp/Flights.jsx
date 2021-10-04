@@ -9,7 +9,7 @@ const Flights = () => {
           <h4>Delayed Flights this Year</h4>
           <div className="no_flights_cards_md">
             <div className="no_flight_card">
-              <h3>2000+</h3>
+              <h3>5,000+</h3>
               <img src={path} alt="..." />
               <p>DOMASTIC FLIGHTS</p>
             </div>
@@ -19,7 +19,7 @@ const Flights = () => {
               <p>DOMASTIC TRAINS</p>
             </div>
             <div className="no_flight_card">
-              <h3>2000+</h3>
+              <h3>5,000+</h3>
               <img src={path} alt="..." />
               <p>DOMASTIC FLIGHTS</p>
             </div>

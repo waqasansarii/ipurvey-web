@@ -13,14 +13,22 @@
   width: 100%;
   height: max-content;
   background: white;
-  margin-top: 1rem;
-  padding: 3rem 0;
+  margin-top: 2px;
+  padding: 7rem 0 1rem 0;
 }
 
 .plan_container {
   width: 80%;
   height: max-content;
   margin: 0 auto;
+}
+
+.plan_container .otp_box {
+  padding: 0 60px;
+}
+
+.plan_col {
+  padding: 0;
 }
 
 .select_plan,
@@ -59,7 +67,7 @@
   height: 50px;
   border: none;
   box-shadow: none;
-  text-align: center;
+  text-align: left;
   background: transparent;
   outline: none;
   color: #2e58a6;
@@ -111,6 +119,7 @@
   padding: 20px 30px;
   background: white;
   color: #2e58a6;
+  border-radius: 5px;
   list-style-position: inside;
   /* list-style: url("../../Assets/Path\ 5451.svg"); */
 
@@ -166,12 +175,15 @@
 }
 
 .p_methods::-webkit-scrollbar-thumb {
-  background-color: #0075ff;
-  border-radius: 10px;
+  background: #2e58a6 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  opacity: 1;
 }
 
 .p_methods::-webkit-scrollbar-track {
-  background-color: #f5f5f5;
+  background: #748aa629 0% 0% no-repeat padding-box;
+  opacity: 0.1;
+  border-radius: 20px;
 }
 
 .p_methods p {
@@ -300,14 +312,32 @@
   text-align: center;
 }
 
+@media screen and (min-width: 1600px) {
+  .plan_container {
+width: 1300px;
+  }
+}
 
-@media screen and (max-width:1078px) {
-  .select_plan > div:nth-of-type(1),.p_text h2 {
+  @media screen and (max-width: 1110px) {
+  .plan_container .otp_box {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 1078px) {
+  .select_plan > div:nth-of-type(1),
+  .p_text h2 {
     font-size: 0.9rem;
   }
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width: 991px) {
+  .plan_hero {
+    padding: 0;
+  }
+  .plan_container {
+    padding-top: 110px;
+  }
   .select_plan {
     width: 100%;
   }
@@ -317,10 +347,66 @@
   .plan_content {
     margin: 20px 0;
   }
+  .select_plan,
+  .select_plan_payment {
+    width: 100%;
+  }
+  .plan_container .otp_box {
+    padding: 0 50px;
+  }
+  .otp_input {
+    width: 70px;
+  }
 }
 
-@media screen and (max-width:448px) {
+@media screen and (max-width: 768px) {
+  .tr_details_2 > div {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .plan_container .otp_box {
+    padding: 0 20px;
+  }
+  .otp_input {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .plan_select_bank {
+    padding: 20px 5px;
+  }
+}
+
+@media screen and (max-width: 448px) {
   .plan_container {
-    width: 90%;
+    width: 91%;
+  }
+  .select_plan,
+  .select_plan_payment {
+    padding: 20px 10px;
+  }
+  .plan_content {
+    margin: 20px auto;
+  }
+  .plan_container > .row {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .select_plan,
+  .select_plan_payment {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .plan_container .otp_box {
+    padding: 0 20px;
+  }
+  .otp_input {
+    width: 50px;
   }
 }

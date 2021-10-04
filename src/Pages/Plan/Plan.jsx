@@ -19,17 +19,20 @@ const Plan = () => {
   return (
     <React.Fragment>
       <div className="plan_section">
-        <div className="partner_header">
-          <h2>Subscribe to a plan</h2>
+      <div className="phead_top">
+          <div></div>
+          <div className="partner_header">
+            <h2>Subscribe to a plan</h2>
+          </div>
         </div>
         <div className="plan_hero">
           <div className="plan_container">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-6 plan_col">
                 <div className="select_plan">
                   <h2>Select a plan</h2>
                   <div>
-                    <select name="" id="">
+                    <select>
                       <option value="">
                         Frequent Rail & Flight Combo Plan
                       </option>

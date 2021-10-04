@@ -32,9 +32,11 @@ const Developers = () => {
                   </Link>
                 </div>
                 <div className="developers_btns">
-                  <button className="cus_blue_btn">
-                    View API Documentation
-                  </button>
+                  <Link to="/api-doc">
+                    <button className="cus_blue_btn">
+                      View API Documentation
+                    </button>
+                  </Link>
                   <button className="cus_wht_btn">Contact Us</button>
                 </div>
               </div>

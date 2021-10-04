@@ -110,7 +110,7 @@ const Stepper = () => {
                 </div>
               </div>
               <p className="step_val" style={{ opacity: 1 }}>
-                Eligible
+              Eligibility
               </p>
             </div>
             <div className="SecondStep_md">

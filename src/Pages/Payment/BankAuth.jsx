@@ -15,7 +15,9 @@ const BankAuth = () => {
           <div className="col-lg-12">
             <div className="pm_head">
               <div>
-               <Link to="payment/bank-auth"><img src={arrowLeft} alt="..." /></Link>
+                <Link to="payment/bank-auth">
+                  <img src={arrowLeft} alt="..." />
+                </Link>
                 <h2 className="ms-2">Authenticate your Login Credentials</h2>
               </div>
             </div>
@@ -40,10 +42,18 @@ const BankAuth = () => {
         </div>
         <div className="row">
           <div className="auth_tabs">
-            <button onClick={() => setShowTab(true)}>
+            <button
+              className={!showTab ? "auth_non_active_tab" : "auth_active_tab"}
+              onClick={() => setShowTab(true)}
+            >
               Internet Banking ID
             </button>
-            <button onClick={() => setShowTab(false)}>QR Code</button>
+            <button
+              className={showTab ? "auth_non_active_tab" : "auth_active_tab"}
+              onClick={() => setShowTab(false)}
+            >
+              QR Code
+            </button>
           </div>
         </div>
         {showTab ? (
@@ -79,7 +89,7 @@ const BankAuth = () => {
                 </Link>
               </div>
             </div>
-           
+
             <div className="row mt-1">
               <div className="col-lg-12">
                 <button className="home_form_btn">
@@ -92,7 +102,6 @@ const BankAuth = () => {
                 <Link className="hl_text">Cancel transcation</Link>
               </div>
             </div>
-          
           </>
         ) : (
           // <BankQrCode />
@@ -105,7 +114,7 @@ const BankAuth = () => {
                 <img src={qrCode} alt="..." />
               </div>
             </div>
-             
+
             <div className="row mt-3">
               <div className="col-lg-12">
                 <button className="home_form_btn">
@@ -118,7 +127,6 @@ const BankAuth = () => {
                 <Link className="hl_text">Cancel transcation</Link>
               </div>
             </div>
-          
           </>
         )}
       </div>

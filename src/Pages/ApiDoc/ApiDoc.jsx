@@ -4,6 +4,8 @@ import "./ApiDoc.css";
 import logo from "../../Assets/iPurvery Logo PNG.svg";
 import searchIcon from "../../Assets/Icon feather-search.png";
 import copyIcon from "../../Assets/Icon material-content-copy.svg";
+import { api_content } from "./ApiDocData";
+import Footer from "../../Layout/Footer";
 const options = {
   list1: {
     text: "Culpa eaque qui nostrum",
@@ -39,15 +41,19 @@ const options = {
     text: "Rerum corrupti deserunt",
   },
 };
+
 const ApiDoc = () => {
   const [active, setActive] = useState("list1");
 
   return (
     <React.Fragment>
       <div className="api_doc_section">
-        <div className="api_doc_header">
-          <h2>Api Documentation</h2>
-          <span>Help?</span>
+        <div className="phead_top">
+          <div></div>
+          <div className="api_doc_header">
+            <h2>Api Documentation</h2>
+            <span>Help?</span>
+          </div>
         </div>
         <div className="api_doc_hero">
           <div className="api_container">
@@ -59,8 +65,8 @@ const ApiDoc = () => {
                       <img src={logo} alt="..." />
                     </div>
                   </div>
-                  <div className="row mt-3">
-                    <div className="col-lg-12">
+                  <div className="row mt-3 w-100">
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-12">
                       <div className="ps_input1">
                         <input type="text" placeholder="Search a bank" />
                         <img
@@ -170,6 +176,7 @@ const ApiDoc = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </React.Fragment>
   );
 };

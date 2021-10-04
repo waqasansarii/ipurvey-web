@@ -11,7 +11,7 @@ const SelectFlight = ({ nextBtn, backBtn }) => {
     <div className="steper_form_container">
       <div className="stepper_form_md">
         <div className="stepper_form">
-          <h2>What's the departure date?</h2>
+          <h2>Please select your flight</h2>
           <ul className="flights_list">
             {[0, 1, 2, 3, 4].map((i) => (
               <li
@@ -29,8 +29,8 @@ const SelectFlight = ({ nextBtn, backBtn }) => {
                   id="flight"
                 />
                 <div className="flight_time">
-                  9:00 <img src={plan} alt="..." />
-                  12:00
+                  19:00 <img src={plan} alt="..." />
+                  23:00
                 </div>
                 <p className="flight_landed">Qatar Airways</p>
                 <p className="flight_code">QA4159</p>

@@ -1,7 +1,7 @@
 import React from 'react'
 import calender from '../../Assets/Icon awesome-calendar-alt.png'
 import arrow from '../../Assets/Icon feather-arrow-rightw.png'
-import headImg from '../../Assets/undraw_Order_confirmed_re_g0if.png'
+import headImg from '../../Assets/undraw_Order_confirmed_re_g0if_light.png'
 
 const EmailForm = ({nextBtn,backBtn}) => {
   return (

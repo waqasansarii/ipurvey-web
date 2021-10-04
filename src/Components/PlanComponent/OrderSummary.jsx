@@ -3,7 +3,7 @@ import React from "react";
 const OrderSummary = (props) => {
   return (
     <>
-      <div className="row mb-3">
+      <div className="row mb-3 order_summary">
         <div className="col-lg-12">
           <div className="tr_details_1">
             <span>{props.topText}</span>

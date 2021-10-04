@@ -12,31 +12,31 @@ const PartnerStarted = () => {
             </div>
           </div>
           <div className="row gy-2 align-items-center justify-content-center">
-            <div className="co-12 col-sm-12 col-md-12 col-lg-3">
+            <div className="co-12 col-sm-12 col-md-3 col-lg-3">
               <div className="started_card">
                 <img src={getImg} alt="" />
                 <h2>Step Title</h2>
                 <p>Lorem ipsum dolor sit amet</p>
               </div>
             </div>
-            <div className="col-lg-1">
+            <div className="col-md-1 col-lg-1">
               <div className="started_arrow">
                 <img src={rightArrow} alt="" />
               </div>
             </div>
-            <div className="co-12 col-sm-12 col-md-12 col-lg-3">
+            <div className="co-12 col-sm-12 col-md-3 col-lg-3">
               <div className="started_card">
                 <img src={getImg} alt="" />
                 <h2>Step Title</h2>
                 <p>Lorem ipsum dolor sit amet</p>
               </div>
             </div>
-            <div className="col-lg-1">
+            <div className="col-md-1 col-lg-1">
               <div className="started_arrow">
                 <img src={rightArrow} alt="" />
               </div>
             </div>
-            <div className="co-12 col-sm-12 col-md-12 col-lg-3">
+            <div className="co-12 col-sm-12 col-md-3 col-lg-3">
               <div className="started_card">
                 <img src={getImg} alt="" />
                 <h2>Step Title</h2>

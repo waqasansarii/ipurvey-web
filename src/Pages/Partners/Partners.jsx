@@ -4,6 +4,7 @@ import PartnerHeader from "./PartnerHeader";
 import PartnerHero from "./PartnerHero";
 import PartnersPlan from "./PartnersPlan";
 import PartnerStarted from "./PartnerStarted";
+import Footer from "../../Layout/Footer";
 const Partners = () => {
   return (
     <React.Fragment>
@@ -13,6 +14,7 @@ const Partners = () => {
         <PartnersPlan />
         <PartnerStarted />
       </div>
+      <Footer />
     </React.Fragment>
   );
 };

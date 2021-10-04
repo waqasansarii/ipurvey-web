@@ -11,7 +11,7 @@ const StepperSignup = () => {
         <div className="account_form_sd">
           <div className="form_head_md">
             <div>
-              <h4>Sign Up for iPurvey!</h4>
+              <h4><b>Sign Up for iPurvey!</b></h4>
             </div>
           </div>
 

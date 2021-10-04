@@ -18,7 +18,7 @@
   /* border: 2px solid red; */
 }
 .account_form_container {
-  width: 330px;
+  width: 370px;
   padding: 20px 25px;
   background-color: rgba(255, 255, 255, 0.452);
   box-shadow: 0px 3px 10px #d6d5d5;
@@ -156,7 +156,7 @@
     margin: 15px auto;
 }
 .form_blue_para{
-    font-size: .7rem;
+    font-size: .8rem;
     color: #2E58A6;
     margin-bottom: 5px;
 }

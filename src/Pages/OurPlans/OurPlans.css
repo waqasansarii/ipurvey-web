@@ -32,6 +32,7 @@
   width: 100%;
   background: white;
   height: 70px;
+  text-align: right;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -93,7 +94,6 @@
   font-weight: 600;
   font-size: 0.7rem;
   margin: 0;
-
 }
 
 .feature_item_box h2 {
@@ -126,8 +126,41 @@
   margin: 10px auto;
 }
 
+@media screen and (min-width: 1500px) {
+  .feature_item_box h5 {
+    font-size: 1rem;
+  }
+  .feature_item_box .fib_head {
+    padding-top: 8px;
+  }
+}
 
-@media screen and (max-width:991px) {
+@media screen and (min-width: 1800px) {
+  .feature_item_box h5 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 1128px) {
+  .our_plan_col {
+    overflow-x: auto;
+  }
+  .our_plan_row {
+    width: 900px;
+  }
+  .our_plan_col::-webkit-scrollbar {
+    width: 1px;
+    background-color: transparent;
+  }
+  .popular_text {
+    top: 0px;
+  }
+  .feature_item_box h2 {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
   .plans_scroll {
     display: flex;
     flex-direction: row !important;

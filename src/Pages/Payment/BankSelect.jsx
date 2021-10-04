@@ -72,7 +72,7 @@ const BankSelect = (props) => {
         </div>
         <div className="row bank_select_options">
           {Object.entries(options).map((el) => (
-            <div className={props.col ? "col-lg-4" : "col-6 col-sm-6 col-md-6 col-lg-6"}>
+            <div className={props.col ? "col-6 col-sm-4 col-md-4 col-lg-4" : "col-6 col-sm-6 col-md-6 col-lg-6"}>
               <div
                 onClick={() => setActive(el[0])}
                 className={

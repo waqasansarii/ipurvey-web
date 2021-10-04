@@ -1,25 +1,25 @@
-.w_i_30{
+.w_i_30 {
   width: 30px;
   background: #2e58a6;
 }
-.w_i_70{
-    width: 70px;
+.w_i_70 {
+  width: 70px;
   background: #2e58a6;
 }
 
-.w_i_100{
-    width: 100px;
+.w_i_100 {
+  width: 100px;
   background: #2e58a6;
 }
-.w_i_130{
-    width: 130px;
+.w_i_130 {
+  width: 130px;
 }
-.greenBg{
-    background: #50C900;
+.greenBg {
+  background: #50c900;
 }
 
-.blueBg{
-    background: #2e58a6;
+.blueBg {
+  background: #2e58a6;
 }
 .claim_stepper_container {
   width: 400px;
@@ -50,16 +50,16 @@
   opacity: 0.6;
 }
 .step_dot {
-  width: 16px;
-  height: 16px;
+  width: 13px;
+  height: 13px;
   border: 2px solid #9eaecb;
   border-radius: 50%;
   /* margin: 0px 10px; */
   margin-left: 10px;
 }
-.step_dot>img{
-    width: 11px;
-    margin-top: -12px;
+.step_dot > img {
+  width: 11px;
+  margin-top: -12px;
 }
 .clr_dot {
   background: #2e58a6 0% 0% no-repeat padding-box;
@@ -88,7 +88,7 @@
   margin-left: -40px;
 }
 .step_val {
-  margin-top: 5px;
+  margin-top: 10px;
   /* margin-left: -10px; */
 }
 
@@ -99,7 +99,7 @@
   /* background: #ffffff 0% 0% no-repeat padding-box; */
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 10px;
-  padding: 20px 20px;
+  padding: 25px 25px;
   width: 400px;
   margin-top: 15px;
   position: relative;
@@ -113,7 +113,7 @@
   outline: none;
   padding: 9px;
   width: 100%;
-  padding-left: 30px;
+  padding-left: 36px;
   color: #2e58a6;
   opacity: 0.5;
   background-color: #e6ecf8;
@@ -199,6 +199,7 @@
   border: none;
   outline: none;
   padding: 9px;
+  text-align: center;
   width: 130px;
   margin-top: 10px;
 }
@@ -266,8 +267,8 @@
   overflow: auto;
   padding: 10px 5px;
   padding-top: 0px;
-  background: #E6ECF8 0% 0% no-repeat padding-box;
-border-radius: 5px;
+  background: #e6ecf8 0% 0% no-repeat padding-box;
+  border-radius: 5px;
 }
 .flights_list::-webkit-scrollbar {
   width: 3px;
@@ -294,16 +295,49 @@ border-radius: 5px;
   background: #e6ecf8 0% 0% no-repeat padding-box;
   cursor: pointer;
 }
-.flight_selected{
-    box-shadow: 0px 3px 6px #00000029;
-border: 1px solid #2E58A6;
+.flight_selected {
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #2e58a6;
 }
 .flight_li input {
   border: none;
   outline: none;
-  box-shadow: inset 0 1px 2px rgba(83, 83, 83, 0.39), 0 -1px 0px #FFF, 0 1px 0 #FFF;
-
+  box-shadow: inset 0 1px 2px rgba(83, 83, 83, 0.39), 0 -1px 0px #fff,
+    0 1px 0 #fff;
 }
+
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  /* box-shadow: inset 0 1px 2px rgba(83, 83, 83, 0.39), 0 -1px 0px #fff,
+    0 1px 0 #fff; */
+  border: none !important;
+  background: white;
+  -webkit-appearance: none;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:checked:active {
+  /* background: url("../../Assets/checkbox_icon.png") center no-repeat,
+    -webkit-linear-gradient(white, white); */
+  background: #B9C7E2;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 0;
+}
+
+input[type="checkbox"]:active:not(:disabled) {
+  height: 20px;
+  width: 20px;
+}
+
+input[type="checkbox"]:not(:disabled) {
+  box-shadow: inset 0 1px 2px rgba(83, 83, 83, 0.39), 0 -1px 0px #fff,
+    0 1px 0 #fff;
+}
+
 .flight_li p {
   font-size: 0.9rem;
   color: #2e58a6;
@@ -318,197 +352,216 @@ border: 1px solid #2E58A6;
 }
 
 /* email form  */
-.stpr_email_para{
-    font-size: .9rem;
-    color: #2E58A6;
-    margin-bottom: 15px !important;
+.stpr_email_para {
+  font-size: 0.9rem;
+  color: #2e58a6;
+  margin-bottom: 15px !important;
 }
 
 /* one step away  */
 
-.accept_privacy{
-    display: flex;
-    align-items: flex-start;
+.accept_privacy {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.accept_privacy > input {
+  margin-top: 4px;
+}
+.accept_privacy > p {
+  color: #2e58a6;
+  font-size: 0.8rem;
+  margin-left: 10px;
+  text-align: start;
+}
+.refrence_num {
+  margin-bottom: 15px !important;
+}
+.stp_link {
+  color: #2e58a6;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.stp_link2 {
+  color: #2e58a6;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.stepr_sort_code {
+  display: flex;
+  justify-content: space-between;
+}
+.stepr_sort_code > input {
+  width: 48%;
+}
+
+@media (max-width: 860px) {
+  .home_steper_animation .animation_para_div {
+    display: none;
+  }
+}
+@media (max-width: 430px) {
+  .steper_form_container {
+    width: 350px;
+    margin: 0px auto;
     margin-top: 20px;
+  }
+  .selection_travel_mode {
+    width: 100%;
+  }
+  .byAir_mode,
+  .byTrain_mode {
+    width: 148px;
+  }
+  .claimSteps_head {
+    width: 350px;
+    margin: 0px auto;
+  }
+  .dflt_step_line {
+    width: 105px;
+  }
+  .w_i_30 {
+    width: 20px;
+  }
+  .w_i_70 {
+    width: 50px;
+  }
+  .w_i_100 {
+    width: 70px;
+  }
+  .w_i_130 {
+    width: 105px;
+  }
+  .stepper_form > h2 {
+    font-size: 1.1rem;
+  }
+  .step_val,
+  .stpr_email_para,
+  .accept_privacy > p,
+  .stp_link,
+  .stp_link2,
+  .stp_back,
+  .stp_para > p {
+    font-size: 0.75rem;
+  }
+  .flight_li p,
+  .flight_time {
+    font-size: 0.7rem;
+  }
+  .stp_btns {
+    width: 200px;
+  }
+  .stepper_form .home_form_btn {
+    width: 200px;
+  }
 }
-.accept_privacy>input{
-    margin-top: 4px;
-}
-.accept_privacy>p{
-    color: #2E58A6;
-    font-size: .9rem;
-    margin-left: 10px;
-    text-align: start;
-}
-.refrence_num{
-    margin-bottom: 15px !important;
-}
-.stp_link{
-    color: #2E58A6;
-    font-size: .9rem;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.stp_link2{
-    color: #2E58A6;
-    font-size: .9rem;
-    font-weight: bold;
-}
-
-.stepr_sort_code{
-    display: flex;
-    justify-content: space-between;
-}
-.stepr_sort_code>input{
+@media (max-width: 370px) {
+  .steper_form_container {
+    width: 320px;
+  }
+  .byTrain_mode > img,
+  .byAir_mode > img {
+    height: 22px;
+  }
+  .claimSteps_head {
+    width: 320px;
+  }
+  .dflt_step_line {
+    width: 95px;
+  }
+  .w_i_30 {
+    width: 20px;
+  }
+  .w_i_70 {
+    width: 40px;
+  }
+  .w_i_100 {
+    width: 60px;
+  }
+  .w_i_130 {
+    width: 95px;
+  }
+  .stp_inp > input {
+    font-size: 0.8rem;
+  }
+  .stp_inp > img {
+    top: 10px;
+  }
+  .stp_inp > input::placeholder {
+    color: #2e58a6;
+    font-size: 0.7rem;
+  }
+  .steper_form_container .byAir_mode > p,
+  .byTrain_mode > p {
+    font-size: 0.75rem;
+  }
+  .steper_form_container .selection_travel_mode {
+    width: 100%;
+  }
+  .steper_form_container .byAir_mode,
+  .byTrain_mode {
     width: 48%;
+  }
 }
-
-
-@media (max-width:860px){
-    .home_steper_animation .animation_para_div{
-       display: none;
-    }
+@media (max-width: 340px) {
+  .steper_form_container {
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .claimSteps_head {
+    width: 100%;
+  }
+  .dflt_step_line {
+    width: 75px;
+  }
+  .w_i_30 {
+    width: 10px;
+  }
+  .w_i_70 {
+    width: 30px;
+  }
+  .w_i_100 {
+    width: 50px;
+  }
+  .w_i_130 {
+    width: 75px;
+  }
+  .stepper_form > h2 {
+    font-size: 0.9rem;
+  }
+  .step_val {
+    font-size: 0.65rem;
+  }
 }
-@media (max-width:430px){
-    .steper_form_container{
-        width: 350px;
-        margin: 0px auto;
-        margin-top: 20px;
-    }
-    .claimSteps_head{
-        width: 350px;
-        margin: 0px auto;
-    }
-    .dflt_step_line{
-        width: 105px;
-    }
-    .w_i_30{
-        width: 20px;
-    }
-    .w_i_70{
-        width: 50px;
-    }
-    .w_i_100{
-        width: 70px;
-    }
-    .w_i_130{
-        width: 105px;
-    }
-    .stepper_form > h2{
-        font-size: 1.1rem;
-    }
-    .step_val,.stpr_email_para,.accept_privacy>p,.stp_link,.stp_link2,.stp_back,.stp_para > p{
-        font-size: .75rem;
-    }
-    .flight_li p,.flight_time{
-        font-size: .7rem;
-    }
-    .stp_btns{
-        width: 200px;
-    }
-   .stepper_form .home_form_btn{
-      width: 200px;
-    }
-}
-@media (max-width:370px){
-    .steper_form_container{
-        width: 320px;
-    }
-    .claimSteps_head{
-        width: 320px;
-    }
-    .dflt_step_line{
-        width: 95px;
-    }
-    .w_i_30{
-        width: 20px;
-    }
-    .w_i_70{
-        width: 40px;
-    }
-    .w_i_100{
-        width: 60px;
-    }
-    .w_i_130{
-        width: 95px;
-    }
-    .stp_inp > input{
-        font-size: .8rem;
-    }
-    .stp_inp > img{
-        top: 10px;
-    }
-    .stp_inp > input::placeholder {
-        color: #2e58a6;
-        font-size: 0.7rem;
-      }
-     .steper_form_container .byAir_mode > p, .byTrain_mode>p{
-          font-size: .75rem;
-      }
-    .steper_form_container  .selection_travel_mode{
-          width: 100%;
-      }
-     .steper_form_container .byAir_mode, .byTrain_mode{
-          width: 49%;
-      }
-}
-@media (max-width:340px){
-    .steper_form_container{
-        width: 100%;
-        padding: 20px 10px;
-    }
-    .claimSteps_head{
-        width: 100%;
-    }
-    .dflt_step_line{
-        width: 75px;
-    }
-    .w_i_30{
-        width: 10px;
-    }
-    .w_i_70{
-        width: 30px;
-    }
-    .w_i_100{
-        width: 50px;
-    }
-    .w_i_130{
-        width: 75px;
-    }
-    .stepper_form > h2{
-        font-size: .9rem;
-    }
-    .step_val{
-        font-size: .65rem;
-    }
-}
-@media (max-width:300px){
-    .steper_form_container{
-        width: 260px;
-    }
-    .claimSteps_head{
-        width: 260px;
-    }
-    .dflt_step_line{
-        width: 60px;
-    }
-    .w_i_30{
-        width: 10px;
-    }
-    .w_i_70{
-        width: 25px;
-    }
-    .w_i_100{
-        width: 40px;
-    }
-    .w_i_130{
-        width: 60px;
-    }
-    .stepper_form > h2{
-        font-size: .9rem;
-    }
-    .step_val{
-        font-size: .65rem;
-    }
+@media (max-width: 300px) {
+  .steper_form_container {
+    width: 260px;
+  }
+  .claimSteps_head {
+    width: 260px;
+  }
+  .dflt_step_line {
+    width: 60px;
+  }
+  .w_i_30 {
+    width: 10px;
+  }
+  .w_i_70 {
+    width: 25px;
+  }
+  .w_i_100 {
+    width: 40px;
+  }
+  .w_i_130 {
+    width: 60px;
+  }
+  .stepper_form > h2 {
+    font-size: 0.9rem;
+  }
+  .step_val {
+    font-size: 0.65rem;
+  }
 }

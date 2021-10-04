@@ -1,9 +1,16 @@
-import React from "react";
+import React,{useState} from "react";
 // assets
 import email from "../../Assets/Icon ionic-ios-mail@2x.png";
 import drag from '../../Assets/drag.png'
 
 const BeAPartForm = () => {
+
+  const [img,setImg] = useState('')
+  const handleImageUpload = e=>{
+     const url = URL.createObjectURL(e.target.files[0])
+     setImg(url)
+  }
+
   return (
     <div className="beA_part_container">
       <div className="beA_part_md">
@@ -45,7 +52,13 @@ const BeAPartForm = () => {
                     <input type="email" placeholder='Email Address' />
                     <input type="text" placeholder='Job Position Interested' />
                     <div className="dragNdrop">
-                        <img src={drag} alt="..." />
+                      <label htmlFor="drag">
+                        <input type="file" name="drag" id="drag" onChange={handleImageUpload} style={{display:'none'}} />
+                      {!img?
+                        <img src={drag} alt="..."  />
+                     : null }
+                      </label>
+                      {img? <img src={img} alt='...' /> : null}
                     </div>
                     <button>Send</button>
                 </form>

@@ -22,7 +22,18 @@
 .terms_top_main {
   width: 58%;
   margin-left: 130px;
+  /* max-width: 1200px; */
+  /* margin: 0px auto; */
   margin-top: 30px;
+}
+@media(min-width:1500px){
+  .terms_top_main {
+    width: 100%;
+    /* margin-left: 130px; */
+    max-width: 1200px;
+    margin: 0px auto;
+    margin-top: 30px;
+  }
 }
 .terms_top_main > p {
   color: #2e58a6;

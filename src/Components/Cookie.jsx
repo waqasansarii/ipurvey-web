@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import cokkie from "../Assets/undraw_cookie_love_ulvn@2x.png";
+import cokkie from "../Assets/undraw_cookie_love_ulvn_light.png";
 import crosslight from "../Assets/Path 5674.png";
 
 const Cokkie = () => {
@@ -49,14 +49,14 @@ const Cokkie = () => {
                             style={{
                                 border: "1px solid white",
                                 backgroundColor: "transparent",
-                                padding: "5px 18px",
+                                padding: "8px 18px",
                                 color: 'white'
                             }}
                             onClick={() => {
                                 setShow(true);
                             }}
                         >
-                            No I don't Agree!
+                            More Information
                         </button>
                         <button
 

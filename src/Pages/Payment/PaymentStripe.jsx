@@ -30,7 +30,7 @@ const PaymentStripe = () => {
           <div className="col-lg-12">
             <div className="ps_input1">
               <input type="text" placeholder="Card Number" />
-              <img src={payCards} alt="..." />
+              <img className="pay_cards" src={payCards} alt="..." />
             </div>
           </div>
         </div>

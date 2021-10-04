@@ -13,8 +13,9 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 40px;
+    align-items: center;
 }
-.developers_btns>button{
+.developers_btns button{
     width: 300px;
     margin: 10px auto;
     padding: 12px ;
@@ -138,7 +139,7 @@
     .developer_sd{
         padding: 0px 15px;
     }
-    .developers_btns>button{
+    .developers_btns button{
         width: 100%;
     }
 }

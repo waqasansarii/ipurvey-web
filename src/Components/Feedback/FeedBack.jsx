@@ -94,7 +94,7 @@ const FeedBack = () => {
         <div className="feedback_btn"  onClick={() => {
             !chatOpen ? handleChatOpen() : hideChat();
           }}>
-          <img src={arrow} alt="..." />
+          <img style={{transform: chatOpen ? "rotate(-90deg)" : "rotate(90deg)"}} src={arrow} alt="..." />
           <span>Feedback</span>
         </div>
       </div>

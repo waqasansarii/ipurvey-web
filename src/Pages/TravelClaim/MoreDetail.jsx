@@ -14,7 +14,7 @@ const MoreDetail = ({ nextBtn, backBtn }) => {
       <div className="steper_form_container">
         <div className="stepper_form_md">
           <div className="stepper_form">
-            <h2>What's the departure date?</h2>
+            <h2>Just a few more details!</h2>
             <p className="flight_type">Flight Type</p>
             <div className="selection_travel_mode">
               <div
@@ -35,7 +35,7 @@ const MoreDetail = ({ nextBtn, backBtn }) => {
                 onClick={() => handleTravelMode("twoWay")}
               >
                 <img src={twoPlan} alt="..." />
-                <p>Two Way</p>
+                <p>Round Trip</p>
               </div>
             </div>
             <div className="flight_num ">

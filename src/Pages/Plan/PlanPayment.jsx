@@ -37,8 +37,11 @@ const PlanPayment = () => {
   return (
     <React.Fragment>
       <div className="plan_section">
-        <div className="partner_header">
-          <h2>Subscribe to a plan</h2>
+        <div className="phead_top">
+          <div></div>
+          <div className="partner_header">
+            <h2>Subscribe to a plan</h2>
+          </div>
         </div>
         <div className="plan_hero">
           <div className="plan_container">
@@ -47,7 +50,7 @@ const PlanPayment = () => {
                 <div className="select_plan_payment">
                   <img className="mt-3 mb-2" src={planImg} alt="..." />
                   <h2>Payment Details</h2>
-               
+
                   <div className="row w-100">
                     <div className="col-lg-12">
                       <div className="type_box">
@@ -73,7 +76,7 @@ const PlanPayment = () => {
                       </div>
                     </div>
                   </div>
-               
+
                   <div className="row w-100 mt-4">
                     <div className="col-lg-12">
                       <div className="type_box">
@@ -86,10 +89,12 @@ const PlanPayment = () => {
                         </div>
                         <div className="d-flex justify-content-between mt-2">
                           <span>IPurvey per transaction fee</span>
-                          <span style={{opacity:"0.9"}}>£ 0.25</span>
+                          <span style={{ opacity: "0.9" }}>£ 0.25</span>
                         </div>
                         <div className="d-flex justify-content-between mt-2">
-                          <span style={{opacity:"0.9"}}>Waived for subscribed customers</span>
+                          <span style={{ opacity: "0.9" }}>
+                            Waived for subscribed customers
+                          </span>
                           {/* <span>98765432</span> */}
                         </div>
                         <hr />
@@ -100,7 +105,6 @@ const PlanPayment = () => {
                       </div>
                     </div>
                   </div>
-               
                 </div>
               </div>
 
@@ -123,7 +127,11 @@ const PlanPayment = () => {
                         path="/planpayment/bank-auth"
                         component={PlanAuth}
                       />
-                      <Route exact path="/planpayment/bank-otp" component={PlanOtp} />
+                      <Route
+                        exact
+                        path="/planpayment/bank-otp"
+                        component={PlanOtp}
+                      />
                       <Route
                         exact
                         path="/planpayment/bank-type"

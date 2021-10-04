@@ -29,17 +29,17 @@ const WhyIpurvey = () => {
               </div>
               <div>
                   <img src={img2} alt="..." />
-                  <h6>No Paperwork</h6>
+                  <h6>Secure Transactions</h6>
                   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
               </div>
               <div>
                   <img src={img3} alt="..." />
-                  <h6>No Paperwork</h6>
+                  <h6>Quick and easy</h6>
                   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
               </div>
               <div>
                   <img src={img4} alt="..." />
-                  <h6>No Paperwork</h6>
+                  <h6>Seamless Payments</h6>
                   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
               </div>
           </div>

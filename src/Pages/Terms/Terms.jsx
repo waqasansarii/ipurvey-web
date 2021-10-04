@@ -1,21 +1,14 @@
-import React, { useLayoutEffect, useState } from "react";
-import arrow from "../../Assets/Icon feather-arrow-right@2x.png";
-import { Link } from "react-router-dom";
+import React, { useLayoutEffect } from "react";
 import "./Terms.css";
 import SubNav from "../../Layout/SubNav";
 import rightImg from "../../Assets/undraw_contract_uy56.png";
 import TermsDetail from "./TermsDetail";
 import Footer from "../../Layout/Footer";
 
-
-
 const TermAndCond = () => {
-
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  
 
   return (
     <div className="terms_and_cond_container">
