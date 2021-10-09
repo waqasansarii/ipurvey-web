@@ -142,7 +142,7 @@
   margin-bottom: 15px;
 }
 .stp_btns {
-  width: 200px;
+  width: 220px;
   margin: 20px auto;
 }
 
@@ -460,10 +460,10 @@ input[type="checkbox"]:not(:disabled) {
     font-size: 0.7rem;
   }
   .stp_btns {
-    width: 200px;
+    width: 220px;
   }
   .stepper_form .home_form_btn {
-    width: 200px;
+    width: 220px;
   }
 }
 @media (max-width: 370px) {

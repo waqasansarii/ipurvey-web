@@ -46,7 +46,7 @@ const OneStepAway = ({ nextBtn }) => {
           </div>
           <div className="stp_btns">
             <button className="home_form_btn" onClick={nextBtn}>
-              Sign Up iPurvey <img src={arrow} alt="..." />{" "}
+              Sign Up to iPurvey <img src={arrow} alt="..." />{" "}
             </button>
             <button className="stp_back">
               Already a member?

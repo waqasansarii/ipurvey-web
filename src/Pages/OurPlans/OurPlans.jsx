@@ -47,7 +47,7 @@ const our_planData = [
   },
 ];
 const OurPlans = () => {
-  const [activePlan, setActivePlan] = useState("");
+  const [activePlan, setActivePlan] = useState("2");
 
   const handleSelect = (e) => {
     setActivePlan(e.id);

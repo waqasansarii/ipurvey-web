@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import cokkie from "../Assets/undraw_cookie_love_ulvn_light.png";
 import crosslight from "../Assets/Path 5674.png";
+import { useHistory } from "react-router";
 
 const Cokkie = () => {
 
@@ -11,8 +12,14 @@ const Cokkie = () => {
             easing: 'ease'
         })
     }, [])
-
+    
+    const history = useHistory()
     const [show, setShow] = useState(false);
+    
+    const handleMoreInfo = () =>{
+        setShow(true)
+        history.push('/privacy')
+    }
     return (
         <div
             data-aos="fade-up"
@@ -53,7 +60,7 @@ const Cokkie = () => {
                                 color: 'white'
                             }}
                             onClick={() => {
-                                setShow(true);
+                                handleMoreInfo();
                             }}
                         >
                             More Information
