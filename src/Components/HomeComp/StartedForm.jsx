@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 // assets
 import topImg from "../../Assets/undraw_connected_world_wuay.png";
-import plan from "../../Assets/Group 3468.png";
+import plan from "../../Assets/Icon ionic-ios-airplane.png";
 import train from "../../Assets/Group 3465.png";
 import error from "../../Assets/Icon material-error.png";
 import hover from "../../Assets/Component 41 – 1.png";
@@ -29,7 +29,7 @@ const StartedForm = () => {
               }
               onClick={() => handleTravelMode("byAir")}
             >
-              <img src={plan} alt="..." />
+              <img className='planR' src={plan} alt="..." />
               <p>By Air</p>
             </div>
             <div

@@ -51,8 +51,14 @@
   opacity: 1;
   background: #cddbf5;
 }
+.planR{
+  transform: rotate(270deg);
+}
 .activate {
   opacity: 1;
+}
+.activate p{
+  font-weight: 600;
 }
 .byTrain_mode > img,
 .byAir_mode > img {
@@ -115,49 +121,6 @@
   margin-bottom: 0px;
 }
 
-/* .home_form_div_md input,
-.home_form_div_md select {
-  width: 300px;
-  border: none;
-  outline: none;
-  padding: 6px 12px;
-  background-color: #f0f4fc;
-  margin-top: 10px;
-  color: #2e58a6;
-  opacity: 0.5;
-  font-size: 0.8rem;
-}
-.seleCt_travel_mode > p {
-  color: #2e58a6;
-  font-size: 0.8rem;
-  margin-top: 10px;
-  margin-bottom: 0px;
-}
-.slect_tab {
-  display: flex;
-  justify-content: center;
-} */
-/* .travel_tab label {
-  padding: 10px 30px;
-  margin: 15px;
-  margin-bottom: 5px;
-  border: 2px solid white;
-  border-radius: 4px;
-  opacity: 0.5;
-  background-color: #f0f4fc;
-  box-shadow: 0px 3px 6px rgb(85, 84, 84);
-}
-.tr_tab > p {
-  color: #2e58a6;
-  font-size: 0.8rem;
-  margin-bottom: 0px;
-} */
-/* #box1:checked + label,
-#box2:checked + label {
-  box-shadow: 0px 3px 6px rgb(85, 84, 84);
-  border: 2px solid #2e58a6;
-  opacity: 1;
-} */
 .home_form_btn {
   background-color: #2e58a6;
   color: white;
@@ -191,7 +154,7 @@
 
 /* form two  */
 
-.loading_div {
+/* .loading_div {
   margin-top: 70px;
 }
 .loading_div > p {
@@ -199,7 +162,7 @@
   font-size: 0.8rem;
   margin-bottom: 0px;
   margin-top: 10px;
-}
+} */
 
 /* form three  */
 

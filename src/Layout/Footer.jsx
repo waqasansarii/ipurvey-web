@@ -17,12 +17,12 @@ const Footer = () => {
               <h6>iPurvey</h6>
               <ul className="link_ul">
                 <li>
-                  <Link className="f_links" to="/">
+                  <Link className="f_links" to="/account-info">
                     Your Account{" "}
                   </Link>
                 </li>
                 <li>
-                  <Link className="f_links" to="/about">
+                  <Link className="f_links" to="/contact">
                     Media Center{" "}
                   </Link>
                 </li>
@@ -32,7 +32,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className="f_links" to="/contact">
+                  <Link className="f_links" to="/partners">
                     Partners
                   </Link>
                 </li>
@@ -42,22 +42,22 @@ const Footer = () => {
               <h6>Support</h6>
               <ul className="link_ul">
                 <li>
-                  <Link className="f_links" to="/">
+                  <Link className="f_links" to="/about">
                     About Us{" "}
                   </Link>
                 </li>
                 <li>
-                  <Link className="f_links" to="/about">
+                  <Link className="f_links" to="/contact">
                     Contact Us{" "}
                   </Link>
                 </li>
                 <li>
-                  <Link className="f_links" to="blog">
+                  <Link className="f_links" to="/contact">
                     Help Center
                   </Link>
                 </li>
                 <li>
-                  <Link className="f_links" to="/contact">
+                  <Link className="f_links" to="/faq">
                     FAQs
                   </Link>
                 </li>
@@ -67,17 +67,17 @@ const Footer = () => {
               <h6>Legal</h6>
               <ul className="link_ul">
                 <li>
-                  <Link className="f_links" to="/">
+                  <Link className="f_links" to="/privacy">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link className="f_links" to="/about">
+                  <Link className="f_links" to="/terms">
                     Terms of Service
                   </Link>
                 </li>
                 <li>
-                  <Link className="f_links" to="blog">
+                  <Link className="f_links" to="/contact">
                     Data policy
                   </Link>
                 </li>

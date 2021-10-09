@@ -27,7 +27,7 @@ const DashBoard = () => {
               <div className="db_table_md">
                 <div>
                   <div className="db_table_head">
-                    <h4>YOUR RECENTLY TRAVLE BOOKINGS</h4>
+                    <h4>YOUR TRAVEL BOOKINGS</h4>
                   </div>
                   <GroupedBar />
                 </div>
@@ -35,7 +35,7 @@ const DashBoard = () => {
               <div className="db_table_md">
                 <div>
                   <div className="db_table_head">
-                    <h4>YOUR RECENTLY TRAVLE BOOKINGS</h4>
+                    <h4>YOUR RECENT TRAVEL BOOKINGS</h4>
                     <Link className="link">
                       View all <img src={arrow} alt="..." />
                     </Link>

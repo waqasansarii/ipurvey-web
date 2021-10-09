@@ -51,7 +51,7 @@ const ChatBox = () => {
                   <img className="smCartoonImg" src={user1} alt="img" />
                 </li>
                 <li>
-                  <p className="webName">RaRaRe</p>
+                  <p className="webName">Customer Support Agent</p>
                 </li>
               </ul>
             </div>
@@ -61,33 +61,30 @@ const ChatBox = () => {
                   <div>
                     <img className="msg_smCartoonImg" src={user} alt="img" />
                     <p className="help_msg_para">
-                      Hello there! Good morning!
-                      <br /> It`s now 05:00 PM in Islamabad, Pakistan!
+                    Hi, Welcome to iPurvey!
                     </p>
                   </div>
-                  <p className="date">12:45 PM</p>
+                  {/* <p className="date">1/1/2021 | 05:00 PM</p> */}
                 </li>
                 <li>
                   <div>
                     <img className="msg_smCartoonImg" src={user} alt="img" />
                     <p className="help_msg_para">
-                      Hello there! Good morning! it`s now 05:00 PM in Islamabad,
-                      Pakistan!
+                    How can I help you?
                     </p>
                   </div>
-                  <p className="date">12:45 PM</p>
+                  <p className="date">1/1/2021 | 05:00 PM</p>
                 </li>
               </ul>
               <ul className="cr_user_msd_ul">
                 <li>
                   <div>
                     <p className="cr_help_msg_para">
-                      Hello there! Good morning! it`s now 05:00 PM in Islamabad,
-                      Pakistan!
+                    I'm a business manager at Qatar Airways. Would like to know about API Plans and Pricing!
                     </p>
                     <img className="msg_smCartoonImg" src={user} alt="img" />
                   </div>
-                  <p className="date2">12:45 PM</p>
+                  <p className="date2">1/1/2021 | 05:00 PM</p>
                 </li>
               </ul>
             </div>
@@ -95,7 +92,7 @@ const ChatBox = () => {
               <input
                 className="help_input"
                 type="text"
-                placeholder="How can I help you?"
+                placeholder="How can we help you?"
               />
               <img className="mic_img" src={send} alt="img" />
             </div>

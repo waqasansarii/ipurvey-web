@@ -30,6 +30,8 @@
 .blog_card_div > .card {
   padding: 0px;
   border: 0px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 .blog_user_card_detail_div > div {
   /* display: flex; */

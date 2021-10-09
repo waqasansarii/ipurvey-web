@@ -14,17 +14,20 @@ const NotificationDropdown = ({ className }) => {
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          <img src={notificationIcon} alt="img" />
+          <div className="position-relative">
+            <span className="notification_num">5</span>
+            <img src={notificationIcon} alt="img" />
+          </div>
         </button>
         <div
           className="dropdown-menu notification_menu"
           aria-labelledby="dropdownMenuButton1"
         >
-          <ul >
+          <ul>
             <li>
               <div className="notif_title">
                 <div className="nt_head">
-                  <h6 >Notification Title</h6>
+                  <h6>Notification Title</h6>
                   <span className="msg_date">April,2021</span>
                 </div>
                 <p className="mesage">
@@ -32,7 +35,7 @@ const NotificationDropdown = ({ className }) => {
                   Beatae.
                 </p>
                 <div className="msg_time">
-                    <p>2:00 PM</p>
+                  <p>2:00 PM</p>
                 </div>
               </div>
             </li>
@@ -47,7 +50,7 @@ const NotificationDropdown = ({ className }) => {
                   Beatae.
                 </p>
                 <div className="msg_time">
-                    <p>2:00 PM</p>
+                  <p>2:00 PM</p>
                 </div>
               </div>
             </li>
@@ -62,7 +65,7 @@ const NotificationDropdown = ({ className }) => {
                   Beatae.
                 </p>
                 <div className="msg_time">
-                    <p>2:00 PM</p>
+                  <p>2:00 PM</p>
                 </div>
               </div>
             </li>
@@ -77,7 +80,7 @@ const NotificationDropdown = ({ className }) => {
                   Beatae.
                 </p>
                 <div className="msg_time">
-                    <p>2:00 PM</p>
+                  <p>2:00 PM</p>
                 </div>
               </div>
             </li>

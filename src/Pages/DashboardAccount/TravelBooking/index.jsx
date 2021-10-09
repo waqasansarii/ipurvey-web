@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MiniDrawer from "../Sidebar";
 import Table from "./Table";
 import { travelBookingTable } from "../data";
@@ -10,6 +10,7 @@ import MobViewDetailCard from "./MobViewDetailCard";
 import BackHeader from "../BackHeader";
 
 const TravelBooking = () => {
+  const [showFilterDrp, setShowFilterDrp] = useState(false);
   return (
     <div className="tb_page_container">
       <div className="tb_page_md">
@@ -45,9 +46,16 @@ const TravelBooking = () => {
               </div>
               <div className="filter_container">
                 <div className="filter_img_md">
-                  <img src={filter} alt="..." />
-                  <p>Advanced Filters</p>
-                  <FilterDropDown />
+                  <div
+                    className="d-flex align-items-center"
+                    onClick={() => setShowFilterDrp(!showFilterDrp)}
+                  >
+                    <img src={filter} alt="..." />
+                    <p style={{ marginBottom: "0", marginLeft: "10px" }}>
+                      Advanced Filters
+                    </p>
+                  </div>
+                  {showFilterDrp ? <FilterDropDown /> : null}
                 </div>
               </div>
               <div className="travel_table_container">

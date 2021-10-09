@@ -18,7 +18,7 @@ const OneStepAway = ({ nextBtn }) => {
             <input type="text" name="date" id="date" placeholder="12345678" />
           </div>
           <div className="accept_privacy">
-            <input type="checkbox" name="accept" id="accept" />
+            <input type="checkbox" className='awayCheck' name="accept" id="accept" />
             <p>
               We have updated our{" "}
               <Link to="" className="stp_link">
@@ -46,7 +46,7 @@ const OneStepAway = ({ nextBtn }) => {
           </div>
           <div className="stp_btns">
             <button className="home_form_btn" onClick={nextBtn}>
-              Signup iPurvey <img src={arrow} alt="..." />{" "}
+              Sign Up iPurvey <img src={arrow} alt="..." />{" "}
             </button>
             <button className="stp_back">
               Already a member?

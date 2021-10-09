@@ -35,7 +35,7 @@ const MobileViewMenu = () => {
           <div className="mobView_link">
               <Link className='link' to='/'>Home</Link>
               <Link className='link ' to='/'>Services</Link>
-              <Link className='link' to='/plan'>Pricing</Link>
+              <Link className='link' to='/our-plan'>Pricing</Link>
               <Link className='link' to='/developer'>Developers</Link>
               <Link className='link' to='/blog'>Blogs</Link>
               <Link className='link' to='/contact'>Contact</Link>

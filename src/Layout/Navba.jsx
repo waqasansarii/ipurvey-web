@@ -53,12 +53,12 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/blog">
+                <Link className="nav-link" to="/terms">
                   Services
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link" to="/our-plan">
                   Pricing
                 </Link>
               </li>
@@ -82,13 +82,13 @@ const Navbar = () => {
               {!isActive ? (
                 <>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/contact">
+                    <Link className="nav-link" to="/account-info">
                       My Account
                     </Link>
                   </li>
                   <li className="nav-item" onClick={handleLogIn}>
                     <Link className="nav-link cus_blue_btn" to="/signup">
-                      Sing Up
+                      Sign up
                     </Link>
                   </li>
                 </>

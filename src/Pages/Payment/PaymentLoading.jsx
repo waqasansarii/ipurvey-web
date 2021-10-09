@@ -1,6 +1,6 @@
 import React from "react";
 import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
-import loading from "../../Assets/Group 850.png";
+import loading from "../../Assets/stepLoad.png";
 import { Link } from "react-router-dom";
 
 const PaymentLoading = () => {
@@ -21,9 +21,14 @@ const PaymentLoading = () => {
         </div>
         <div className="row mt-5">
           <div className="col-lg-12">
-            <div className="ps_img mt-3">
-              <img src={loading} alt="..." />
+            <div className="loading_stpr_div">
+              <p className="loading_border"></p>
+              <img className="loading_steper" src={loading} alt="..." />
             </div>
+            {/* <div className="ps_img mt-3">
+             
+              <img src={loading} alt="..." />
+            </div> */}
           </div>
         </div>
         <div className="row mt-3">

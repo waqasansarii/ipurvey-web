@@ -11,6 +11,15 @@
     display: flex;
     width: 100%;
   }
+  .privacy_scroll_div::-webkit-scrollbar {
+    width: 3px;
+  }
+  .privacy_scroll_div::-webkit-scrollbar-thumb {
+    background-color: #2e58a6;
+  }
+  .privacy_scroll_div::-webkit-scrollbar-track {
+    background-color: #e7e5e5;
+  }
   .privacy_scroll_div>div{
     width: 50%;
   }

@@ -26,6 +26,12 @@
     box-shadow: none;
 }
 
+@media (min-width:1600px){
+    .sub_header_md {
+        padding: 20px 220px;
+    }
+}
+
 @media (max-width:1050px){
     .sub_header_md{
         padding: 20px;

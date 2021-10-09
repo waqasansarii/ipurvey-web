@@ -1,72 +1,57 @@
 import React, { useState } from "react";
 import "./OurPlans.css";
 import tick from "../../Assets/Path 5267.svg";
-
+import cross from "../../Assets/cross.png";
+const our_planData = [
+  {
+    id: "0",
+    name: "1 Month",
+    price: "FREE TRIAL",
+    transaction: "*Limited to 5 journeys",
+    planImg: [tick, tick, tick, cross, cross],
+  },
+  {
+    id: "1",
+    name: "Frequent Rail Commuter Plan",
+    price: "£2.99",
+    transaction: "*(+30p/Transaction)",
+    planImg: [tick, tick, tick, tick, tick],
+  },
+  {
+    id: "2",
+    name: "Frequent Flyer Plan",
+    price: "£5.99",
+    transaction: "(+30p/transaction)",
+    planImg: [tick, tick, tick, tick, tick],
+  },
+  {
+    id: "3",
+    name: "Frequent Rail & Flight Combo Plan",
+    price: "£6.99",
+    transaction: "(+30p/transaction)",
+    planImg: [tick, tick, tick, tick, tick],
+  },
+  {
+    id: "4",
+    name: "Occasional Rail Plan",
+    price: "£0.79",
+    transaction: "Per transaction",
+    planImg: [tick, tick, tick, cross, cross],
+  },
+  {
+    id: "5",
+    name: "Occasional Flight Plan",
+    price: "£1.99",
+    transaction: "Per transaction",
+    planImg: [tick, tick, tick, cross, cross],
+  },
+];
 const OurPlans = () => {
-  const [activePlan, setActivePlan] = useState(false);
+  const [activePlan, setActivePlan] = useState("");
 
-  const our_planData = [
-    {
-      name: "1 Month",
-      price: "FREE TRIAL",
-      transaction: "*Limited to 5 journeys",
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-    },
-    {
-      name: "1 Month",
-      price: "FREE TRIAL",
-      transaction: "*Limited to 5 journeys",
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-    },
-    {
-      name: "1 Month",
-      price: "FREE TRIAL",
-      transaction: "*Limited to 5 journeys",
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-    },
-    {
-      name: "1 Month",
-      price: "FREE TRIAL",
-      transaction: "*Limited to 5 journeys",
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-    },
-    {
-      name: "1 Month",
-      price: "FREE TRIAL",
-      transaction: "*Limited to 5 journeys",
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-    },
-    {
-      name: "1 Month",
-      price: "FREE TRIAL",
-      transaction: "*Limited to 5 journeys",
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-    },
-  ];
+  const handleSelect = (e) => {
+    setActivePlan(e.id);
+  };
   return (
     <React.Fragment>
       <div className="our_plans_section">
@@ -115,11 +100,20 @@ const OurPlans = () => {
                   {our_planData.map((d, i) => {
                     return (
                       <div
+                        key={i}
                         className="col-2 col-sm-2 col-md-2 col-lg-2 p-0"
-                        onClick={() => {}}
+                        onClick={() => handleSelect(d)}
                       >
-                        <div className="feature_item_box active_fib">
-                          <div className="popular_text">Popular</div>
+                        <div
+                          className={
+                            activePlan === d.id
+                              ? "active_fib feature_item_box"
+                              : "feature_item_box"
+                          }
+                        >
+                          {activePlan === d.id ? (
+                            <div className="popular_text">Popular</div>
+                          ) : null}
                           <div className="fib_head">
                             <div className="row">
                               <h5>{d.name}</h5>
@@ -132,35 +126,38 @@ const OurPlans = () => {
                             </div>
                           </div>
                           <div className="row">
-                            <div className="col-lg-12">
+                            {d.planImg.map((v, i) => {
+                              return (
+                                <div key={i} className="col-lg-12">
+                                  <div className="flist">
+                                    <img src={v} alt="..." />
+                                  </div>
+                                </div>
+                              );
+                            })}
+                            {/* <div className="col-lg-12">
                               <div className="flist">
-                                <img src={d.tick} alt="..." />
+                                <img src={d.img} alt="..." />
                               </div>
                             </div>
 
                             <div className="col-lg-12">
                               <div className="flist">
-                                <img src={d.tick} alt="..." />
+                                <img src={d.img} alt="..." />
                               </div>
                             </div>
 
                             <div className="col-lg-12">
                               <div className="flist">
-                                <img src={d.tick} alt="..." />
+                                <img src={d.img} alt="..." />
                               </div>
                             </div>
 
                             <div className="col-lg-12">
                               <div className="flist">
-                                <img src={d.tick} alt="..." />
+                                <img src={d.img} alt="..." />
                               </div>
-                            </div>
-
-                            <div className="col-lg-12">
-                              <div className="flist">
-                                <img src={d.tick} alt="..." />
-                              </div>
-                            </div>
+                            </div> */}
                           </div>
                           <div className="row">
                             <button className="home_form_btn">Subscribe</button>

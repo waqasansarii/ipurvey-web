@@ -455,6 +455,7 @@
   color: #2e58a6;
   margin: 0;
   width: 100%;
+  outline: none;
   box-shadow: none;
   background: transparent;
 }
@@ -870,7 +871,6 @@
   .order_summary .tr_details_2 > div {
     flex-direction: row;
   }
- 
 }
 
 @media screen and (max-width: 425px) {

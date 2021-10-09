@@ -4,9 +4,9 @@ import { useHistory, Link } from "react-router-dom";
 import userprofileimg from "../../Assets/Rectangle 1113.png";
 import downicon from "../../Assets/Path 5113.png";
 import dashboard from "../../Assets/Icon material-dashboard.png";
-import person from "../../Assets/Icon material-person.png";
-import hand from "../../Assets/Icon awesome-hand-point-up.png";
-import bell from "../../Assets/Icon awesome-bell.png";
+import person from "../../Assets/Icon material-person2.png";
+import hand from "../../Assets/Icon awesome-hand-point-up2.png";
+import bell from "../../Assets/Icon awesome-bell2.png";
 import out from "../../Assets/Icon open-account-logout.png";
 
 const UserDropdown = ({ logout }) => {
@@ -38,17 +38,17 @@ const UserDropdown = ({ logout }) => {
             <img src={dashboard} alt="..." />
             <p>Your Dashboard</p>
           </Link>
-          <Link to="/dashboard" className='drop_link'>
+          <Link to="/account-info" className='drop_link'>
             <img src={person} alt="..." />
-            <p>Account Seetings</p>
+            <p>Account Settings</p>
           </Link>
-          <Link to="/dashboard" className='drop_link'>
+          <Link to="/manage-subscription" className='drop_link'>
             <img src={hand} alt="..." />
-            <p>Subscription</p>
+            <p>Subscriptions</p>
           </Link>
-          <Link to="/dashboard" className='drop_link'>
+          <Link to="/notification" className='drop_link'>
             <img src={bell} alt="..." />
-            <p>Notification</p>
+            <p>Messages</p>
           </Link>
           <br />
           <Link to="/dashboard" className='drop_link' onClick={logout}>

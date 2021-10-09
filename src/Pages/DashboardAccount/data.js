@@ -3,21 +3,21 @@ export const dbTable = {
   body: [
     {
       date: "21/2/2021",
-      fromTo: "Dubai(DUX)  >  Las angleses(LA)",
+      fromTo: "Dubai (DUX) > Los Angleses (LA)",
       type: "Cancelled",
       status: "Info required",
       id: "01",
     },
     {
       date: "21/2/2021",
-      fromTo: "Dubai(DUX)  >  Las angleses(LA)",
+      fromTo: "Dubai (DUX) > Los Angleses (LA)",
       type: "Delayed",
       status: "New",
       id: "02",
     },
     {
       date: "21/2/2021",
-      fromTo: "Dubai(DUX) >  Las angleses(LA)",
+      fromTo: "Dubai (DUX) > Los Angleses (LA)",
       type: "Delayed",
       status: "Expired",
       id: "02",

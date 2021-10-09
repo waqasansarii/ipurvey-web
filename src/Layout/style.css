@@ -125,12 +125,23 @@
 }
 
 .notif_btn img {
-  width: 29px;
+  width: 26px;
   object-fit: contain;
 }
 
+.notification_num {
+  position: absolute;
+  padding: 2px 8px;
+  right: -12px;
+  font-size: 00.8rem;
+  top: -10px;
+  box-shadow: 0px 3px 6px #00000029;
+  background-color: white;
+  border-radius: 50%;
+}
+
 .notification_menu {
-  left: -240px !important;
+  left: -315px !important;
   height: max-content;
   padding: 15px 10px;
   width: 372px;
@@ -168,7 +179,7 @@ ul {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #e8f9f5;
+  background: #f0f4fc 0% 0% no-repeat padding-box;
   padding: 10px 8px;
 }
 
@@ -183,8 +194,8 @@ ul {
 .nt_head h6,
 .va_text {
   margin: 0;
-  font-size: 0.8rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .nt_head span {
@@ -255,6 +266,8 @@ ul {
   width: 80%;
   height: max-content;
   padding: 1rem 0;
+  right: 20px !important;
+  left: unset !important;
   border: none;
   box-shadow: 0px 0px 10px gainsboro;
 }
@@ -273,7 +286,7 @@ ul {
   display: flex;
   text-decoration: none;
   align-items: center;
-  color: #2e58a6;
+  color: #000000;
   padding: 10px 20px;
 }
 .drop_link:hover {
@@ -307,6 +320,7 @@ ul {
 
 .footer_main_container {
   background-color: #f0f4fc;
+  padding: 2rem 0;
 }
 
 .footer_main_div {
@@ -400,7 +414,7 @@ ul {
   /* height: 122px; */
 }
 .copy_right_container {
-  padding: 10px;
+  padding: 30px 10px;
   background-color: #2e58a6;
 }
 .social_links {
@@ -468,6 +482,10 @@ ul {
 @media screen and (min-width: 1500px) {
   .navbar .container-fluid {
     width: 80% !important;
+  }
+  .sub_nav_container h4 {
+    max-width: 1192px;
+    margin: 0 auto;
   }
 }
 

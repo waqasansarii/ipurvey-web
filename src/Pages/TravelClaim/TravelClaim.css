@@ -58,8 +58,8 @@
   margin-left: 10px;
 }
 .step_dot > img {
-  width: 11px;
-  margin-top: -12px;
+  width: 9px;
+  margin-top: -15px;
 }
 .clr_dot {
   background: #2e58a6 0% 0% no-repeat padding-box;
@@ -115,7 +115,7 @@
   width: 100%;
   padding-left: 36px;
   color: #2e58a6;
-  opacity: 0.5;
+  opacity: 0.8;
   background-color: #e6ecf8;
 }
 .stp_inp > input::placeholder {
@@ -316,16 +316,24 @@ input[type="checkbox"] {
   background: white;
   -webkit-appearance: none;
 }
+.awayCheck{
+  height: 25px !important;
+  width: 70px !important;
+}
 
 input[type="checkbox"]:checked,
 input[type="checkbox"]:checked:active {
   /* background: url("../../Assets/checkbox_icon.png") center no-repeat,
-    -webkit-linear-gradient(white, white); */
+  -webkit-linear-gradient(white, white); */
   background: #B9C7E2;
   width: 20px;
   height: 20px;
   padding: 5px;
   border-radius: 0;
+}
+.awayCheck:checked,.awayCheck:checked:active{
+  height: 25px !important;
+  width: 50px !important;
 }
 
 input[type="checkbox"]:active:not(:disabled) {

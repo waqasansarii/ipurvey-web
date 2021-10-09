@@ -14,7 +14,7 @@ const ForgotForm = () => {
           </div>
           <div className='forgot_main_img'>
               <img src={forgotMan} alt="..." />
-              <p className='form_blue_para'>We'll send a magic link on your email address and your password can be recovered!</p>
+              <p className='form_blue_para'>We'll send a magic link to your email address to recover your password! </p>
           </div>
           <div className="home_form_div_sd">
             <input type="email" placeholder="Email Address" />

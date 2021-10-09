@@ -1,11 +1,12 @@
 .tb_page_container {
   background-color: #f0f4fc;
+  padding-bottom: 20px;
 }
 .tb_page_sd {
   display: flex;
 }
 .tb_page_right_md {
-  width: 75%;
+  width: 78%;
 }
 .tb_page_rigth_content {
   margin-left: 20px;
@@ -34,16 +35,17 @@
   display: flex;
   width: 50%;
 }
-.tb_select_md{
+.tb_select_md {
   padding: 5px 7px;
   opacity: 0.7;
   width: 100%;
   background-color: white;
   margin-left: 15px;
-  box-shadow: inset 0 1px 2px rgba(83, 83, 83, 0.39), 0 -1px 0px #FFF, 0 1px 0 #FFF;
+  box-shadow: inset 0 1px 2px rgba(83, 83, 83, 0.39), 0 -1px 0px #fff,
+    0 1px 0 #fff;
   border-radius: 5px;
 }
-.tb_search_md > form > div .tb_select_md  select {
+.tb_search_md > form > div .tb_select_md select {
   padding: 5px 0px;
   border: none;
   outline: none;
@@ -64,6 +66,7 @@
   justify-content: flex-end;
   align-items: center;
   margin-top: 20px;
+  margin-left: auto;
   padding-right: 10px;
   position: relative;
 }
@@ -140,10 +143,10 @@
 }
 
 /* mob view travel card  */
-.mob_view_taravel_card{
+.mob_view_taravel_card {
   display: none;
 }
-.tb_mv_card{
+.tb_mv_card {
   background-color: white;
   padding: 15px;
   box-shadow: 0px 3px 6px #00000029;
@@ -151,26 +154,25 @@
   margin-top: 15px;
   padding-top: 5px;
 }
-.tb_mv_card p{
+.tb_mv_card p {
   margin-bottom: 0px;
 }
-.tb_card_row{
+.tb_card_row {
   display: flex;
   margin-top: 10px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   /* justify-content: space-between; */
 }
-.tb_MV_info{
+.tb_MV_info {
   margin-left: 50px;
   /* margin-top: 10px; */
 }
-.tb_MV_info_left{
-   width: 40%;
+.tb_MV_info_left {
+  width: 40%;
   /* font-size: .9rem; */
 }
-.tb_card_details{
+.tb_card_details {
   color: #2e58a6;
-  
 }
 
 @media (max-width: 1200px) {
@@ -185,50 +187,51 @@
     margin-top: 15px;
     margin-left: 0px;
   }
-  .tb_page_right_md{
+  .tb_page_right_md {
     width: 95%;
   }
 }
 @media (max-width: 800px) {
-  .tb_page_rigth_content h5{
+  .tb_page_rigth_content h5 {
     display: none;
   }
 }
 @media (max-width: 600px) {
-  .travel_table_container{
+  .travel_table_container {
     display: none;
   }
-  .mob_view_taravel_card{
+  .mob_view_taravel_card {
     display: block;
   }
-  .tb_search_md > form{
+  .tb_search_md > form {
     flex-direction: column;
   }
-  .tb_search_md > form > input,.tb_search_md > form > div{
+  .tb_search_md > form > input,
+  .tb_search_md > form > div {
     width: 100%;
   }
-  .tb_search_md > form > div{
+  .tb_search_md > form > div {
     justify-content: space-between;
   }
-  .tb_search_md > form > div > select{
+  .tb_search_md > form > div > select {
     margin-top: 10px;
     width: 48%;
     margin-left: 0px;
   }
-  .filter_img_md{
+  .filter_img_md {
     justify-content: center;
   }
-  .tb_search_md > form > button{
+  .tb_search_md > form > button {
     width: 150px;
   }
-  .result_per_page{
+  .result_per_page {
     display: none;
   }
-  .tb_page_right_md{
+  .tb_page_right_md {
     width: 93%;
     margin: 20px auto;
   }
-  .tb_page_rigth_content{
+  .tb_page_rigth_content {
     margin: 0px;
   }
   /* .tb_search_md > form > div > select:first-child{
@@ -238,18 +241,19 @@
   /* .tb_page_right_md{
     width: 100%;
   } */
-  .tb_card_row{
-    font-size: .8rem;
+  .tb_card_row {
+    font-size: 0.8rem;
   }
-  .tb_search_md > form > input,.tb_search_md > form > div > select{
-    font-size: .9rem;
+  .tb_search_md > form > input,
+  .tb_search_md > form > div > select {
+    font-size: 0.9rem;
   }
 }
 @media (max-width: 365px) {
-  .tb_card_row{
-    font-size: .7rem;
+  .tb_card_row {
+    font-size: 0.7rem;
   }
-  .tb_MV_info_left{
+  .tb_MV_info_left {
     width: 30%;
   }
 }
