@@ -41,6 +41,9 @@
   border-radius: 8px;
   margin: 0.3rem 0;
 }
+.feature_list span{
+  font-size: .9rem;
+}
 
 .feature_item_box {
   text-align: center;

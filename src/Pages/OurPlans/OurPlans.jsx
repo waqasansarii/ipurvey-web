@@ -72,22 +72,22 @@ const OurPlans = () => {
                   </div>
                   <div className="col-lg-12">
                     <div className="feature_list">
-                      <span>Travel disruption monitoring</span>
+                      <span>Automatic claim request to travel operator*</span>
                     </div>
                   </div>
                   <div className="col-lg-12">
                     <div className="feature_list">
-                      <span>Travel disruption monitoring</span>
+                      <span>Customer notification of submitted claim</span>
                     </div>
                   </div>
                   <div className="col-lg-12">
                     <div className="feature_list">
-                      <span>Travel disruption monitoring</span>
+                      <span>History of customer journeys and submitted claim</span>
                     </div>
                   </div>
                   <div className="col-lg-12">
                     <div className="feature_list">
-                      <span>Travel disruption monitoring</span>
+                      <span>Multiple choice of compensation payment method</span>
                     </div>
                   </div>
                 </div>
