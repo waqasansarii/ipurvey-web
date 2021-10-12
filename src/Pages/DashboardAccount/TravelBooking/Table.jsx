@@ -5,7 +5,7 @@ import i from "../../../Assets/Component 38 – 3.png";
 
 const Table = ({ tbClass, data }) => {
   return (
-    <div className="table_container">
+    <div className="table_container table_bk">
       <table className={`db_table ${tbClass}`}>
         <thead>
           {data.head.map((val, i) => (

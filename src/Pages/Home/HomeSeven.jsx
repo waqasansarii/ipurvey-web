@@ -59,7 +59,7 @@ const HomeSeven = () => {
           {/* home first form section  */}
           <div className="home_form_div_md">
             <div className="head_md">
-              <Link className="form_arrow_link" to='/home-six'>
+              <Link className="form_arrow_link" to="/home-six">
                 <img src={arrow} alt="" />
               </Link>
               <div>
@@ -96,7 +96,9 @@ const HomeSeven = () => {
                   <input type="checkbox" name="" id="" />
                   <p>Remember me</p>
                 </div>
-                <Link className="form_link">Forgot password?</Link>
+                <Link to="/forgot" className="form_link">
+                  Forgot password?
+                </Link>
               </div>
               <button className="home_form_btn">Login</button>
             </div>

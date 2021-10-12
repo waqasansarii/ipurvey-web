@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link ,useHistory} from "react-router-dom";
 import SubNav from "../../Layout/SubNav";
 import "./style.css";
 // assets
@@ -9,6 +9,7 @@ import img2 from "../../Assets/Pc.png";
 import Footer from "../../Layout/Footer";
 
 const Developers = () => {
+  const history = useHistory()
   return (
     <React.Fragment>
       <div className="developer_container">
@@ -37,7 +38,7 @@ const Developers = () => {
                       View API Documentation
                     </button>
                   </Link>
-                  <button className="cus_wht_btn">Contact Us</button>
+                  <button className="cus_wht_btn" onClick={()=>history.push('/contact')}>Contact Us</button>
                 </div>
               </div>
               <div className="pm_right_sec">

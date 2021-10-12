@@ -144,6 +144,9 @@
 .stp_btns {
   width: 220px;
   margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .stp_back {
@@ -306,7 +309,7 @@
     0 1px 0 #fff;
 }
 
-input[type="checkbox"] {
+.flight_li input[type="checkbox"] {
   height: 20px;
   width: 20px;
   border-radius: 5px;
@@ -316,32 +319,33 @@ input[type="checkbox"] {
   background: white;
   -webkit-appearance: none;
 }
-.awayCheck{
+.awayCheck {
   height: 25px !important;
   width: 70px !important;
 }
 
-input[type="checkbox"]:checked,
-input[type="checkbox"]:checked:active {
+.flight_li input[type="checkbox"]:checked,
+.flight_li input[type="checkbox"]:checked:active {
   /* background: url("../../Assets/checkbox_icon.png") center no-repeat,
   -webkit-linear-gradient(white, white); */
-  background: #B9C7E2;
+  background: #b9c7e2;
   width: 20px;
   height: 20px;
   padding: 5px;
   border-radius: 0;
 }
-.awayCheck:checked,.awayCheck:checked:active{
+.awayCheck:checked,
+.awayCheck:checked:active {
   height: 25px !important;
   width: 50px !important;
 }
 
-input[type="checkbox"]:active:not(:disabled) {
+.flight_li input[type="checkbox"]:active:not(:disabled) {
   height: 20px;
   width: 20px;
 }
 
-input[type="checkbox"]:not(:disabled) {
+.flight_li input[type="checkbox"]:not(:disabled) {
   box-shadow: inset 0 1px 2px rgba(83, 83, 83, 0.39), 0 -1px 0px #fff,
     0 1px 0 #fff;
 }

@@ -20,7 +20,7 @@ const Blog = () => {
           <div className="event_slider_div">
             <BlogSlider />
           </div>
-          <div className="blog_card_socail_feed_div ">
+          <div className="blog_card_socail_feed_div blogCSFMain">
             <BlogCard size="15" show />
             <SocialFeed />
           </div>

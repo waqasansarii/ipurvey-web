@@ -57,14 +57,16 @@
 .mobView_menu_bar .dropdown-menu {
   background-color: #f0f4fc !important;
   width: 300px;
-  right: -52px !important;
+  /* right: 0px !important; */
+  left: -204px !important;
   top: 55px;
   padding: 20px;
   overflow-y: scroll;
   max-height: 85vh !important;
+  border: none;
 }
 .mobView_menu_bar .dropdown-menu::-webkit-scrollbar {
-  width: 5px;
+  width: 0px;
 }
 .mobView_link,
 .mobView_link_two {
@@ -565,7 +567,8 @@ ul {
     margin-top: 0px;
   }
   .mobView_menu_bar .dropdown-menu {
-    right: -22px !important;
+    /* right: 0px !important; */
+    left: -233px !important;
   }
 }
 @media screen and (max-width: 450px) {

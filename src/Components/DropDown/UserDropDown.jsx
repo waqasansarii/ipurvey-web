@@ -51,7 +51,7 @@ const UserDropdown = ({ logout }) => {
             <p>Messages</p>
           </Link>
           <br />
-          <Link to="/dashboard" className='drop_link' onClick={logout}>
+          <Link to="/" className='drop_link' onClick={logout}>
             <img src={out} alt="..." />
             <p>Logout</p>
           </Link>

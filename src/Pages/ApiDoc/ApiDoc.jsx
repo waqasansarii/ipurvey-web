@@ -68,7 +68,7 @@ const ApiDoc = () => {
                   <div className="row mt-3 w-100">
                     <div className="col-12 col-sm-12 col-md-12 col-lg-12">
                       <div className="ps_input1">
-                        <input type="text" placeholder="Search a bank" />
+                        <input type="text" placeholder="Search" />
                         <img
                           style={{ width: "20px" }}
                           src={searchIcon}

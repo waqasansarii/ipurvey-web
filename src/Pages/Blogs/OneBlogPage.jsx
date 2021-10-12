@@ -87,7 +87,7 @@ const SelectBlog = () => {
                 <BlogCard size="14" className="blog_cards_story" />
               </div>
             ))}
-            <SocialFeed />
+            <SocialFeed className='sblogPageFeed' />
           </div>
         </div>
       </div>

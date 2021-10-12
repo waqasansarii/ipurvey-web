@@ -76,7 +76,7 @@ const termsData = [
     id: "04",
   },
   {
-    head: "Limitation of our Liability",
+    head: "What is not covered?",
     para: [
       `By using the services provided by iPurvey, you are agreeing to
       our Terms & Conditions as set out`,
@@ -94,7 +94,7 @@ const termsData = [
     id: "05",
   },
   {
-    head: "Links and Third-Party Websites",
+    head: "Limitation of our Liability",
     para: [
       `By using the services provided by iPurvey, you are agreeing to
       our Terms & Conditions as set out`,
@@ -112,7 +112,7 @@ const termsData = [
     id: "06",
   },
   {
-    head: "Compensation",
+    head: "Links and Third-Party Websites",
     para: [
       `By using the services provided by iPurvey, you are agreeing to
       our Terms & Conditions as set out`,
@@ -128,6 +128,24 @@ const termsData = [
       third-party web sites.`,
     ],
     id: "07",
+  },
+  {
+    head: "Compensation",
+    para: [
+      `By using the services provided by iPurvey, you are agreeing to
+      our Terms & Conditions as set out`,
+      `Your access to and use of the service is subject to our Privacy
+      Policy iPurvey is not responsible for any errors or omissions
+      within the data provided to us by third- party. We utilise the
+      information as provided to us to monitor your journey for
+      disruption. You are responsible for your actions and we are not
+      liable for any damages or actions taken based on the use of the
+      data or the application or service. iPurvey is not responsible
+      for the content of third-party websites and you take full
+      responsibility for accepting the terms and conditions of the
+      third-party web sites.`,
+    ],
+    id: "08",
   },
 ];
 
@@ -147,7 +165,7 @@ const TermsDetail = () => {
       <div className="terms_dtl_md">
         <div className="termsDetail_box">
           <div className="termsQues_list">
-            <h4>Content</h4>
+            <h4>Contents</h4>
             <ul className="tersmQues_ul">
               {termsData.map((val) => (
                 <li>

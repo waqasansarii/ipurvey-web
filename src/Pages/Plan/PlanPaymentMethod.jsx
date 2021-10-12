@@ -15,7 +15,7 @@ const options = {
     route: "/payment/paypal",
   },
   stripe: {
-    name: "Payment with Paypal",
+    name: "Payment with Stripe",
     img: stripeIcon,
     route: "/payment/stripe",
   },

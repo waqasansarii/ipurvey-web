@@ -10,9 +10,9 @@ import social6 from '../../Assets/Rectangle 1137@2x.png'
 import fb from '../../Assets/Group 833@2x.png'
 import insta from '../../Assets/Group 3428@2x.png'
 
-const SocialFeed = () => {
+const SocialFeed = ({className}) => {
     return (
-        <div className='socail_feed_conatiner'>
+        <div className={`socail_feed_conatiner ${className}`}>
             <div className="social_feed_div">
                 <div className="feed_div">
                     <h4><strong>Facebook Feed</strong></h4>

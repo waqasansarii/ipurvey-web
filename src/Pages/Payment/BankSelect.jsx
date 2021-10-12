@@ -8,7 +8,7 @@ import santader from "../../Assets/santader.png";
 import HSBC from "../../Assets/Mask Group 3.png";
 import NatWest from "../../Assets/2472366.png";
 import tick from "../../Assets/Group 4169.png";
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const options = {
   bank: {
@@ -16,24 +16,24 @@ const options = {
     img: HBOS,
     route: "/payment/paying-bank",
   },
-  monzo: {
-    name: "Monzo",
-    img: monzo,
-    route: "/payment/paying-bank",
-  },
-  starling: {
-    name: "Santander",
-    img: Starling,
-    route: "/payment/paying-bank",
-  },
   hsbc: {
     name: "HSBC Bank",
     img: HSBC,
     route: "/payment/paying-bank",
   },
+  monzo: {
+    name: "Monzo",
+    img: monzo,
+    route: "/payment/paying-bank",
+  },
   stripe: {
     name: "NatWest",
     img: NatWest,
+    route: "/payment/paying-bank",
+  },
+  starling: {
+    name: "Santander",
+    img: Starling,
     route: "/payment/paying-bank",
   },
   santader: {
@@ -53,8 +53,10 @@ const BankSelect = (props) => {
           <div className="col-lg-12">
             <div className="pm_head">
               <div>
-               <Link to="/payment/bank-method"><img src={arrowLeft} alt="..." /></Link>
-                <h2>Select a Payment Method</h2>
+                <Link to="/payment/bank-method">
+                  <img src={arrowLeft} alt="..." />
+                </Link>
+                <h2>Select your bank</h2>
               </div>
               <p className="mt-4">
                 This payment method is only available for the banks listed below
@@ -72,7 +74,13 @@ const BankSelect = (props) => {
         </div>
         <div className="row bank_select_options">
           {Object.entries(options).map((el) => (
-            <div className={props.col ? "col-6 col-sm-4 col-md-4 col-lg-4" : "col-6 col-sm-6 col-md-6 col-lg-6"}>
+            <div
+              className={
+                props.col
+                  ? "col-6 col-sm-4 col-md-4 col-lg-4"
+                  : "col-6 col-sm-6 col-md-6 col-lg-6"
+              }
+            >
               <div
                 onClick={() => setActive(el[0])}
                 className={
@@ -95,9 +103,10 @@ const BankSelect = (props) => {
         </div>
         <div className="row mt-4">
           <div className="col-lg-12">
-            <button className="home_form_btn">
-              <Link to={options[active].route}>Continue</Link>
-            </button>
+            <Link to={options[active].route}>
+              {" "}
+              <button className="home_form_btn">Continue</button>
+            </Link>
           </div>
         </div>
         <div className="row mt-2">

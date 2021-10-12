@@ -9,17 +9,20 @@ const MobileViewMenu = () => {
       <button
         className="navbar-toggler"
         type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContentMobile"
-        aria-controls="navbarSupportedContent"
+        // data-bs-toggle="collapse"
+        // data-bs-target="#navbarSupportedContentMobile"
+        // aria-controls="navbarSupportedContent"
+        // aria-expanded="false"
+        // aria-label="Toggle navigation"
+        id="dropdownMenuButtonMenu2"
+        data-bs-toggle="dropdown"
         aria-expanded="false"
-        aria-label="Toggle navigation"
       >
         <img className="" src={bar} alt="" />
       </button>
       <div
         className="dropdown-menu "
-        aria-labelledby="dropdownMenuButton10"
+        aria-labelledby="dropdownMenuButtonMenu2"
         id="navbarSupportedContentMobile"
         // onClick={(e) => e.stopPropagation()}
       >
@@ -34,9 +37,9 @@ const MobileViewMenu = () => {
             </div>
           <div className="mobView_link">
               <Link className='link' to='/'>Home</Link>
-              <Link className='link ' to='/'>Services</Link>
+              <Link className='link ' to='/terms'>Services</Link>
               <Link className='link' to='/our-plan'>Pricing</Link>
-              <Link className='link' to='/developer'>Developers</Link>
+              <Link className='link' to='/developers'>Developers</Link>
               <Link className='link' to='/blog'>Blogs</Link>
               <Link className='link' to='/contact'>Contact</Link>
           </div>

@@ -23,13 +23,13 @@ const PaymentThankYou = () => {
         <div className="row">
           <div className="col-lg-12">
             <button className="home_form_btn">
-              <Link to="success">Continue to Dashboard</Link>
+              <Link to="/dashboard">Continue to Dashboard</Link>
             </button>
           </div>
         </div>
         <div className="row mt-3">
           <div className="col-lg-12">
-            <Link className="hl_text">Retrieve another booking</Link>
+            <Link to="/" className="hl_text">Retrieve another booking</Link>
           </div>
         </div>
       </div>

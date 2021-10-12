@@ -15,7 +15,7 @@ const BankAuth = () => {
           <div className="col-lg-12">
             <div className="pm_head">
               <div>
-                <Link to="payment/bank-auth">
+                <Link to="payment/paying-bank">
                   <img src={arrowLeft} alt="..." />
                 </Link>
                 <h2 className="ms-2">Authenticate your Login Credentials</h2>
@@ -84,7 +84,7 @@ const BankAuth = () => {
                 </div>
               </div>
               <div className="col-6 col-sm-6 col-md-6 col-lg-6">
-                <Link to="/" className="dont_text">
+                <Link to="/forgot" className="dont_text">
                   Forgot Password?
                 </Link>
               </div>
@@ -92,14 +92,18 @@ const BankAuth = () => {
 
             <div className="row mt-1">
               <div className="col-lg-12">
-                <button className="home_form_btn">
-                  <Link to="/payment/bank-otp">Login to Starling Bank</Link>
-                </button>
+                <Link to="/payment/bank-otp">
+                  <button className="home_form_btn">
+                    Login to Starling Bank
+                  </button>
+                </Link>
               </div>
             </div>
             <div className="row mt-3">
               <div className="col-lg-12">
-                <Link className="hl_text">Cancel transcation</Link>
+                <Link to="/payment/select-bank" className="hl_text">
+                  Cancel transcation
+                </Link>
               </div>
             </div>
           </>
@@ -117,14 +121,18 @@ const BankAuth = () => {
 
             <div className="row mt-3">
               <div className="col-lg-12">
-                <button className="home_form_btn">
-                  <Link to="/payment/bank-otp">Login to Starling Bank</Link>
-                </button>
+                <Link to="/payment/bank-otp">
+                  <button className="home_form_btn">
+                    Login to Starling Bank
+                  </button>
+                </Link>
               </div>
             </div>
             <div className="row mt-3">
               <div className="col-lg-12">
-                <Link className="hl_text">Cancel transcation</Link>
+                <Link to="/payment/select-bank" className="hl_text">
+                  Cancel transcation
+                </Link>
               </div>
             </div>
           </>

@@ -40,14 +40,16 @@ const BankPaying = () => {
         </div>
         <div className="row mt-4">
           <div className="col-lg-12">
-            <button className="home_form_btn">
-              <Link to="success">Yes, I Agree!</Link>
-            </button>
+            <Link to="/payment/bank-auth">
+              <button className="home_form_btn">Yes, I Agree!</button>
+            </Link>
           </div>
         </div>
         <div className="row mt-2">
           <div className="col-lg-12">
-            <Link className="hl_text">Change Bank</Link>
+            <Link to="/payment/select-bank" className="hl_text">
+              Change Bank
+            </Link>
           </div>
         </div>
       </div>

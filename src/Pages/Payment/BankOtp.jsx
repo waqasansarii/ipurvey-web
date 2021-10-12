@@ -49,20 +49,28 @@ const BankOtp = () => {
         </div>
         <div className="otp_box row justify-content-center">
           <div className="col-3 col-sm-3 col-md-3 col-lg-3">
-            <div className="otp_input">-</div>
+            <div className="otp_input">
+              <input type="text" placeholder="-" />
+            </div>
           </div>
           <div className="col-3 col-sm-3 col-md-3 col-lg-3">
-            <div className="otp_input">-</div>
+            <div className="otp_input">
+              <input type="text" placeholder="-" />
+            </div>
           </div>
           <div className="col-3 col-sm-3 col-md-3 col-lg-3">
-            <div className="otp_input">-</div>
+            <div className="otp_input">
+              <input type="text" placeholder="-" />
+            </div>
           </div>
           <div className="col-3 col-sm-3 col-md-3 col-lg-3">
-            <div className="otp_input">-</div>
+            <div className="otp_input">
+              <input type="text" placeholder="-" />
+            </div>
           </div>
         </div>
         <div className="row mt-3 mb-5">
-          <Link to="/" className="dont_text">
+          <Link to="#" className="dont_text">
             Resend Code
           </Link>
         </div>

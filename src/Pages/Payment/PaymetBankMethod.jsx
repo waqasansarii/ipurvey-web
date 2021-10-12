@@ -1,18 +1,25 @@
 import React from "react";
+import { useHistory } from "react-router";
 import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import bankImg from "../../Assets/Group 891.png";
 import { Link } from "react-router-dom";
 
 const PaymetBankMethod = () => {
+  const history = useHistory();
+
   return (
     <React.Fragment>
-    
       <div className="payment_bank_method1">
         <div className="row">
           <div className="col-lg-12">
             <div className="pm_head">
               <div>
-                <Link to="/payment/method"><img src={arrowLeft} alt="..." /></Link>
+                <img
+                  style={{ cursor: "pointer" }}
+                  onClick={() => history.goBack()}
+                  src={arrowLeft}
+                  alt="..."
+                />
                 <h2>Select a Payment Method</h2>
               </div>
             </div>
@@ -38,9 +45,9 @@ const PaymetBankMethod = () => {
         </div>
         <div className="row mt-4">
           <div className="col-lg-12">
-            <button className="home_form_btn">
-              <Link to="/payment/loading">Continue</Link>
-            </button>
+            <Link to="/payment/loading">
+              <button className="home_form_btn">Continue</button>
+            </Link>
           </div>
         </div>
         <div className="row mt-2">
@@ -49,7 +56,6 @@ const PaymetBankMethod = () => {
           </div>
         </div>
       </div>
-    
     </React.Fragment>
   );
 };

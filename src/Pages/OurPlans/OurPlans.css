@@ -70,8 +70,8 @@
 
 .feature_item_box .fib_head {
   border-radius: 8px 8px 0 0;
-  padding-top: 16px;
-  height: 97px;
+  padding-top: 32px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;

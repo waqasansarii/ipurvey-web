@@ -21,16 +21,16 @@ const OneStepAway = ({ nextBtn }) => {
             <input type="checkbox" className='awayCheck' name="accept" id="accept" />
             <p>
               We have updated our{" "}
-              <Link to="" className="stp_link">
+              <Link to="/terms" className="stp_link">
                 {" "}
                 Terms of Service{" "}
               </Link>
               ,{" "}
-              <Link to="" className="stp_link">
+              <Link to="/privacy" className="stp_link">
                 Privacy Policy{" "}
               </Link>
               , and{" "}
-              <Link to="" className="stp_link">
+              <Link to="/" className="stp_link">
                 {" "}
                 Cookie Policy{" "}
               </Link>
