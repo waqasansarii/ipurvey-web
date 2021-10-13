@@ -28,7 +28,7 @@ const Developers = () => {
                   ipsum
                 </p>
                 <div className="learn_more_lin">
-                  <Link className="link">
+                  <Link className="link" to='/api-doc'>
                     Start integration <img src={arrow} alt="..." />
                   </Link>
                 </div>
@@ -74,7 +74,7 @@ const Developers = () => {
                   </div>
                 </div>
                 <div className="pm_left_sec2">
-                  <h5>Multiple payment methods!</h5>
+                  <h5>Lorem ipsum dolor sit</h5>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Pariatur nulla aut ipsam aliquam perspiciatis, autem ea
@@ -82,8 +82,8 @@ const Developers = () => {
                     provident velit aut amet culpa, voluptatibus excepturi!
                   </p>
                   <div className="learn_more_lin2">
-                    <Link className="link">
-                      View registered banks <img src={arrow} alt="..." />
+                    <Link className="link" to='/api-doc'>
+                    Start Integration <img src={arrow} alt="..." />
                     </Link>
                   </div>
                 </div>

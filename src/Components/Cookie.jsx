@@ -72,7 +72,7 @@ const Cokkie = () => {
                                 setShow(true);
                             }}
                         >
-                            I Agree!
+                            I Accept!
                         </button>
                     </div>
                 </div>

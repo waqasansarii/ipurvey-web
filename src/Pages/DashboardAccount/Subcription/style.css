@@ -1,6 +1,8 @@
 .subscript_manage_sd {
   display: flex;
   background-color: #f0f4fc;
+  min-height: calc(100vh - 90px) ;
+
 }
 .subcript_right_content_main .partner_header {
   display: none;

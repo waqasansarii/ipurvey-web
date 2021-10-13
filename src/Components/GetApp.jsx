@@ -29,7 +29,7 @@ const GetApp = ({ btn, para, head }) => {
               </button>
             ) : null}
             <div>
-              <span>Coming soon!</span>
+              <span>Coming Soon</span>
               <img src={store} alt="..." />
             </div>
           </div>

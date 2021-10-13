@@ -1,6 +1,26 @@
 .tb_page_container {
   background-color: #f0f4fc;
   padding-bottom: 20px;
+  min-height: 100vh;
+  height: max-content;
+  /* min-height: calc(100vh - 90px) ; */
+
+}
+.travel_table_container{
+  position: relative;
+}
+.tbHover{
+  position: absolute;
+  width: 350px;
+  background-color: white ;
+  z-index: 99999;
+  padding: 10px;
+  right: 0px !important;
+  top: 50px;
+}
+.tbHover .popover__content2:before {
+  left: calc(85% - 14px);
+
 }
 .table_bk {
   max-height: 70vh;
@@ -84,11 +104,13 @@
 }
 
 .tb_page_table {
+  min-width: 850px;
   max-height: 60vh;
   overflow: auto;
-  min-width: 850px;
 }
+/* .tb_page_table tbody{
 
+} */
 .tb_page_table thead {
   background-color: #9fadc0;
 }
@@ -197,6 +219,9 @@
 @media (max-width: 800px) {
   .tb_page_rigth_content h5 {
     display: none;
+  }
+  .popover__content2 h5{
+    display:  block !important;
   }
 }
 @media (max-width: 600px) {

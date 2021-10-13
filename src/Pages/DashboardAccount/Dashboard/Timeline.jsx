@@ -18,7 +18,7 @@ export default function ReportTimeline() {
               <TimelineDot style={{ backgroundColor: "white" }}>
                 <img src={step1} alt="..." />
               </TimelineDot>
-              <TimelineConnector />
+              <TimelineConnector className='grnClr' />
             </TimelineSeparator>
             <TimelineContent>
             <div className="step1Head">

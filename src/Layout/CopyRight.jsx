@@ -13,7 +13,7 @@ const CopyRight = () => {
         <div className='copy_right_container'>
             <div className="copy_right_main_div">
                 <div className="contact_link_ul_">
-                    <h5>Contact us</h5>
+                    <h5>Connect with us!</h5>
                     <img className='contct_path_line' src={path} alt="" />
                     <ul className="social_links">
                         <li>

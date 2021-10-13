@@ -1,177 +1,187 @@
 .chatbox_md {
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    z-index: 9999999;
-    font-size: 0.8em;
-  }
-  .chatImg {
-    width: 60px;
-    height: 60px;
-  }
-  .helpChat_div {
-    background-color: #f0f4fc;
-    position: absolute;
-    left: -297px;
-    top: -370px;
-    width: 300px;
-    border-radius: 7px;
-    box-shadow: 0px 0px 5px gainsboro;
-    /* display: none; */
-    height: 365px;
-    
-  }
-  .chatbox_md:hover > .helpChat_div {
-    display: block;
-  }
-  
-  .webName_ul,
-  .mute_ul {
-    list-style: none;
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    align-items: center;
-  }
-  .help_msg_ul {
-    list-style: none;
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-  }
-  .webName_ul p {
-    margin-bottom: 0px;
-    color: white;
-  }
-  .help_chat_head_div {
-    display: flex;
-    justify-content: space-between;
-    background-color: #2e58a6;
-    padding: 10px 5px;
-    padding-bottom: 10px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    height: 50px;
-  }
-  .help_msgs_div {
-    padding: 10px 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    height: 310px;
-    overflow: auto;
-  }
-  .help_msgs_div::-webkit-scrollbar {
-    width: 5px;
-  }
-  .help_msg_ul {
-    display: flex;
-    flex-direction: column;
-  }
-  .help_msg_ul > li > div {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 0px;
-  }
-  .msg_smCartoonImg {
-    height: 40px;
-  }
-  .help_msg_para {
-    padding: 8px;
-    background-color: white;
-    border-radius: 8px;
-    margin-bottom: 0px;
-    font-size: 0.85rem;
-    /* max-width: 212px; */
-    width: 73%;
-  }
-  .date {
-    text-align: right;
-    color: #2e58a6;
-    font-size: 0.75rem;
-    margin-top: 5px;
-    width: 200px;
-    margin: 5px auto;
-    margin-bottom: 0px;
-  }
-  .date2 {
-    text-align: start;
-    color: #2e58a6;
-    font-size: 0.75rem;
-    margin-top: 5px;
-    width: 200px;
-    margin: 5px auto;
-    margin-bottom: 0px;
-  }
-  
-  .chat_btn {
-    font-size: 0.8em !important;
-    font-weight: 600;
-    padding: 7px 20px;
-    line-height: 1em !important;
-    text-align: center;
-    background-color: #1cc1a0;
-    color: white;
-    border-radius: 3px;
-    width: 80px;
-  }
-  
-  .help_input_div {
-    background-color: white !important;
-    padding: 8px 13px;
-    display: flex;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    align-items: center;
-  }
-  
-  .help_input {
-    width: 98%;
-    border: none;
-    padding: 0px 8px;
-    outline: none;
-    font-size: 0.9rem;
-    box-shadow: none !important;
-  }
-  
-  .cr_user_msd_ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-  }
-  .cr_user_msd_ul > li > div {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-  }
-  .cr_user_msd_ul > li {
-    margin-top: 10px;
-  }
-  .cr_user_msd_ul > li p {
-    margin-bottom: 0px;
-  }
-  
-  .cr_help_msg_para {
-    padding: 8px;
-    background-color: #2e58a6;
-    color: white;
-    border-radius: 8px;
-    margin-bottom: 0px;
-    font-size: 0.85rem;
-    max-width: 212px;
-    font-weight: 300;
-  }
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 9999999;
+  font-size: 0.8em;
+}
+.chatImg {
+  width: 60px;
+  height: 60px;
+}
+.helpChat_div {
+  background-color: #f0f4fc;
+  position: absolute;
+  left: -297px;
+  top: -370px;
+  width: 300px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px gainsboro;
+  /* display: none; */
+  height: 365px;
+}
+.chatbox_md:hover > .helpChat_div {
+  display: block;
+}
 
- 
-@media (max-width:450px){
-  .helpChat_div{
+.chat_img {
+  width: 100%;
+  display: flex;
+  justify-content: center !important;
+}
+
+.chat_img img {
+  width: 212px;
+  object-fit: contain;
+}
+
+.webName_ul,
+.mute_ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  align-items: center;
+}
+.help_msg_ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  overflow: auto;
+  padding: 0px;
+}
+.webName_ul p {
+  margin-bottom: 0px;
+  color: white;
+}
+.help_chat_head_div {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2e58a6;
+  padding: 10px 5px;
+  padding-bottom: 10px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  height: 50px;
+}
+.help_msgs_div {
+  padding: 10px 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 310px;
+  overflow: auto;
+}
+.help_msgs_div::-webkit-scrollbar {
+  width: 5px;
+}
+.help_msg_ul {
+  display: flex;
+  flex-direction: column;
+}
+.help_msg_ul > li > div {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.msg_smCartoonImg {
+  height: 40px;
+}
+.help_msg_para {
+  padding: 8px;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 0px;
+  font-size: 0.85rem;
+  /* max-width: 212px; */
+  width: 73%;
+}
+.date {
+  text-align: right;
+  color: #2e58a6;
+  font-size: 0.75rem;
+  margin-top: 5px;
+  width: 200px;
+  margin: 5px auto;
+  margin-bottom: 0px;
+}
+.date2 {
+  text-align: start;
+  color: #2e58a6;
+  font-size: 0.75rem;
+  margin-top: 5px;
+  width: 200px;
+  margin: 5px auto;
+  margin-bottom: 0px;
+}
+
+.chat_btn {
+  font-size: 0.8em !important;
+  font-weight: 600;
+  padding: 7px 20px;
+  line-height: 1em !important;
+  text-align: center;
+  background-color: #1cc1a0;
+  color: white;
+  border-radius: 3px;
+  width: 80px;
+}
+
+.help_input_div {
+  background-color: white !important;
+  padding: 8px 13px;
+  display: flex;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  align-items: center;
+}
+
+.help_input {
+  width: 98%;
+  border: none;
+  padding: 0px 8px;
+  outline: none;
+  font-size: 0.9rem;
+  box-shadow: none !important;
+}
+
+.cr_user_msd_ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.cr_user_msd_ul > li > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.cr_user_msd_ul > li {
+  margin-top: 10px;
+}
+.cr_user_msd_ul > li p {
+  margin-bottom: 0px;
+}
+
+.cr_help_msg_para {
+  padding: 8px;
+  background-color: #2e58a6;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 0px;
+  font-size: 0.85rem;
+  max-width: 212px;
+  font-weight: 300;
+}
+
+@media (max-width: 450px) {
+  .helpChat_div {
     left: -250px;
     top: -375px;
   }
 }
-@media (max-width:450px){
-  .helpChat_div{
+@media (max-width: 450px) {
+  .helpChat_div {
     width: 270px;
     left: -215px;
     top: -375px;
   }
-}  
+}

@@ -4,7 +4,8 @@
   margin-left: 50px;
 }
 .MuiDrawer-paper {
-  height: 86% !important;
+  /* height: 86% !important; */
+  height: calc(100% - 86px) !important;
   top: 91px !important;
 }
 
@@ -15,7 +16,9 @@
 .sidebar_container .sb_link {
   padding: 10px 20px !important;
 }
-
+.sOpen_img:hover{
+  cursor: pointer;
+}
 .sClose_img {
   display: flex;
   justify-content: space-between;
@@ -73,6 +76,9 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+}
+.sb_imgD:hover{
+  cursor: pointer;
 }
 
 .sub_sb_links {

@@ -1,6 +1,10 @@
 .acc_activity_sd{
     display: flex;
     background-color: #F0F4FC;
+    /* min-height: 100vh; */
+  min-height: calc(100vh - 90px) ;
+
+   align-items: flex-start;
 }
 .acc_activity_right_md{
     margin-top: 30px;

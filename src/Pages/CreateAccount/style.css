@@ -47,7 +47,6 @@
 }
 .account_form_sd .orLine_md > img {
   width: 100%;
-  /* margin: 10px 0px; */
   margin-top: 20px;
   margin-bottom: 5px;
 }
@@ -70,11 +69,8 @@
 }
 .user_acc_right_md {
   width: 40%;
-  /* border: 2px solid red; */
 }
 .user_acc_right_md > img {
-  /* width: 100%; */
-  /* height: 100vh; */
   object-fit: contain;
 }
 
@@ -86,8 +82,6 @@
 }
 .acc_name_inp > input {
   width: 48%;
-  /* padding: 6px 9px; */
-  /* font-size: .9rem; */
 }
 
 .acc_postal_code > button {
@@ -138,7 +132,6 @@
   transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
 }
 .popover__message {
-  /* text-align: center; */
   margin-bottom: 0px;
   font-size: 0.8rem;
 }

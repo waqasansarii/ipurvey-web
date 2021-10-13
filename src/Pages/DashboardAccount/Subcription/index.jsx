@@ -19,7 +19,7 @@ const SubscriptionManager = () => {
               <h2>MANAGE SUBSCRIPTIONS</h2>
             </div>
             <div className="sbc_manage_md">
-              <OurPlans />
+              <OurPlans link bgTrans btnText activeByDefault />
               {/* mobile view subscription  */}
               <SubscriptionCardMobile />
             </div>

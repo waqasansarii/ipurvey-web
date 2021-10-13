@@ -10,17 +10,17 @@ import OrderSummary from "../../Components/PlanComponent/OrderSummary";
 
 const options = {
   paypal: {
-    name: "Payment with Paypal",
+    name: "Pay with Paypal",
     img: paypalIcon,
     route: "/payment/paypal",
   },
   stripe: {
-    name: "Payment with Stripe",
+    name: "Pay with Stripe",
     img: stripeIcon,
     route: "/payment/stripe",
   },
   bank: {
-    name: "Payment with Bank",
+    name: "Pay by bank transfer",
     img: bankIcon,
     route: "/payment/bank-transfer",
   },

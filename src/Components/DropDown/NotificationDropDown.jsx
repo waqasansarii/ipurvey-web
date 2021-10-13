@@ -86,7 +86,7 @@ const NotificationDropdown = ({ className }) => {
             </li>
           </ul>
           <div className="nitfic_view_all">
-            <Link className="va_text text-center text_bluegreen">view all</Link>
+            <Link className="va_text text-center text_bluegreen" to='/notification'>view all</Link>
           </div>
         </div>
       </div>

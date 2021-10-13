@@ -21,7 +21,7 @@ const PaymentMethod = () => {
               </p>
               <div className="learn_more_lin">
                 <Link className="link">
-                  View registered banks <img src={arrow} alt="..." />
+                Download the app <img src={arrow} alt="..." />
                 </Link>
               </div>
             </div>
@@ -59,7 +59,7 @@ const PaymentMethod = () => {
               </p>
               <div className="learn_more_lin">
                 <Link className="link">
-                  View registered banks <img src={arrow} alt="..." />
+                Download the app <img src={arrow} alt="..." />
                 </Link>
               </div>
             </div>

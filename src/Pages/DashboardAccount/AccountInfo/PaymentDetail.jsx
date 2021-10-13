@@ -17,7 +17,7 @@ const PaymentDetail = () => {
     <div className="AInfo_conatainer">
       <div className="ainfo_md">
         <div className="payment_head">
-          <h5 >PAYMENT DETAIL</h5>
+          <h5  className='accInfoHeadMain'>PAYMENT DETAILS</h5>
         </div>
         <div className="pD_inp">
           <input type="text" placeholder="Sort Code" />

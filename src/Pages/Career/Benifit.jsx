@@ -12,7 +12,7 @@ const Benifit = () => {
           <div className="benifit_cards">
             <div>
               <img src={img1} alt="..." />
-              <h6>No Paperwork</h6>
+              <h6>Benefit Title</h6>
               <p>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et
@@ -20,7 +20,7 @@ const Benifit = () => {
             </div>
             <div>
               <img src={img2} alt="..." />
-              <h6>No Paperwork</h6>
+              <h6>Benefit Title</h6>
               <p>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et
@@ -28,7 +28,7 @@ const Benifit = () => {
             </div>
             <div>
               <img src={img3} alt="..." />
-              <h6>No Paperwork</h6>
+              <h6>Benefit Title</h6>
               <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et

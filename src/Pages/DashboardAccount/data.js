@@ -4,15 +4,22 @@ export const dbTable = {
     {
       date: "21/2/2021",
       fromTo: "Dubai (DUX) > Los Angleses (LA)",
-      type: "Cancelled",
+      type: "-",
       status: "Info required",
       id: "01",
     },
     {
       date: "21/2/2021",
       fromTo: "Dubai (DUX) > Los Angleses (LA)",
-      type: "Delayed",
+      type: "-",
       status: "New",
+      id: "02",
+    },
+    {
+      date: "21/2/2021",
+      fromTo: "Dubai (DUX) > Los Angleses (LA)",
+      type: "Cancelled",
+      status: "Expired",
       id: "02",
     },
     {
@@ -20,7 +27,7 @@ export const dbTable = {
       fromTo: "Dubai (DUX) > Los Angleses (LA)",
       type: "Delayed",
       status: "Expired",
-      id: "02",
+      id: "03",
     },
   ],
 };

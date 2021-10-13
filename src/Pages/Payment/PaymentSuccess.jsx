@@ -1,6 +1,7 @@
 import React from "react";
 import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import successTick from "../../Assets/Group 872.png";
+import { Link } from "react-router-dom";
 const PaymentSuccess = () => {
   return (
     <React.Fragment>
@@ -9,7 +10,10 @@ const PaymentSuccess = () => {
           <div className="col-lg-12">
             <div className="pm_head">
               <div>
-                <img src={arrowLeft} alt="..." />
+              <Link to="/payment/bank-type">
+                  <img src={arrowLeft} alt="..." />
+                </Link>
+                {/* <img src={arrowLeft} alt="..." /> */}
                 <h2>Authorize your payment</h2>
               </div>
             </div>

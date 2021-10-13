@@ -7,7 +7,7 @@ const AccInfoForm = () => {
     <div className="AInfo_conatainer">
       <div className="ainfo_md">
         <div className="aInfo_head">
-          <h5>YOUR ACCOUNT INFORMATION</h5>
+          <h5 className='accInfoHeadMain'>YOUR ACCOUNT INFORMATION</h5>
           <button>
             {" "}
             <img src={edit} alt="..." /> Edit

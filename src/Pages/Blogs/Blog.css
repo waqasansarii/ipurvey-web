@@ -7,6 +7,9 @@
   margin-top: 80px !important;
   padding: 0px 10px;
 }
+.sBlgCardM{
+  margin-top: 5px !important;
+}
 .blog_head_search_div {
   display: flex;
   justify-content: space-between;
@@ -105,7 +108,7 @@
 }
 /* social feed comp  */
 .sblogPageFeed{
-  margin-top: -95px;
+  margin-top: -71px;
 }
 .sblogPageFeed .feed_div h4{
   margin-left: 67px;

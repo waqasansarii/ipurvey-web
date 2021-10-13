@@ -36,7 +36,7 @@ const DashBoard = () => {
                 <div>
                   <div className="db_table_head">
                     <h4>YOUR RECENT TRAVEL BOOKINGS</h4>
-                    <Link className="link">
+                    <Link className="link" to='/travel-booking'>
                       View all <img src={arrow} alt="..." />
                     </Link>
                   </div>

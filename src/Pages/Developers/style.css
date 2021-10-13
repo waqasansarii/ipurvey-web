@@ -30,6 +30,12 @@
     width: 520px;
 
 }
+.developer_sd .pm_left_sec2 h5{
+    /* width: 520px; */
+    text-align: center;
+    font-size: 1.4rem;
+
+}
 .developer_sd .pm_right_sec2{
     width: 450px;
 }

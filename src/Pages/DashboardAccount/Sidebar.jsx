@@ -147,13 +147,13 @@ export default function MiniDrawer() {
           </div>
           <div className="sidebar_container">
             <div>
-              <div className="sOpen_img">
+              <div className="sOpen_img" onClick={handleDrawerOpen}>
                 <img
                   src={sOpen}
                   alt="..."
                   color="inherit"
                   aria-label="open drawer"
-                  onClick={handleDrawerOpen}
+                  
                   edge="start"
                   className={`sb_opnBtn ${clsx(classes.menuButton, {
                     [classes.hide]: open,

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./OurPlans.css";
 import tick from "../../Assets/Path 5267.svg";
 import cross from "../../Assets/cross.png";
+import { useHistory } from "react-router";
 const our_planData = [
   {
     id: "0",
@@ -46,8 +47,9 @@ const our_planData = [
     planImg: [tick, tick, tick, cross, cross],
   },
 ];
-const OurPlans = () => {
-  const [activePlan, setActivePlan] = useState("2");
+const OurPlans = ({ link, bgTrans, btnText, activeByDefault }) => {
+  const history = useHistory();
+  const [activePlan, setActivePlan] = useState("3");
 
   const handleSelect = (e) => {
     setActivePlan(e.id);
@@ -76,18 +78,23 @@ const OurPlans = () => {
                     </div>
                   </div>
                   <div className="col-lg-12">
-                    <div className="feature_list">
+                    <div className="feature_list fTwoList">
                       <span>Customer notification of submitted claim</span>
+                      <p className="smPln">*Qualifying travel disruption</p>
                     </div>
                   </div>
                   <div className="col-lg-12">
                     <div className="feature_list">
-                      <span>History of customer journeys and submitted claim</span>
+                      <span>
+                        History of customer journeys and submitted claim
+                      </span>
                     </div>
                   </div>
                   <div className="col-lg-12">
                     <div className="feature_list">
-                      <span>Multiple choice of compensation payment method</span>
+                      <span>
+                        Multiple choice of compensation payment method
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -114,7 +121,13 @@ const OurPlans = () => {
                           {activePlan === d.id ? (
                             <div className="popular_text">Popular</div>
                           ) : null}
-                          <div className="fib_head">
+                          <div
+                            className={
+                              activePlan === d.id && !bgTrans || d.id === "1" && activeByDefault
+                                ? " activeHead fib_head"
+                                :  "fib_head"
+                            }
+                          >
                             <div className="row">
                               <h5>{d.name}</h5>
                             </div>
@@ -125,7 +138,13 @@ const OurPlans = () => {
                               <span>{d.transaction}</span>
                             </div>
                           </div>
-                          <div className="row">
+                          <div
+                            className={
+                              d.id === "1" && activeByDefault
+                                ? "row byDfActive"
+                                : "row"
+                            }
+                          >
                             {d.planImg.map((v, i) => {
                               return (
                                 <div key={i} className="col-lg-12">
@@ -159,8 +178,31 @@ const OurPlans = () => {
                               </div>
                             </div> */}
                           </div>
-                          <div className="row">
-                            <button className="home_form_btn">Subscribe</button>
+                          <div
+                            className={
+                              d.id === "1" && activeByDefault
+                                ? "row byDfActive bRadius"
+                                : "row"
+                            }
+                          >
+                            {!link ? (
+                              <button
+                                className="home_form_btn"
+                                onClick={() => history.push("/plan")}
+                              >
+                                {btnText ? "Upgrade" : "Subscribe"}
+                              </button>
+                            ) : (
+                              <button
+                                className={
+                                  d.id === "1" && activeByDefault
+                                    ? "byDfBtnAct home_form_btn"
+                                    : "home_form_btn"
+                                }
+                              >
+                                {d.id === "1" && activeByDefault ? "Cancel plan" : "Upgrade"}
+                              </button>
+                            )}
                           </div>
                         </div>
                       </div>

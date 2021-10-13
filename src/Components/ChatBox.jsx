@@ -3,8 +3,9 @@ import chat from "../Assets/Group 3417.png";
 import user from "../Assets/Rectangle 1148.png";
 import send from "../Assets/Group 3419.png";
 import user1 from "../Assets/Rectangle 1144.png";
+import imgChat from "../Assets/Rectangle 1151.png";
 import { useEffect } from "react";
-import './Style/Chat.css'
+import "./Style/Chat.css";
 
 const ChatBox = () => {
   const [chatOpen, setChatOpen] = useState(false);
@@ -60,18 +61,14 @@ const ChatBox = () => {
                 <li>
                   <div>
                     <img className="msg_smCartoonImg" src={user} alt="img" />
-                    <p className="help_msg_para">
-                    Hi, Welcome to iPurvey!
-                    </p>
+                    <p className="help_msg_para">Hi, Welcome to iPurvey!</p>
                   </div>
                   {/* <p className="date">1/1/2021 | 05:00 PM</p> */}
                 </li>
                 <li>
                   <div>
                     <img className="msg_smCartoonImg" src={user} alt="img" />
-                    <p className="help_msg_para">
-                    How can I help you?
-                    </p>
+                    <p className="help_msg_para">How can I help you?</p>
                   </div>
                   <p className="date">1/1/2021 | 05:00 PM</p>
                 </li>
@@ -80,11 +77,15 @@ const ChatBox = () => {
                 <li>
                   <div>
                     <p className="cr_help_msg_para">
-                    I'm a business manager at Qatar Airways. Would like to know about API Plans and Pricing!
+                      I'm a business manager at Qatar Airways. Would like to
+                      know about API Plans and Pricing!
                     </p>
                     <img className="msg_smCartoonImg" src={user} alt="img" />
                   </div>
                   <p className="date2">1/1/2021 | 05:00 PM</p>
+                  <div className="chat_img">
+                    <img src={imgChat} alt="..." />
+                  </div>
                 </li>
               </ul>
             </div>

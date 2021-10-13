@@ -40,7 +40,7 @@ const SelectBlog = () => {
               <p>june 20-3-2020 | 3:00 Pm</p>
             </div>
           </div>
-          <div className="blog_card_socail_feed_div">
+          <div className="blog_card_socail_feed_div sBlgCardM">
             {blogData.map((val, i) => (
               <div className="select_blog_more_main_div" key={i}>
                 <Swiper
