@@ -4,7 +4,7 @@ import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import eyeIcon from "../../Assets/Icon awesome-eye-slash.png";
 import paypalIcon from "../../Assets/PayPal_logo_logotype_emblem.svg";
 import { Link } from "react-router-dom";
-const PaymentPaypal = () => {
+const PaymentPaypal = (props) => {
   const history = useHistory();
   return (
     <React.Fragment>
@@ -43,7 +43,7 @@ const PaymentPaypal = () => {
 
         <div className="row mt-5">
           <div className="col-lg-12">
-            <Link to="#">
+            <Link to={props.path ? "payment-thank" : "/payment/thank-you"}>
               <button className="home_form_btn">Login to Paypal</button>
             </Link>
           </div>

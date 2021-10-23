@@ -4,7 +4,7 @@ import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import bankImg from "../../Assets/Group 891.png";
 import { Link } from "react-router-dom";
 
-const PaymetBankMethod = () => {
+const PaymetBankMethod = (props) => {
   const history = useHistory();
 
   return (
@@ -52,7 +52,12 @@ const PaymetBankMethod = () => {
         </div>
         <div className="row mt-2">
           <div className="col-lg-12">
-            <Link className="hl_text">Cancel Transaction</Link>
+            <Link
+              to={props.path ? "/plan/payment-failed" : "/payment/failed"}
+              className="hl_text"
+            >
+              Cancel Transaction
+            </Link>
           </div>
         </div>
       </div>

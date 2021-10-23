@@ -10,7 +10,7 @@ export const dbTable = {
     },
     {
       date: "21/2/2021",
-      fromTo: "Dubai (DUX) > Los Angleses (LA)",
+      fromTo: "London UK (LUK) > Islamabad (ISB)",
       type: "-",
       status: "New",
       id: "02",
@@ -24,7 +24,7 @@ export const dbTable = {
     },
     {
       date: "21/2/2021",
-      fromTo: "Dubai (DUX) > Los Angleses (LA)",
+      fromTo: "London UK (LUK) > Islamabad (ISB)",
       type: "Delayed",
       status: "Expired",
       id: "03",

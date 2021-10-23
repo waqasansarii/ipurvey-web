@@ -15,6 +15,7 @@ import PlanOtp from "./PlanOtp";
 import PlanAccountType from "./PlanAccountType";
 import PlanConfirm from "./PlanConfirm";
 import PlanSuccessfull from "./PlanSuccessfull";
+import PlanQrCode from "./PlanQrCode";
 
 const PlanPayment = () => {
   const options = {
@@ -126,6 +127,11 @@ const PlanPayment = () => {
                         exact
                         path="/planpayment/bank-auth"
                         component={PlanAuth}
+                      />
+                      <Route
+                        exact
+                        path="/planpayment/bank-qrcode"
+                        component={PlanQrCode}
                       />
                       <Route
                         exact

@@ -26,7 +26,7 @@ const Home = () => {
         <Flights />
         <PaymentMethod />
         <Trusted />
-        <GetApp head="Get Register Today" btn />
+        <GetApp head="Get registered today" btn />
       </div>
       <Footer />
     </React.Fragment>

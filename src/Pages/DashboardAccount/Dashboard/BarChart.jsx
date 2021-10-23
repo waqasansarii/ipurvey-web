@@ -19,13 +19,21 @@ const data = {
 
 const options = {
   scales: {
-    yAxes: [
-      {
-        ticks: {
-          beginAtZero: true,
-        },
+    x: {
+      grid: {
+        display: false,
       },
-    ],
+    },
+    y: {
+      grid: {
+        display: false,
+        drawBorder: false,
+        lineWidth: 0.5,
+      },
+      ticks: {
+        display: false
+    }
+    },
   },
   responsive: true,
   plugins: {

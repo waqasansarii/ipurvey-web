@@ -16,6 +16,7 @@ import BankOtp from "./BankOtp";
 import BankAccountType from "./BankAccountType";
 import ConfirmPayment from "./ConfirmPayment";
 import PaymentSuccess from "./PaymentSuccess";
+import BankAuthQr from "./BankAuthQr";
 const PaymentForm = () => {
   return (
     <>
@@ -41,6 +42,7 @@ const PaymentForm = () => {
             <Route exact path="/payment/select-bank" component={BankSelect} />
             <Route exact path="/payment/paying-bank" component={BankPaying} />
             <Route exact path="/payment/bank-auth" component={BankAuth} />
+            <Route exact path="/payment/bank-qrcode" component={BankAuthQr} />
             <Route exact path="/payment/bank-otp" component={BankOtp} />
             <Route
               exact

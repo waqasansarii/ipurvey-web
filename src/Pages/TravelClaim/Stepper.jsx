@@ -18,19 +18,19 @@ const nextStepForm = (nextFunc, backFunc, steps) => {
   switch (steps) {
     case 0:
       return <DepartureDateForm nextBtn={nextFunc} backBtn={backFunc} />;
+    // case 1:
+    //   return <TryAgain nextBtn={nextFunc} />;
     case 1:
-      return <TryAgain nextBtn={nextFunc} />;
-    case 2:
       return <WhereWereTraveling nextBtn={nextFunc} backBtn={backFunc} />;
-    case 3:
+    case 2:
       return <MoreDetail nextBtn={nextFunc} backBtn={backFunc} />;
-    case 5:
+    case 4:
       return <SelectFlight nextBtn={nextFunc} backBtn={backFunc} />;
-    case 6:
+    case 5:
       return <EmailForm nextBtn={nextFunc} backBtn={backFunc} />;
-    case 7:
+    case 6:
       return <OneStepAway nextBtn={nextFunc} />;
-    case 8:
+    case 7:
       return <StepperSignup />;
 
     default:
@@ -45,15 +45,15 @@ const Stepper = () => {
   let [loading, setLoading] = useState(false);
   const handleNextButton = () => {
     setNextStep(++nextStep);
-    if (nextStep === 4) {
+    if (nextStep === 3) {
       setLoading(true);
     }
   };
   useEffect(() => {
-    if (nextStep === 4) {
+    if (nextStep === 3) {
       setTimeout(() => {
         setLoading(false);
-        if (nextStep >= 4 && nextStep <= 4) {
+        if (nextStep >= 3 && nextStep <= 3) {
           setNextStep(++nextStep);
         }
       }, 2000);
@@ -61,7 +61,7 @@ const Stepper = () => {
   }, [loading]);
   const handleBackButton = () => {
     if (nextStep > 0) {
-      if (nextStep === 5) {
+      if (nextStep === 4) {
         setNextStep(nextStep - 2);
       } else {
         setNextStep(--nextStep);

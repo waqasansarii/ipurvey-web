@@ -2,13 +2,38 @@
   width: 100%;
   margin-bottom: 2rem;
 }
-.smPln{
-  color: #748AA6;
-  font-size: .7rem;
-  text-align: end;
-}
+
 .our_plans_section .partner_header {
   margin: 1rem 0;
+}
+
+.current_plan {
+  background: #2e58a6;
+  color: white !important;
+  border-radius: 8px;
+}
+
+.current_plan button {
+  background-color: white;
+  color: #2e58a6;
+}
+
+.fib_head .cp_img {
+  display: none;
+}
+
+.current_plan .cp_img {
+  display: block;
+  position: absolute;
+  left: -4px;
+  top: -5px;
+  width: 64px;
+}
+
+.current_plan h5,
+.current_plan span,
+.current_plan h2 {
+  color: white !important;
 }
 
 .our_plan_hero {
@@ -16,13 +41,13 @@
   height: max-content;
   background: #f0f4fc;
   margin: 2rem auto;
-  padding: 1rem 1rem;
+  padding: 0rem 1rem;
   border-radius: 8px;
 }
 
 .feature_box {
   width: 100%;
-  padding: 76px 0;
+  padding: 77px 0 0 0;
 }
 
 .feature_box > h2 {
@@ -45,15 +70,6 @@
   border-radius: 8px;
   margin: 0.3rem 0;
 }
-.fTwoList{
-  /* display; */
-  flex-direction: column ;
-  text-align: right !important;
-  /* text-align: right; */
-  height:  auto;
-  padding-top: 10px;
-  align-items: flex-end !important;
-}
 .feature_list span {
   font-size: 0.9rem;
 }
@@ -75,6 +91,7 @@
   font-size: 0.9rem;
   color: white;
   right: 0;
+  z-index: 999;
   background: #50c900;
   display: flex;
   justify-content: center;
@@ -91,35 +108,21 @@
   justify-content: flex-start;
 }
 
+.plan_ca {
+  width: 16%;
+}
+
 .active_fib {
   border: 1px solid #50c900;
 }
 
-/* .active_fib .fib_head {
+.active_fib .fib_head {
   background: #2e58a6;
-} */
-.activeHead{
-  background: #2e58a6;
-
-}
-.byDfBtnAct{
-  border: none;
-  background-color: white;
-  color: #2e58a6;
-  outline: none;
-}
-.byDfActive{
-  background: #2e58a6;
-  margin: 0px 0px;
-}
-.bRadius{
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
-.activeHead h5,
-.activeHead span,
-.activeHead h2 {
+.active_fib h5,
+.active_fib span,
+.active_fib h2 {
   color: white !important;
 }
 
@@ -144,7 +147,6 @@
 }
 
 .flist {
-  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,9 +157,18 @@
   width: 85%;
 }
 
+.bg-white {
+  background-color: white;
+}
+
+.bg-light {
+  background-color: #f6f7fb;
+}
+
 .feature_item_box .home_form_btn {
   padding: 11px 10px;
   width: 70%;
+  font-weight: 500;
   margin: 10px auto;
 }
 
@@ -166,7 +177,12 @@
     font-size: 1rem;
   }
   .feature_item_box .fib_head {
-    padding-top: 8px;
+    padding-top: 15px;
+  }
+  .current_plan .cp_img {
+    left: -8px;
+    top: -8px;
+    width: 64px;
   }
 }
 
@@ -179,6 +195,11 @@
 @media screen and (max-width: 1128px) {
   .our_plan_col {
     overflow-x: auto;
+  }
+
+  .current_plan .cp_img {
+    left: -1px;
+    top: -1px;
   }
   .our_plan_row {
     width: 900px;

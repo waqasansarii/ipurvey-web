@@ -103,7 +103,7 @@ const BankSelect = (props) => {
         </div>
         <div className="row mt-4">
           <div className="col-lg-12">
-            <Link to={options[active].route}>
+            <Link to={props.path ? "bank-paying" : options[active].route}>
               {" "}
               <button className="home_form_btn">Continue</button>
             </Link>
@@ -111,7 +111,12 @@ const BankSelect = (props) => {
         </div>
         <div className="row mt-2">
           <div className="col-lg-12">
-            <Link className="hl_text">Cancel Transaction</Link>
+            <Link
+              to={props.path ? "/plan/payment-failed" : "/payment/failed"}
+              className="hl_text"
+            >
+              Cancel Transaction
+            </Link>
           </div>
         </div>
       </div>

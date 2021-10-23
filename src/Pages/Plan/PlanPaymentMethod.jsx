@@ -12,17 +12,17 @@ const options = {
   paypal: {
     name: "Pay with Paypal",
     img: paypalIcon,
-    route: "/payment/paypal",
+    route: "/plan/payment-paypal",
   },
   stripe: {
     name: "Pay with Stripe",
     img: stripeIcon,
-    route: "/payment/stripe",
+    route: "/plan/payment-stripe",
   },
   bank: {
     name: "Pay by bank transfer",
     img: bankIcon,
-    route: "/payment/bank-transfer",
+    route: "/planpayment/bank-select",
   },
 };
 

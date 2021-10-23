@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import starlingIcon from "../../Assets/Mask Group 2.png";
 import lockIcon from "../../Assets/Icon awesome-lock.png";
 import otpIcon from "../../Assets/Group 863.png";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const BankOtp = () => {
+  const history = useHistory();
+  useEffect(() => {
+    setTimeout(() => {
+      history.push("/payment/bank-type");
+    }, 2000);
+  }, []);
   return (
     <React.Fragment>
       <div className="bank_otp">
@@ -50,7 +56,11 @@ const BankOtp = () => {
         <div className="otp_box row justify-content-center">
           <div className="col-3 col-sm-3 col-md-3 col-lg-3">
             <div className="otp_input">
-              <input type="text" placeholder="-" />
+              <input
+                type="text"
+                // onChange={() => setFilled(e.target.value)}
+                placeholder="-"
+              />
             </div>
           </div>
           <div className="col-3 col-sm-3 col-md-3 col-lg-3">

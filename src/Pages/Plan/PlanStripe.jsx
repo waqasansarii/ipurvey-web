@@ -14,7 +14,7 @@ const PlanStripe = () => {
         />
         <div className="row">
           <div className="pp_content">
-            <PaymentStripe />
+            <PaymentStripe path />
           </div>
         </div>
       </div>

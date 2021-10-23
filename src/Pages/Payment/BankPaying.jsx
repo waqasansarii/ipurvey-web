@@ -1,8 +1,10 @@
 import React from "react";
+import { useHistory } from "react-router";
 import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import bankImg from "../../Assets/Group 868.png";
 import { Link } from "react-router-dom";
-const BankPaying = () => {
+const BankPaying = (props) => {
+  const history = useHistory();
   return (
     <React.Fragment>
       <div className="payment_bank_method1 paying_bank">
@@ -10,9 +12,12 @@ const BankPaying = () => {
           <div className="col-lg-12">
             <div className="pm_head">
               <div>
-                <Link to="/payment/select-bank">
-                  <img src={arrowLeft} alt="..." />
-                </Link>
+                <img
+                  style={{ cursor: "pointer" }}
+                  onClick={() => history.goBack()}
+                  src={arrowLeft}
+                  alt="..."
+                />
                 <h2>Select your bank</h2>
               </div>
             </div>
@@ -21,9 +26,7 @@ const BankPaying = () => {
         <div className="row mt-4">
           <div className="col-lg-12">
             <div className="ps_img">
-              <Link to="/payment/select-bank">
-                <img src={bankImg} alt="..." />
-              </Link>
+              <img src={bankImg} alt="..." />
             </div>
           </div>
         </div>
@@ -40,14 +43,19 @@ const BankPaying = () => {
         </div>
         <div className="row mt-4">
           <div className="col-lg-12">
-            <Link to="/payment/bank-auth">
+            <Link to={props.path ? "bank-auth" : "/payment/bank-auth"}>
               <button className="home_form_btn">Yes, I Agree!</button>
             </Link>
           </div>
         </div>
         <div className="row mt-2">
           <div className="col-lg-12">
-            <Link to="/payment/select-bank" className="hl_text">
+            <Link
+              to={
+                props.path ? "/planpayment/bank-select" : "/payment/select-bank"
+              }
+              className="hl_text"
+            >
               Change Bank
             </Link>
           </div>

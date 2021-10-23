@@ -5,7 +5,7 @@ const PlanBankPaying = () => {
   return (
     <React.Fragment>
       <div className="plan_select_bank">
-        <BankPaying />
+        <BankPaying path />
       </div>
     </React.Fragment>
   );

@@ -5,7 +5,7 @@ const PlanAccountType = () => {
   return (
     <React.Fragment>
       <div className="plan_account_type">
-        <BankAccountType />
+        <BankAccountType path/>
       </div>
     </React.Fragment>
   );

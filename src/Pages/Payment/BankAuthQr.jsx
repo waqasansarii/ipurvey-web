@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
-import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
-import starlingIcon from "../../Assets/Mask Group 2.png";
+import React from "react";
+import qrCode from "../../Assets/Group 852.png";
 import lockIcon from "../../Assets/Icon awesome-lock.png";
-import eyeIcon from "../../Assets/Icon awesome-eye-slash.png";
+import starlingIcon from "../../Assets/Mask Group 2.png";
+import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
+import { Link, useHistory } from "react-router-dom";
 
-const BankAuth = (props) => {
+const BankAuthQr = (props) => {
   const history = useHistory();
   return (
-    <React.Fragment>
+    <>
       <div className="bank_auth payment">
         <div className="row">
           <div className="col-lg-12">
@@ -44,48 +44,33 @@ const BankAuth = (props) => {
         </div>
         <div className="row">
           <div className="auth_tabs">
-            <button className="auth_active_tab">Internet Banking ID</button>
-            <Link to={props.path ? "bank-qrcode" : "/payment/bank-qrcode"}>
-              <button className="auth_non_active_tab">QR Code</button>
+            <Link
+              to={props.path ? "/planpayment/bank-auth" : "/payment/bank-auth"}
+            >
+              <button className="auth_non_active_tab">
+                Internet Banking ID
+              </button>
             </Link>
+            <button className="auth_active_tab">QR Code</button>
           </div>
         </div>
         <div className="row mt-3">
-          <p>Sign In using Internet Banking ID</p>
+          <p>Sign In using QR Code</p>
         </div>
-        <div className="row mt-1">
-          <div className="col-lg-12">
-            <div className="ps_input1">
-              <input type="text" placeholder="Name on the card" />
-            </div>
-          </div>
-        </div>
-        <div className="row mt-3">
-          <div className="col-lg-12">
-            <div className="ps_input1">
-              <input type="password" placeholder="Password" />
-              <img src={eyeIcon} alt="..." />
-            </div>
-          </div>
-        </div>
-        <div className="row mt-2 align-items-center justify-content-between">
-          <div className="col-6 col-sm-6 col-md-6 col-lg-6">
-            <div className="check_box">
-              <input type="checkbox" />
-              <span>Rember me</span>
-            </div>
-          </div>
-          <div className="col-6 col-sm-6 col-md-6 col-lg-6">
-            <Link to="/forgot" className="dont_text">
-              Forgot Password?
-            </Link>
+        <div className="row">
+          <div className="col-lg-12 d-flex justify-content-center">
+            <img src={qrCode} alt="..." />
           </div>
         </div>
 
-        <div className="row mt-1">
+        <div className="row mt-3">
           <div className="col-lg-12">
             <Link
-              to={props.path ? "/planpayment/bank-otp" : "/payment/bank-otp"}
+              to={
+                props.path
+                  ? "/planpayment/confirm-payment"
+                  : "/payment/confirm-payment"
+              }
             >
               <button className="home_form_btn">Login to Starling Bank</button>
             </Link>
@@ -102,8 +87,8 @@ const BankAuth = (props) => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 
-export default BankAuth;
+export default BankAuthQr;

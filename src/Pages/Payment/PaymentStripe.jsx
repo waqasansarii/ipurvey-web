@@ -5,7 +5,7 @@ import appleIcon from "../../Assets/Icon awesome-apple.png";
 import payCards from "../../Assets/797313.png";
 import eyeIcon from "../../Assets/Icon awesome-eye-slash.png";
 import { Link } from "react-router-dom";
-const PaymentStripe = () => {
+const PaymentStripe = (props) => {
   const history = useHistory();
 
   return (
@@ -71,9 +71,9 @@ const PaymentStripe = () => {
         </div>
         <div className="row mt-3">
           <div className="col-lg-12">
-            <button className="home_form_btn">
-              <Link to="/payment/success">Continue to pay</Link>
-            </button>
+            <Link to={props.path ? "payment-thank" : "/payment/thank-you"}>
+              <button className="home_form_btn">Continue to pay</button>
+            </Link>
           </div>
         </div>
         <div className="row mt-3">

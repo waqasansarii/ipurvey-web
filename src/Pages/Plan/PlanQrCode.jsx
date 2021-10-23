@@ -1,14 +1,13 @@
 import React from "react";
-import BankAuth from "../Payment/BankAuth";
-
-const PlanAuth = () => {
+import BankAuthQr from "../Payment/BankAuthQr";
+const PlanQrCode = () => {
   return (
     <React.Fragment>
       <div className="plan_select_bank bank_auth">
-        <BankAuth path />
+        <BankAuthQr path />
       </div>
     </React.Fragment>
   );
 };
 
-export default PlanAuth;
+export default PlanQrCode;

@@ -3,8 +3,9 @@ import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import bankImg from "../../Assets/Group 868.png";
 import starlingIcon from "../../Assets/Mask Group 2.png";
 
-import { Link } from "react-router-dom";
-const ConfirmPayment = () => {
+import { Link, useHistory } from "react-router-dom";
+const ConfirmPayment = (props) => {
+  const history = useHistory();
   return (
     <React.Fragment>
       <div className="payment_bank_method1 payment">
@@ -12,7 +13,12 @@ const ConfirmPayment = () => {
           <div className="col-lg-12">
             <div className="pm_head">
               <div>
-                <img src={arrowLeft} alt="..." />
+                <img
+                  style={{ cursor: "pointer" }}
+                  onClick={() => history.goBack()}
+                  src={arrowLeft}
+                  alt="..."
+                />
                 <h2>Authorize your payment</h2>
               </div>
             </div>
@@ -41,14 +47,19 @@ const ConfirmPayment = () => {
         </div>
         <div className="row mt-5">
           <div className="col-lg-12">
-            <button className="home_form_btn">
-              <Link to="success">Proceed & Pay</Link>
-            </button>
+            <Link to="success">
+              <button className="home_form_btn">Proceed & Pay</button>
+            </Link>
           </div>
         </div>
         <div className="row mt-2">
           <div className="col-lg-12">
-            <Link className="hl_text">Cancel Transaction</Link>
+            <Link
+              to={props.path ? "/plan/payment-failed" : "/payment/failed"}
+              className="hl_text"
+            >
+              Cancel Transaction
+            </Link>
           </div>
         </div>
       </div>

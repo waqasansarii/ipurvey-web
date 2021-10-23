@@ -2,25 +2,26 @@ import React, { useState } from "react";
 import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import starlingIcon from "../../Assets/Mask Group 2.png";
 import tick from "../../Assets/Group 4169.png";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
-const options = {
-  bank: {
-    currAccount: "Current Account",
-    accNumber: "33322222",
-    sortNumber: "40-65-22",
-    route: "/",
-  },
-  monzo: {
-    currAccount: "Savings Account",
-    accNumber: "33322222",
-    sortNumber: "40-65-22",
-    route: "/",
-  },
-};
-const BankAccountType = () => {
+
+const BankAccountType = (props) => {
   const [active, setActive] = useState("bank");
-
+  const history = useHistory();
+  const options = {
+    bank: {
+      currAccount: "Current Account",
+      accNumber: "33322222",
+      sortNumber: "40-65-22",
+      route: props.path ? "/planpayment/bank-qrcode" : "/payment/bank-qrcode",
+    },
+    monzo: {
+      currAccount: "Savings Account",
+      accNumber: "33322222",
+      sortNumber: "40-65-22",
+      route: props.path ? "/planpayment/bank-qrcode" : "/payment/bank-qrcode",
+    },
+  };
   return (
     <React.Fragment>
       <div className="bank_type payment">
@@ -28,7 +29,12 @@ const BankAccountType = () => {
           <div className="col-lg-12">
             <div className="pm_head">
               <div>
-                <img src={arrowLeft} alt="..." />
+                <img
+                  style={{ cursor: "pointer" }}
+                  onClick={() => history.goBack()}
+                  src={arrowLeft}
+                  alt="..."
+                />
                 <h2 className="ms-2">Authenticate your Login Credentials</h2>
               </div>
             </div>
@@ -82,14 +88,19 @@ const BankAccountType = () => {
 
         <div className="row mt-5">
           <div className="col-lg-12">
-            <button className="home_form_btn">
-              <Link to="success">Proceed & Pay</Link>
-            </button>
+            <Link to={options[active].route}>
+              <button className="home_form_btn">Proceed & Pay</button>
+            </Link>
           </div>
         </div>
         <div className="row mt-2">
           <div className="col-lg-12">
-            <Link className="hl_text">Cancel transcation</Link>
+            <Link
+              to={props.path ? "/plan/payment-failed" : "/payment/failed"}
+              className="hl_text"
+            >
+              Cancel transcation
+            </Link>
           </div>
         </div>
       </div>

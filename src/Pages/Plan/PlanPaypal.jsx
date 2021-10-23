@@ -27,7 +27,7 @@ const PlanPaypal = () => {
         </div>
         <div className="row">
           <div className="pp_content">
-            <PaymentPaypal />
+            <PaymentPaypal path/>
           </div>
         </div>
       </div>
