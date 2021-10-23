@@ -348,6 +348,8 @@ background-color: #e6ecf8;
 .awayCheck {
   height: 25px !important;
   width: 70px !important;
+  -webkit-appearance: none;
+  border: none !important;
   background: white;
 }
 
@@ -363,9 +365,12 @@ background-color: #e6ecf8;
 }
 .awayCheck:checked,
 .awayCheck:checked:active {
-  height: 25px !important;
-  width: 70px !important;
-  box-shadow: 0px 3px 6px #00000029;
+  /* height: 25px !important; */
+  width: 50px !important;
+  border-radius: 0;
+  padding: 5px;
+  background: #b9c7e2;
+  /* box-shadow: 0px 3px 6px #00000029; */
 }
 
 .flight_li input[type="checkbox"]:active:not(:disabled) {
